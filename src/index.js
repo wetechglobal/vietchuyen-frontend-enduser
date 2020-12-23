@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom';
 import 'scss/index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import store from './store/store';
+import ReduxToastr from 'react-redux-toastr';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store()}>
+    <React.StrictMode>
+      <App />
+      <ReduxToastr timeOut={3000} newestOnTop={false} preventDuplicates
+        position="top-right" transitionIn="fadeIn" transitionOut="fadeOut"
+        progressBar closeOnToastrClick={false} />
+    </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
