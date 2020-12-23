@@ -1,14 +1,11 @@
 
-import { Row, Col } from 'react-bootstrap';
 
 const TheFooter = () => {
 
     return (
-        <Row>
-            <Col className="footer">
-                Footer - NAVI
-            </Col>
-        </Row>
+        <footer className="footer">
+            Footer - NAVI
+        </footer>
     );
 }
 export default TheFooter

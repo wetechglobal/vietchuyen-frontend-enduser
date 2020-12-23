@@ -1,33 +1,37 @@
 
-import { Row, Col } from 'react-bootstrap';
-import { Link } from "react-router-dom";
+import { Navbar, Nav, Form, FormControl, Button, Badge } from 'react-bootstrap';
 const TheHeader = () => {
 
     return (
-        <Row>
-            <Col className="header">
-                <div>LOGO</div>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Trang chủ</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">Về việt Chuyên</Link>
-                        </li>
-                        <li>
-                            <Link to="/solution">Giải Pháp - Sản Phẩm</Link>
-                        </li>
-                        <li>
-                            <Link to="/news">Tin Tức</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact">Liên Hệ</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </Col>
-        </Row>
+        <Navbar collapseOnSelect expand="lg" bg="blue" variant="blue" className="header text-uppercase">
+            <Navbar.Brand href="/">LOGO</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="mr-auto">
+                    <Nav.Link href="/">Trang chủ</Nav.Link>
+                    <Nav.Link href="/about">Về Việt Chuyên</Nav.Link>
+                    <Nav.Link href="/solution">Giải Pháp - Sản Phẩm</Nav.Link>
+                    <Nav.Link href="/news">Tin Tức</Nav.Link>
+                    <Nav.Link href="/contact">Liên Hệ</Nav.Link>
+                    {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                            </NavDropdown> */}
+                </Nav>
+                <Nav>
+                    <Badge>EN</Badge>
+                    <Badge>|</Badge>
+                    <Badge>VI</Badge>
+                </Nav>
+                <Form inline>
+                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                    <Button variant="outline-primary">Search</Button>
+                </Form>
+            </Navbar.Collapse>
+        </Navbar>
     );
 }
 export default TheHeader
