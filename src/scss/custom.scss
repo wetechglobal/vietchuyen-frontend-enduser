@@ -1,6 +1,5 @@
 /* create class common */
 .container {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     width: 1920px;
 }
@@ -8,10 +7,10 @@
     border: 1px solid $theme-btn-other;
 }
 .header {
-    border: 1px solid blue;
+    border: 1px solid $theme-navi;
 }
 .footer {
-    border: 1px solid blue;
+    border: 1px solid $theme-btn;
 }
 .slider {
     min-height: 266px;
@@ -21,4 +20,10 @@
 .footer,
 .latest-new {
     margin-bottom: 55px;
+}
+/* MENU */
+.navbar-light .navbar-nav .nav-link{
+    letter-spacing: -0.56px;
+    color: $theme-navi;
+    font-weight: bold;
 }

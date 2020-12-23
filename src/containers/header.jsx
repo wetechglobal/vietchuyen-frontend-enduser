@@ -3,7 +3,7 @@ import { Navbar, Nav, Form, FormControl, Button, Badge } from 'react-bootstrap';
 const TheHeader = () => {
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="blue" variant="blue" className="header text-uppercase">
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="header text-uppercase">
             <Navbar.Brand href="/">LOGO</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
