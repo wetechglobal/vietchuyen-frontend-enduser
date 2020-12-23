@@ -12,7 +12,10 @@
     min-height: 266px;
     background-color: $theme-bg;
 }
-.latest-new {
-    min-height: 166px;
-    background-color: pink;
+/*margin common*/
+.header,
+.footer,
+.latest-new,
+.slider {
+    margin-bottom: 55px;
 }

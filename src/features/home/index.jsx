@@ -1,22 +1,20 @@
 
 import { Row, Col } from 'react-bootstrap';
-
+import Slider from './components/slider/index';
+import LatestNews from './components/latestNew/index';
+import './style.scss';
 const Home = () => {
 
     return (
         <Row>
             <Col className="home">
-                Home Page            
+                Home Page
                 <Row className="slider">
-                    <Col md={12}>SLIDER</Col>
-                    <Col md={12}>SLIDER</Col>
-                    <Col md={12}>SLIDER</Col>
-                    <Col md={12}>SLIDER</Col>
+                    <Slider />
                 </Row>
                 <Row className="latest-new">
-                    <Col md={4}>TIN TUC</Col>
-                    <Col md={4}>TIN TUC</Col>
-                    <Col md={4}>TIN TUC</Col>
+                    <Col md={12} className="title">TIN TỨC MỚI NHẤT</Col>
+                    <LatestNews />
                 </Row>
             </Col>
         </Row>

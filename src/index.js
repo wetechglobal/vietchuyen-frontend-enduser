@@ -9,12 +9,12 @@ import ReduxToastr from 'react-redux-toastr';
 
 ReactDOM.render(
   <Provider store={store()}>
-    <React.StrictMode>
-      <App />
-      <ReduxToastr timeOut={3000} newestOnTop={false} preventDuplicates
-        position="top-right" transitionIn="fadeIn" transitionOut="fadeOut"
-        progressBar closeOnToastrClick={false} />
-    </React.StrictMode>,
+    {/* <React.StrictMode> */}
+    <App />
+    <ReduxToastr timeOut={3000} newestOnTop={false} preventDuplicates
+      position="top-right" transitionIn="fadeIn" transitionOut="fadeOut"
+      progressBar closeOnToastrClick={false} />
+    {/* </React.StrictMode>, */}
   </Provider>,
   document.getElementById('root')
 );
