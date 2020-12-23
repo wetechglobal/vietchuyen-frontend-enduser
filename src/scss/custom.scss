@@ -1,0 +1,18 @@
+/* create class common */
+.border {
+    border: 1px solid $theme-btn-other;
+}
+.header {
+    border: 1px solid palevioletred;
+}
+.footer {
+    border: 1px solid blue;
+}
+.slider {
+    min-height: 266px;
+    background-color: $theme-bg;
+}
+.latest-new {
+    min-height: 166px;
+    background-color: pink;
+}
