@@ -8,12 +8,7 @@ const Home = () => {
     return (
         <Row>
             <Col className="home">
-                <Row className="slider">
-                    <div className="line">
-                        <div className="line-bg"></div>
-                    </div>
-                    <Slider />
-                </Row>
+                <Slider />
                 <Row className="latest-new">
                     <Col md={12} className="title">TIN TỨC MỚI NHẤT</Col>
                     <LatestNews />

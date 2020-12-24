@@ -30,24 +30,25 @@ const Slider = () => {
         }
     ];
     return (
-        <Carousel>
-            {
-                sliders.map((item, idx) =>
-                    <Carousel.Item key={idx}>
-                        <img
-                            className="d-block w-100"
-                            src={item.src}
-                            alt={item.alt}
-                        />
+        <div className="slider">
+            <div className="line">
+                <div className="line-bg"></div>
+            </div>
+            <Carousel>
+                {
+                    sliders.map((item, idx) =>
+                        <Carousel.Item key={idx}>
+                            <img
+                                className="d-block w-100"
+                                src={item.src}
+                                alt={item.alt}
+                            />
+                        </Carousel.Item>
+                    )
+                }
+            </Carousel>
+        </div>
 
-                        {/* <Carousel.Caption>
-                            <h3>{item.lable}</h3>
-                            <p>{item.description}</p>
-                        </Carousel.Caption> */}
-                    </Carousel.Item>
-                )
-            }
-        </Carousel>
     );
 }
 export default Slider
