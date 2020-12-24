@@ -1,10 +1,12 @@
 
 import { Navbar, Nav, Form, FormControl, Button, Badge } from 'react-bootstrap';
+import logo from 'assets/icons/logoVietChuyenSG.svg'
+
 const TheHeader = () => {
 
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="header text-uppercase">
-            <Navbar.Brand href="/">LOGO</Navbar.Brand>
+            <Navbar.Brand href="/"><img src={logo} height="50px" alt=""/></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
