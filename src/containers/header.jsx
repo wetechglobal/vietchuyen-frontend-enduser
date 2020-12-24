@@ -1,20 +1,30 @@
 
 import { Navbar, Nav, Form, FormControl, Button, Badge } from 'react-bootstrap';
 import logo from 'assets/icons/logoVietChuyenSG.svg'
+import search from 'assets/icons/search.svg'
+import React from 'react';
 
-const TheHeader = () => {
-
+const TheHeader = props => {
+    const { location } = props
+    const Search = () => (
+        <Form inline>
+            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+            <Button variant="outline-primary">Search</Button>
+        </Form>
+    )
+    const [showResults, setShowResults] = React.useState(false)
+    const onClick = () => setShowResults(!showResults)
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="header text-uppercase">
-            <Navbar.Brand href="/"><img src={logo} height="50px" alt=""/></Navbar.Brand>
+            <Navbar.Brand href="/"><img src={logo} height="50px" alt="" /></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link href="/">Trang chủ</Nav.Link>
-                    <Nav.Link href="/about">Về Việt Chuyên</Nav.Link>
-                    <Nav.Link href="/solution">Giải Pháp - Sản Phẩm</Nav.Link>
-                    <Nav.Link href="/news">Tin Tức</Nav.Link>
-                    <Nav.Link href="/contact">Liên Hệ</Nav.Link>
+                <Nav className="mr-auto" activeKey={location.pathname}>
+                    <div className="menu"><Nav.Link href="/">Trang chủ</Nav.Link></div>
+                    <div className="menu"><Nav.Link href="/about">Về Việt Chuyên</Nav.Link></div>
+                    <div className="menu"><Nav.Link href="/solution" >Giải Pháp - Sản Phẩm</Nav.Link></div>
+                    <div className="menu"><Nav.Link href="/news" >Tin Tức</Nav.Link></div>
+                    <div className="menu"><Nav.Link href="/contact" >Liên Hệ</Nav.Link></div>
                     {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -23,15 +33,13 @@ const TheHeader = () => {
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown> */}
                 </Nav>
-                <Nav>
+                <Nav className="mobile">
                     <Badge>EN</Badge>
                     <Badge>|</Badge>
                     <Badge>VI</Badge>
+                    <Badge><img alt="" src={search} height="20" onClick={onClick}/></Badge>
                 </Nav>
-                <Form inline>
-                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                    <Button variant="outline-primary">Search</Button>
-                </Form>
+                { showResults ? <Search /> : null }
             </Navbar.Collapse>
         </Navbar>
     );
