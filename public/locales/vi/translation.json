@@ -1,0 +1,12 @@
+{
+  "mainMenu": {
+    "home": "Trang Chủ",
+    "about": "Về Việt Chuyên",
+    "solution": "Giải Pháp - Sản Phẩm",
+    "news": "Tin Tức",
+    "contact": "Liên Hệ"
+  },
+  "news": {
+    "latestNews": "Tin Tức mới nhất"
+  }
+}

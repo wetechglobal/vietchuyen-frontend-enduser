@@ -17,19 +17,25 @@
     min-height: 130px;
     background-color: $theme-bg;
 }
+.pointer {
+    cursor: pointer;
+}
 /*margin common*/
 .footer,
 .latest-new {
     margin-bottom: 55px;
 }
+.latest-new {
+    text-transform: uppercase;
+}
 /* MENU */
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
     color: $theme-navi;
     padding: unset;
     width: fit-content;
 }
 
-.navbar-light .navbar-nav .menu{
+.navbar-light .navbar-nav .menu {
     letter-spacing: -0.56px;
     font-weight: 500;
     font-size: 0.8em;
@@ -62,7 +68,8 @@
     color: #737373;
 }
 
-.mr-auto, .mx-auto {
+.mr-auto,
+.mx-auto {
     margin-right: unset !important;
 }
 

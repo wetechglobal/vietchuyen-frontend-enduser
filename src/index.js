@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import ReduxToastr from 'react-redux-toastr';
+import './common/i18n/i18n';
 
 ReactDOM.render(
   <Provider store={store()}>

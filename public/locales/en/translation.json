@@ -1,0 +1,12 @@
+{
+  "mainMenu": {
+    "home": "Home Page",
+    "about": "About Viet Chuyen",
+    "solution": "Solution - Product",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "news": {
+    "latestNews": "Latest News"
+  }
+}
