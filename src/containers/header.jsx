@@ -1,6 +1,6 @@
 
 import { useTranslation } from 'react-i18next';
-import { Navbar, Nav, Form, FormControl, Button, Badge } from 'react-bootstrap';
+import { Navbar, Nav, Form, FormControl, Badge } from 'react-bootstrap';
 import logo from 'assets/icons/logoVietChuyenSG.svg'
 import search from 'assets/icons/search.svg'
 import React from 'react';
