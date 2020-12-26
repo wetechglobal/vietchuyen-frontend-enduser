@@ -8,5 +8,14 @@
   },
   "news": {
     "latestNews": "Latest News"
+  },
+  "footer": {
+    "companyName": "CONG TY TNHH TM CONG NGHE VIET CHUYEN SG",
+    "addr": "Headquarters",
+    "address": "302, Doc Lap A Tower, Tan Quy Ward, Tan Phu District, HCM City",
+    "phone": "Phone",
+    "gpkd": "Business license number",
+    "gpkdDetail": "\"0304198513\" issued by HCM City Department of Planning and Investment on 27/01/2006",
+    "mst": "Tax code"
   }
 }
