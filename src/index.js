@@ -7,6 +7,10 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import ReduxToastr from 'react-redux-toastr';
 import './common/i18n/i18n';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faCheckSquare, faCoffee)
 
 ReactDOM.render(
   <Provider store={store()}>

@@ -1,0 +1,77 @@
+<html>
+
+<body>
+    <style>
+        .box {
+            position: relative;
+            border: 0px solid red;
+        }
+
+        .group-type {
+            border: 0px solid black;
+        }
+
+        .news-line {
+            border: 0px solid orange;
+            width: 400px;
+            height: 312px;
+        }
+
+        .box-thumbnail {
+            position: absolute;
+            border: 0px solid blue;
+            width: 358px;
+            height: 285px;
+        }
+
+        .pattern-img {
+            position: absolute;
+            border: 0px solid blue;
+        }
+
+        .text {
+            color: red;
+            font-weight: bold;
+            border: 0px solid red;
+            position: absolute;
+            bottom: 6px;
+            left: 0px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .circle {
+            border: 0px solid red;
+            position: absolute;
+            bottom: 0px;
+            left: 90px;
+        }
+    </style>
+
+    <div class="box">
+        <svg class="box-thumbnail">
+            <polygon points="0,0 0,358 170,358 358,160 358,0" fill="url(#news-thumbnail)"
+                style="stroke:black;stroke-width:0;" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+        <svg class="pattern-img">
+            <defs>
+                <pattern id="news-thumbnail" height="100%" width="100%" patternContentUnits="objectBoundingBox">
+                    <image height="1" width="1" preserveAspectRatio="none"
+                        xlink:href="https://i.ibb.co/kHBbYFF/hinhbaidang.png" />
+                </pattern>
+            </defs>
+        </svg>
+
+        <svg class="news-line">
+            <polyline points="100,300 246,300 358,180" style="fill:transparent;stroke:red;stroke-width:2" />
+        </svg>
+        <svg height="20" width="20" class="circle">
+            <circle cx="8" cy="8" r="4" stroke="red" stroke-width="2" fill="white" />
+        </svg>
+        <div class="text">Tin sự kiện</div>
+
+    </div>
+</body>
+
+</html>
