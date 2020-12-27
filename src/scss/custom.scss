@@ -7,11 +7,7 @@
     border: 1px solid $theme-btn-other;
 }
 .header {
-    border: 1px solid $theme-navi;
     padding: 0.5rem 10%;
-}
-.footer {
-    border: 1px solid $theme-btn;
 }
 .slider {
     min-height: 130px;
@@ -21,7 +17,6 @@
     cursor: pointer;
 }
 /*margin common*/
-.footer,
 .latest-new {
     margin-bottom: 55px;
 }
@@ -83,6 +78,94 @@
     color: #0063b0 !important;
 }
 
+
+//footer
+.footer{
+    position: relative;
+
+    .main-footer {
+        width: 100%;
+        position: relative;
+    }
+
+    .map {
+        width: 100%;
+        height: 100%;
+        min-height: 700px;
+        margin-top: -295px;
+    }
+
+    .container {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 60%;
+        color: white;
+        box-shadow:unset;
+    }
+
+    .row {
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .row.copyright {
+        bottom: 2%;
+        position: absolute;
+    }
+
+    .row:last-child {
+        bottom: 2%;
+        position: absolute;
+        right: 15%;
+    }
+
+    .img {
+        align-self: center;
+
+        img {
+            width: 35px;
+            margin-right: 10px;
+        }
+    }
+
+    .inrow {
+        display: flex;
+    }
+
+    .inrow:first-child {
+        margin-right: 50px;
+    }
+
+    .group {
+        position: relative;
+
+        img {
+            width: 50px;
+        }
+
+        .face {
+            position: absolute;
+            bottom: 120px;
+            right: 0;
+        }
+
+        .youtube {
+            right: 45px;
+            position: absolute;
+            bottom: 75px;
+        }
+
+        .in {
+            position: absolute;
+            right: 90px;
+            bottom: 30px;
+        }
+    }
+}
+
 @media only screen and (min-width: 1280px) {
     .navbar-light .navbar-nav .nav-link {
         font-weight: 600;
@@ -100,4 +183,16 @@
         bottom: -98px;
         display: contents;
     }
+
+    .footer{
+        .container {
+            display: none;
+        }
+
+        .map {
+            min-height: 200px;
+        }
+    }
+
+    
 }
