@@ -1,0 +1,45 @@
+.latest-new-image {
+    .image {
+        width: 100%;
+        height: 45vh;
+        background-image: url('../../assets/images/tintucmoinhat.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+.news-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #007bff;
+}
+
+.nav-link.active, .nav-link:hover {
+    border: unset;
+}
+
+.tab-content {
+    flex: 1;
+    // justify-content: flex-start;
+}
+
+.highlights {
+    display: flex;
+
+    .highlight-items {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.others {
+    display: flex;
+    .other-items {
+        width: 30px;
+        height: 30px;
+    }
+}
