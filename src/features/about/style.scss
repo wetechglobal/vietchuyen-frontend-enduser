@@ -1,0 +1,20 @@
+.text-about {
+    background-image: url("../../assets/images/BG_veVietChuyen.png");
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding: 40px;
+    text-shadow: 2px 1px 1px #4d4d4d;
+    padding-left: 389px;
+    padding-right: 637px;
+    margin-top: 76px;
+}
+.contain-about {
+    margin-left: 389px;
+    margin-right: 637px;
+    border: 1px solid black;
+    position: relative;
+    margin-top: 121px;
+}
