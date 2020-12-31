@@ -193,11 +193,11 @@
 
     .main-group {
         position: relative;
-        margin-bottom: 210px;
+        margin-bottom: 100px;
 
         span {
             position: absolute;
-            top: 130px;
+            top: 120px;
         }
     }
 
@@ -209,7 +209,7 @@
         -webkit-transition: all 0.2s; 
         -moz-transition: all 0.2s; 
         transition: all 0.2s;
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
         right: 0;
@@ -218,7 +218,7 @@
     }
 
     .group:hover .vongtron {
-        top: 30px;
+        top: 10px;
     }
 
     .num {
@@ -236,7 +236,7 @@
     }
 
     .group:hover .num{
-        bottom: 50px;
+        bottom: 30px;
     }
 
     span {
@@ -250,6 +250,10 @@
             color: #98FAFC;
             font-weight: bold;
         }
+    }
+
+    .padding-bottom {
+        padding-bottom: 1px;
     }
 }
 

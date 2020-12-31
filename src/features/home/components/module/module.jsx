@@ -34,7 +34,7 @@ const Module = () => {
                                     </div>
                                     <span>{t('strengths.10')}</span>
                                 </div>
-                                <div className="main-group">
+                                <div className="main-group padding-bottom">
                                     <div className="group">
                                         <img className="num" src={IMAGES.TWENTY} alt="" />
                                         <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
@@ -60,7 +60,7 @@ const Module = () => {
                                     </div>
                                     <span>{t('strengths.300')}</span>
                                 </div>
-                                <div className="main-group">
+                                <div className="main-group padding-bottom">
                                     <div className="group">
                                         <img className="num" src={IMAGES.SIXTYTHREE} alt="" />
                                         <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
