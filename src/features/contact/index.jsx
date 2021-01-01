@@ -12,31 +12,26 @@ import hovaten from 'assets/icons/hoten.svg'
 import email from 'assets/icons/email.svg'
 import noidungyeucau from 'assets/icons/noidungyeucau.svg'
 import './style.scss';
-
-
 const Contact = () => {
-
     return (
-        <div>
+        <div className="contact">
             <Row>
                 <Col>
-                    <div >
-                        <img src={title} className='title1' />
+                    <div>
+                        <img src={title} className='title-img' alt="" />
                     </div>
                 </Col>
             </Row>
-
             <Row>
                 <Col lg={5} md={6}>
                     <Row style={{ marginTop: '100px' }}>
                         <Col md={{ span: 5, offset: 7 }} >
-                            <img src={header} className='trusochinh' />
+                            <img src={header} className='trusochinh' alt="" />
                             <p className='text-truso'>
                                 Trụ Sở
-                            <img src={muitenxam} className='muitenxam'></img>
+                            <img src={muitenxam} className='muitenxam' alt="" />
                             </p>
                         </Col>
-
                     </Row>
                 </Col>
                 <Col lg={5} md={6} className='infoborder'>
@@ -47,28 +42,25 @@ const Contact = () => {
                     </Row>
                     <Row>
                         <Col className='dienthoai' >
-                            <img src={dienthoai} style={{ width: '44px', position: 'relative' }} /> (028) 3963 7678
+                            <img src={dienthoai} style={{ width: '44px', position: 'relative' }} alt="" /> (028) 3963 7678
                     </Col>
                         <Col className='fax' style={{ marginTop: '2%' }}>
-                            <img src={fax} style={{ width: '44px', position: 'relative' }} /> Fax: (028) 3963 7679
+                            <img src={fax} style={{ width: '44px', position: 'relative' }} alt="" /> Fax: (028) 3963 7679
                         </Col>
                     </Row>
                 </Col>
-
             </Row>
-
             <Row style={{ marginTop: '100px' }}>
                 <Col md={5}>
                     <Row style={{ marginTop: '100px' }}>
                         <Col md={{ span: 5, offset: 7 }} style={{ marginTop: '300px' }} >
-                            <img src={hethongdaily} className='dailyhethongicon' />
+                            <img src={hethongdaily} className='dailyhethongicon' alt="daily-hethong" />
 
                             <p className='text-truso' style={{ fontSize: '65px', marginTop: '50px' }}>
                                 Hệ thống đại lý và trung tâm hỗ trợ kỹ thuật
-                            <img src={muitenxam} className='muitenxam'></img>
+                            <img src={muitenxam} className='muitenxam' alt="muiten-xam" />
                             </p>
                         </Col>
-
                     </Row>
                 </Col>
                 <Col md={5} className=''>
@@ -84,7 +76,6 @@ const Contact = () => {
                                     Văn phòng đại diện Công ty TNHH Công Nghệ Việt Chuyên SG
                                 </Col>
                             </Row>
-
                             <Row className='diachitext' >
                                 <Col >
                                     Số 81, Ngõ 530 đường Thụy Khuê, Phường Bưởi, Quận Tây Hồ, TP. HN.
@@ -92,11 +83,10 @@ const Contact = () => {
                             </Row>
                             <Row>
                                 <Col className='dienthoai' >
-                                    <img src={dienthoai} style={{ width: '44px', position: 'relative' }} /> (028) 3963 7678
+                                    <img src={dienthoai} style={{ width: '44px', position: 'relative' }} alt="" /> (028) 3963 7678
                                 </Col>
                             </Row>
                         </Col>
-
                         <Col md={12} className='infoborder'>
                             <Row className='dailyhethongtext' >
                                 <Col >
@@ -108,7 +98,6 @@ const Contact = () => {
                                     Văn phòng đại diện Công ty TNHH Công Nghệ Việt Chuyên SG
                                 </Col>
                             </Row>
-
                             <Row className='diachitext' >
                                 <Col >
                                     Số 81, Ngõ 530 đường Thụy Khuê, Phường Bưởi, Quận Tây Hồ, TP. HN.
@@ -116,14 +105,13 @@ const Contact = () => {
                             </Row>
                             <Row>
                                 <Col className='dienthoai' >
-                                    <img src={dienthoai} style={{ width: '44px', position: 'relative' }} /> 0511 3679 222
+                                    <img src={dienthoai} style={{ width: '44px', position: 'relative' }} alt="" /> 0511 3679 222
                                 </Col>
                                 <Col className='fax' style={{ marginTop: '2%' }}>
-                                    <img src={fax} style={{ width: '44px', position: 'relative' }} /> Fax: 0511 3679 224
+                                    <img src={fax} style={{ width: '44px', position: 'relative' }} alt="" /> Fax: 0511 3679 224
                                 </Col>
                             </Row>
                         </Col>
-
                         <Col md={12} className='infoborder'>
                             <Row className='dailyhethongtext' >
                                 <Col >
@@ -135,7 +123,6 @@ const Contact = () => {
                                     Công Ty TNHH Mtv Công Nghệ An Phát Minh
                                 </Col>
                             </Row>
-
                             <Row className='diachitext' >
                                 <Col >
                                     E1 Đường số 56, KDC 586, P.Phú Thứ, Q.Cái Răng, TP.Cần Thơ
@@ -143,14 +130,13 @@ const Contact = () => {
                             </Row>
                             <Row>
                                 <Col className='dienthoai' >
-                                    <img src={dienthoai} style={{ width: '44px', position: 'relative' }} /> 0292 3918 118
+                                    <img src={dienthoai} style={{ width: '44px', position: 'relative' }} alt="" /> 0292 3918 118
                                 </Col>
                                 <Col className='fax' style={{ marginTop: '2%' }}>
-                                    <img src={fax} style={{ width: '44px', position: 'relative' }} /> Fax: 00292 3737 980
+                                    <img src={fax} style={{ width: '44px', position: 'relative' }} alt="" /> Fax: 00292 3737 980
                                 </Col>
                             </Row>
                         </Col>
-
                         <Col md={12} className='infoborder'>
                             <Row className='dailyhethongtext' >
                                 <Col >
@@ -162,7 +148,6 @@ const Contact = () => {
                                     Trung Tâm Bảo Hành Sửa Chữa Thiết Bị Vt- Cntt Vnpt Trà Vinh
                                 </Col>
                             </Row>
-
                             <Row className='diachitext' >
                                 <Col >
                                     70 Hùng Vương, P. 4, TP.Trà Vinh, Tỉnh Trà Vinh
@@ -170,31 +155,28 @@ const Contact = () => {
                             </Row>
                             <Row>
                                 <Col className='dienthoai' >
-                                    <img src={dienthoai} style={{ width: '44px', position: 'relative' }} /> (074) 3 855 777
+                                    <img src={dienthoai} style={{ width: '44px', position: 'relative' }} alt="" /> (074) 3 855 777
                                 </Col>
                                 <Col className='fax' style={{ marginTop: '2%' }}>
-                                    <img src={fax} style={{ width: '44px', position: 'relative' }} /> Fax: (074) 3 853 444
+                                    <img src={fax} style={{ width: '44px', position: 'relative' }} alt="" /> Fax: (074) 3 853 444
                                 </Col>
                             </Row>
                         </Col>
                     </Row>
                 </Col>
             </Row>
-
             <Row >
                 <Col md={5}>
                     <Row style={{ marginTop: '100px' }}>
                         <Col md={{ span: 5, offset: 7 }} >
-                            <img src={lienhengay} className='lienhengay' />
+                            <img src={lienhengay} className='lienhengay' alt="" />
                             <p className='text-truso'>
                                 Liên hệ ngay
-                            <img src={muitenxam} className='muitenxam'></img>
+                            <img src={muitenxam} className='muitenxam' alt="" />
                             </p>
                         </Col>
-
                     </Row>
                 </Col>
-
                 <Col md={4} style={{ marginTop: '100px' }}>
                     <Form>
                         <Row >
@@ -202,7 +184,7 @@ const Contact = () => {
                                 <InputGroup className="mb-3">
                                     <InputGroup.Prepend>
                                         <InputGroup.Text id="basic-addon1" className='BG-hoten'>
-                                            <img src={hovaten} className='hoten'></img>
+                                            <img src={hovaten} className='hoten' alt="" />
                                         </InputGroup.Text>
                                     </InputGroup.Prepend>
                                     <FormControl className='BG-input'
@@ -211,17 +193,14 @@ const Contact = () => {
                                         aria-describedby="basic-addon1"
                                     />
                                 </InputGroup>
-
                             </Col>
-
                         </Row>
-
                         <Row >
                             <Col>
                                 <InputGroup className="mb-3">
                                     <InputGroup.Prepend>
                                         <InputGroup.Text id="basic-addon1" className='BG-hoten'>
-                                            <img src={email} className='email'></img>
+                                            <img src={email} className='email' alt="" />
                                         </InputGroup.Text>
                                     </InputGroup.Prepend>
                                     <FormControl className='BG-input'
@@ -229,33 +208,32 @@ const Contact = () => {
                                         aria-label="email"
                                         aria-describedby="basic-addon1"
                                     />
-                                </InputGroup>
+                                    </InputGroup>
                             </Col>
                         </Row>
-
                         <Row >
                             <Col>
                                 <InputGroup className="mb-3">
                                     <InputGroup.Prepend>
                                         <InputGroup.Text id="basic-addon1" className='BG-hoten' style={{ height: '155px' }}>
-                                            <img src={noidungyeucau} className='noidungyeucau'  ></img>
+                                            <img src={noidungyeucau} className='noidungyeucau' alt="" />
                                         </InputGroup.Text>
                                     </InputGroup.Prepend>
-                                    <FormControl className='BG-input' style={{ height: '155px' }}
-                                        placeholder="Nội dung yêu cầu"
-                                        aria-label="email"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
+                                        <FormControl className='BG-input' style={{ height: '155px' }}
+                                            placeholder="Nội dung yêu cầu"
+                                            aria-label="email"
+                                            aria-describedby="basic-addon1"
+                                        />
+                                    </InputGroup>
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                <Button variant="primary" type="submit" className='guiyeucau' style={{width:'100%'}}>
-                                    GỬI YÊU CẦU
-                                </Button>
-                            </Col>
-                        </Row>
+                            <Row>
+                                <Col>
+                                    <Button variant="primary" type="submit" className='guiyeucau' style={{ width: '100%' }}>
+                                        GỬI YÊU CẦU
+                                    </Button>
+                                </Col>
+                            </Row>
                     </Form>
                 </Col>
             </Row>
