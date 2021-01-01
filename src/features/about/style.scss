@@ -1,6 +1,5 @@
 .text-about {
     background-image: url("../../assets/images/BG_veVietChuyen.png");
-    background-image: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -12,9 +11,29 @@
     margin-top: 76px;
 }
 .contain-about {
-    margin-left: 389px;
-    margin-right: 637px;
-    border: 1px solid black;
-    position: relative;
     margin-top: 121px;
+    color: #1d1d1f;
+    font-size: 20px;
+    font-weight: bold;
+    .box-about {
+        padding: 90px;
+    }
+    .title-about {
+        font-size: 80px;
+    }
+    .title-small-about {
+        font-size: 20px;
+        text-transform: uppercase;
+        border-left: 3px solid #d51d1f;
+        padding-left: 23px;
+    }
+    .blue {
+        color: #1d96d3;
+    }
+    .red {
+        color: #d51d1f;
+    }
+    .row {
+        margin-bottom: 110px;
+    }
 }

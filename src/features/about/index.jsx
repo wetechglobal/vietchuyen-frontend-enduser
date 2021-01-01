@@ -1,6 +1,6 @@
 
 import { Row, Col } from 'react-bootstrap';
-//import IMAGES from "assets/images/images";
+import IMAGES from "assets/images/images";
 
 import './style.scss';
 
@@ -20,57 +20,45 @@ const About = () => {
                         <p>Tổng Giám Đốc Việt Chuyên SG</p>
                     </div>
                 </div>
-                <Row className="contain-about">
-                    <Col md={6}>
-                        a
-                    </Col>
-                    <Col md={6}>
-                        Không ngừng đổi mới và sáng tạo để khẳng định sự khác biệt, đồng thời trân trọng và đề cao con người, bồi dưỡng nguồn nhân lực nhằm đáp ứng ngày một tốt hơn những yêu cầu của khách hàng, những biến chuyển của thị trường, nâng cao giá trị sản phẩm dịch vụ.
-                    </Col>
-                    <Col md={6}>
-                        Trở thành Nhà cung cấp Giải pháp và Sản phẩm Cơ sở hạ tầng CNTT hàng đầu Việt Nam – nơi mà mỗi người Việt Chuyên SG đều được thỏa mãn đam mê và nhiệt huyết với công nghệ.
-                    </Col>
-                    <Col md={6}>
-                        b
-                    </Col>
-                    <Col md={6}>
-                        a
-                    </Col>
-                    <Col md={6}>
-                        Không ngừng đổi mới và sáng tạo để khẳng định sự khác biệt, đồng thời trân trọng và đề cao con người, bồi dưỡng nguồn nhân lực nhằm đáp ứng ngày một tốt hơn những yêu cầu của khách hàng, những biến chuyển của thị trường, nâng cao giá trị sản phẩm dịch vụ.
-                    </Col>
-                    <Col md={6}>
-                        Trở thành Nhà cung cấp Giải pháp và Sản phẩm Cơ sở hạ tầng CNTT hàng đầu Việt Nam – nơi mà mỗi người Việt Chuyên SG đều được thỏa mãn đam mê và nhiệt huyết với công nghệ.
-                    </Col>
-                    <Col md={6}>
-                        b
-                    </Col>
-                    <Col md={6}>
-                        a
-                    </Col>
-                    <Col md={6}>
-                        Không ngừng đổi mới và sáng tạo để khẳng định sự khác biệt, đồng thời trân trọng và đề cao con người, bồi dưỡng nguồn nhân lực nhằm đáp ứng ngày một tốt hơn những yêu cầu của khách hàng, những biến chuyển của thị trường, nâng cao giá trị sản phẩm dịch vụ.
-                    </Col>
-                    <Col md={6}>
-                        Trở thành Nhà cung cấp Giải pháp và Sản phẩm Cơ sở hạ tầng CNTT hàng đầu Việt Nam – nơi mà mỗi người Việt Chuyên SG đều được thỏa mãn đam mê và nhiệt huyết với công nghệ.
-                    </Col>
-                    <Col md={6}>
-                        b
-                    </Col>
-                    <Col md={6}>
-                        a
-                    </Col>
-                    <Col md={6}>
-                        Không ngừng đổi mới và sáng tạo để khẳng định sự khác biệt, đồng thời trân trọng và đề cao con người, bồi dưỡng nguồn nhân lực nhằm đáp ứng ngày một tốt hơn những yêu cầu của khách hàng, những biến chuyển của thị trường, nâng cao giá trị sản phẩm dịch vụ.
-                    </Col>
-                    <Col md={6}>
-                        Trở thành Nhà cung cấp Giải pháp và Sản phẩm Cơ sở hạ tầng CNTT hàng đầu Việt Nam – nơi mà mỗi người Việt Chuyên SG đều được thỏa mãn đam mê và nhiệt huyết với công nghệ.
-                    </Col>
-                    <Col md={6}>
-                        b
-                    </Col>
-
-                </Row>
+                <div className="contain-about">
+                    <Row>
+                        <Col lg={{ span: 4, offset: 2 }}>
+                            <img src={IMAGES.MISSION} width="577" alt="mission" />
+                        </Col>
+                        <Col lg={4} className="box-about">
+                            <div className="title-about blue">SỨ MỆNH</div>
+                            <div className="detail-about">
+                                Không ngừng đổi mới và sáng tạo để khẳng định sự khác biệt, đồng thời trân trọng và đề cao con người, bồi dưỡng nguồn nhân lực nhằm đáp ứng ngày một tốt hơn những yêu cầu của khách hàng, những biến chuyển của thị trường, nâng cao giá trị sản phẩm dịch vụ.
+                        </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col lg={{ span: 4, offset: 2 }} className="box-about">
+                            <div className="title-about red">TẦM NHÌN</div>
+                            <div className="detail-about">
+                                Không ngừng đổi mới và sáng tạo để khẳng định sự khác biệt, đồng thời trân trọng và đề cao con người, bồi dưỡng nguồn nhân lực nhằm đáp ứng ngày một tốt hơn những yêu cầu của khách hàng, những biến chuyển của thị trường, nâng cao giá trị sản phẩm dịch vụ.
+                        </div>
+                        </Col>
+                        <Col lg={4}>
+                            <img src={IMAGES.VISION} width="577" alt="vision" />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col lg={{ span: 4, offset: 2 }}>
+                            <img src={IMAGES.CORE_VALUE} width="577" alt="core-value" />
+                        </Col>
+                        <Col lg={4} className="box-about">
+                            <div className="title-about blue">GIÁ TRỊ CỐT LỖI</div>
+                            <div className="detail-about">
+                                Hơn 10 năm qua, đội ngũ cán bộ nhân viên Viet Chuyen SG luôn cam kết làm việc theo phương châm:
+                        </div>
+                            <div className="title-small-about red">“Chất lượng - Uy tín – Chuyên nghiệp – Sáng tạo – Nỗ lực không ngừng”</div>
+                            <div className="detail-about">
+                                Luôn luôn đề xuất những phương án hướng tới sự phát triển lâu dài nhằm cung cấp các sản phẩm, dịch vụ CNTT chất lượng cao đến các khách hàng.
+                        </div>
+                        </Col>
+                    </Row>
+                </div>
             </Col>
         </Row>
     );
