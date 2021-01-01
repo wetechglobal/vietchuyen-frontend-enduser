@@ -4,6 +4,10 @@ import slider3 from './Banner_03.png';
 import slider4 from './Banner_04.png';
 
 import defaultNews from './hinhbaidang.png';
+import aboutVC from './BG_veVietChuyen.png';
+import mission from './sumenh.png';
+import vision from './tamnhin.png';
+import coreValue from './giatricotloi.png';
 
 import bg from 'assets/images/BG_footer.png';
 import logo from 'assets/icons/logoamban.svg';
@@ -46,7 +50,11 @@ const IMAGES = {
     TWENTY: twenty,
     SIXTYTHREE: sixtythree,
     ONEDUNDRED: onehundred,
-    THREEHUNDRED: threehundred
+    THREEHUNDRED: threehundred,
+    BG_ABOUT_VC: aboutVC,
+    MISSION: mission,
+    VISION: vision,
+    CORE_VALUE: coreValue
 }
 
 export default IMAGES;

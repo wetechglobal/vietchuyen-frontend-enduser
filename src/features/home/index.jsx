@@ -11,7 +11,7 @@ const Home = () => {
         <Row>
             <Col className="home">
                 <Slider />
-                <Row className="latest-new">
+                <Row className="latest-news">
                     <Col md={12} className="title">{t('news.latestNews')}</Col>
                     <LatestNews />
                 </Row>

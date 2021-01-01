@@ -1,4 +1,7 @@
 /* create class common */
+body {
+    //font: normal normal normal 12px/16px SVN-Gotham;
+}
 .container {
     box-shadow: 0px 3px 6px #00000029;
     width: 1920px;
@@ -12,6 +15,7 @@
 .slider {
     min-height: 130px;
     background-color: $theme-bg;
+    margin-bottom: 55px;
 }
 .pointer {
     cursor: pointer;
@@ -19,8 +23,6 @@
 /*margin common*/
 .latest-new {
     margin-bottom: 55px;
-}
-.latest-new {
     text-transform: uppercase;
 }
 .loader-language {
@@ -78,9 +80,8 @@
     color: #0063b0 !important;
 }
 
-
 //footer
-.footer{
+.footer {
     position: relative;
 
     .main-footer {
@@ -103,7 +104,7 @@
         bottom: 0;
         width: 60%;
         color: white;
-        box-shadow:unset;
+        box-shadow: unset;
     }
 
     .row {
@@ -220,7 +221,7 @@
         display: contents;
     }
 
-    .footer{
+    .footer {
         .container {
             display: none;
         }
@@ -229,6 +230,4 @@
             min-height: 200px;
         }
     }
-
-    
 }
