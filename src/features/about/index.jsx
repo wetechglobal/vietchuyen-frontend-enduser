@@ -8,9 +8,9 @@ const About = () => {
 
     return (
         <Row>
-            <Col className="about">
-                <div className="text-about">
-                    <div className="txt">
+            <Col lg={12} className="about">
+                <Row className="text-about">
+                    <Col lg={{ span: 6, offset: 2 }}>
                         <h1>THƯ NGỎ</h1>
                         <h1>Quý khách hàng, đối tác thân mến!</h1>
                         <p>Việt Chuyên SG là Nhà Cung cấp các giải pháp & sản phẩm cơ sở hạ tầng hệ thống CNTT tại Việt Nam.Với kinh nghiệm hơn 10 năm trong ngành Công nghệ thông tin tại Việt Nam, Việt Chuyên SG luôn cam kết làm việc theo phương châm “Chất lượng- Uy tín – Chuyên nghiệp – Sáng tạo – Nỗ lực không ngừng”, từ đó đề xuất những phương án hướng tới sự phát triển lâu dài, cung cấp tới các khách hàng những sản phẩm, dịch vụ CNTT tốt nhất. Chính vì thế, từ thương hiệu ít được biết đến, Viet Chuyen SG đã xây dựng tên tuổi thành công và tạo được dấu ấn rất riêng.</p>
@@ -18,28 +18,28 @@ const About = () => {
                         <p>Mặc dù giai đoạn mới có nhiều thách thức, khó khăn nhưng cũng mang đến vô số cơ hội. Chính vì vậy chúng tôi mong muốn sẽ nhận được sự ủng hộ nhiều hơn nữa từ quý khách hàng, đối tác để cùng nhau tạo ra những giá trị tốt đẹp trong thời đại 4.0. Thay mặt Viet Chuyen SG, tôi xin chân thành gửi lời cảm ơn đến toàn thể quý vị. Cảm ơn các bạn đã đồng hành cũng chúng tôi thắp sáng lên ngọn lửa Viet Chuyen SG – ngọn lửa của niềm tin, sức mạnh đoàn kết và lòng nhiệt huyết.</p>
                         <p>Trân trọng!</p>
                         <p>Tổng Giám Đốc Việt Chuyên SG</p>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
                 <div className="contain-about">
                     <Row>
                         <Col lg={{ span: 4, offset: 2 }}>
                             <img src={IMAGES.MISSION} width="577" alt="mission" />
                         </Col>
-                        <Col lg={4} className="box-about">
+                        <Col lg={{ span: 3, offset: 1 }}>
                             <div className="title-about blue">SỨ MỆNH</div>
                             <div className="detail-about">
                                 Không ngừng đổi mới và sáng tạo để khẳng định sự khác biệt, đồng thời trân trọng và đề cao con người, bồi dưỡng nguồn nhân lực nhằm đáp ứng ngày một tốt hơn những yêu cầu của khách hàng, những biến chuyển của thị trường, nâng cao giá trị sản phẩm dịch vụ.
-                        </div>
+                            </div>
                         </Col>
                     </Row>
                     <Row>
-                        <Col lg={{ span: 4, offset: 2 }} className="box-about">
+                        <Col lg={{ span: 3, offset: 2 }}>
                             <div className="title-about red">TẦM NHÌN</div>
                             <div className="detail-about">
                                 Không ngừng đổi mới và sáng tạo để khẳng định sự khác biệt, đồng thời trân trọng và đề cao con người, bồi dưỡng nguồn nhân lực nhằm đáp ứng ngày một tốt hơn những yêu cầu của khách hàng, những biến chuyển của thị trường, nâng cao giá trị sản phẩm dịch vụ.
-                        </div>
+                            </div>
                         </Col>
-                        <Col lg={4}>
+                        <Col lg={{ span: 6, offset: 1 }}>
                             <img src={IMAGES.VISION} width="577" alt="vision" />
                         </Col>
                     </Row>
@@ -47,7 +47,7 @@ const About = () => {
                         <Col lg={{ span: 4, offset: 2 }}>
                             <img src={IMAGES.CORE_VALUE} width="577" alt="core-value" />
                         </Col>
-                        <Col lg={4} className="box-about">
+                        <Col lg={{ span: 3, offset: 1 }}>
                             <div className="title-about blue">GIÁ TRỊ CỐT LỖI</div>
                             <div className="detail-about">
                                 Hơn 10 năm qua, đội ngũ cán bộ nhân viên Viet Chuyen SG luôn cam kết làm việc theo phương châm:
