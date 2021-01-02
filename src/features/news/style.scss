@@ -1,45 +1,40 @@
-.latest-new-image {
-    .image {
+.news__banner {
+    img {
+        height: 100%;
         width: 100%;
-        height: 45vh;
-        background-image: url('../../assets/images/tintucmoinhat.png');
-        background-size: 100%;
-        background-repeat: no-repeat;
+        object-fit: 'contain'
     }
 }
 
-.news-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.nav-tabs {
-    border-bottom: 1px solid #007bff;
-}
-
-.nav-link.active, .nav-link:hover {
-    border: unset;
-}
-
-.tab-content {
-    flex: 1;
-    // justify-content: flex-start;
-}
-
-.highlights {
-    display: flex;
-
-    .highlight-items {
-        width: 50px;
-        height: 50px;
+.news__info-container {
+    .news__info-tab-event {
+        cursor: pointer;
+        text-align: end;
+        // border-bottom: 2px solid blue;
     }
+    .news__info-tab-tech {
+        cursor: pointer;
+        text-align: start;
+        // border-bottom: 2px solid blue;
+    }
+
+    .active {
+        border-bottom: 2px solid blue;
+        color: blue;
+    }
+    
 }
 
-.others {
-    display: flex;
-    .other-items {
-        width: 30px;
-        height: 30px;
+.box-thumbnail:hover {
+    transform: scale(1.015);
+}
+
+.latest-news {
+    .title {
+        font-size: 55px;
+        font-weight: bolder;
+        text-align: center;
+        margin-bottom: 55px;
+        text-transform: uppercase;
     }
 }

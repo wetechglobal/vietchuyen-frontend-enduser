@@ -4,6 +4,9 @@ import slider3 from './Banner_03.png';
 import slider4 from './Banner_04.png';
 
 import defaultNews from './hinhbaidang.png';
+import imgNewsPage from './tintucmoinhat.png';
+import defaultTechNews from './technews.png';
+
 import aboutVC from './BG_veVietChuyen.png';
 import mission from './sumenh.png';
 import vision from './tamnhin.png';
@@ -28,6 +31,7 @@ import twenty from 'assets/images/20+.png';
 import sixtythree from 'assets/images/63+.png';
 import onehundred from 'assets/images/100+.png';
 import threehundred from 'assets/images/300+.png';
+
 
 const IMAGES = {
     SLIDER1: slider1,
@@ -54,7 +58,9 @@ const IMAGES = {
     BG_ABOUT_VC: aboutVC,
     MISSION: mission,
     VISION: vision,
-    CORE_VALUE: coreValue
+    CORE_VALUE: coreValue,
+    BANNER: imgNewsPage,
+    DEFAULT_TECHNEWS: defaultTechNews,
 }
 
 export default IMAGES;
