@@ -8,5 +8,26 @@
   },
   "news": {
     "latestNews": "Latest News"
+  },
+  "footer": {
+    "companyName": "CONG TY TNHH TM CONG NGHE VIET CHUYEN SG",
+    "addr": "Headquarters",
+    "address": "302, Doc Lap A Tower, Tan Quy Ward, Tan Phu District, HCM City",
+    "phone": "Phone",
+    "gpkd": "Business license number",
+    "gpkdDetail": "\"0304198513\" issued by HCM City Department of Planning and Investment on 27/01/2006",
+    "mst": "Tax code"
+  },
+  "strengths": {
+    "title": "TRENGTHS",
+    "titleFirst": "Over the past 10 years, the staff of Viet Chuyen SG has always committed to working under the motto",
+    "titleCenter": "“QUALITY - PRESTIGE - PROFESSIONALISM - CREATIVE - STOPPING ENERGY”",
+    "titleLast": ", always proposing solutions towards long-term development in order to provide high quality IT products and services to customers.",
+    "300": "Practical experience implementing more than 300+ projects large and small for businesses and organizations in many fields in Vietnam",
+    "10": "years of experience in the IT industry in Vietnam",
+    "63": "Scope of providing solutions and services in 63+ provinces / cities",
+    "20": "Being a strategic partner of 20+ leading IT firms in the world",
+    "6": "Achieve 6+ product quality standards, including: standards UL, EU, ISO, ROHS, FCC, CE1200 ...",
+    "100": "Partner of 100+ large and small business customers in Vietnam"
   }
 }

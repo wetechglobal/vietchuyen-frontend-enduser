@@ -8,5 +8,26 @@
   },
   "news": {
     "latestNews": "Tin Tức mới nhất"
+  },
+  "footer": {
+    "companyName": "CÔNG TY TNHH TM CÔNG NGHỆ VIỆT CHUYÊN SG",
+    "addr": "Trụ sở",
+    "address": "302, Toà nhà Độc Lập A, Phường Tân Quý, Quận Tân Phú, TP.HCM",
+    "phone": "Điện thoại",
+    "gpkd": "Giấy phép kinh doanh số",
+    "gpkdDetail": "\"0304198513\" do Sở Kế Hoạch Đầu Tư TP.HCM cấp ngày 27/01/2006",
+    "mst": "Mã số thuế"
+  },
+  "strengths": {
+    "title": "THẾ MẠNH",
+    "titleFirst": "Gần 10 năm qua, đội ngũ cán bộ nhân viên Việt Chuyên SG luôn cam kết làm việc theo phương châm",
+    "titleCenter": "“CHẤT LƯỢNG - UY TÍN – CHUYÊN NGHIỆP – SÁNG TẠO – NỖ LỰC KHÔNG NGỪNG”",
+    "titleLast": ", luôn luôn đề xuất những phương án hướng tới sự phát triển lâu dài nhằm cung cấp các sản phẩm, dịch vụ CNTT chất lượng cao đến các khách hàng.",
+    "300": "Kinh nghiệm triển khai thực tế hơn 300+ các dự án lớn nhỏ cho các doanh nghiệp, tổ chức thuộc nhiều lĩnh vực tại Việt Nam",
+    "10": "năm kinh nghiệm\ntrong ngành CNTT Việt Nam",
+    "63": "Phạm vi cung cấp giải pháp, dịch vụ 63+ tỉnh/thành",
+    "20": "Là đối tác chiến lược của 20+ hãng CNTT hàng đầu thế giới",
+    "6": "Đạt được 6+ chuẩn chất lượng sản phẩm, bao gồm: chuẩn UL, EU, ISO, ROHS, FCC, CE1200…",
+    "100": "Là đối tác của 100+ khách hàng doanh nghiệp lớn, nhỏ tại Việt Nam "
   }
 }
