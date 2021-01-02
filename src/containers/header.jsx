@@ -17,7 +17,7 @@ const TheHeader = props => {
     const [showResults, setShowResults] = React.useState(false)
     const onClick = () => setShowResults(!showResults)
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="header text-uppercase">
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top" className="header text-uppercase">
             <Navbar.Brand href="/"><img src={logo} height="50px" alt="" /></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
