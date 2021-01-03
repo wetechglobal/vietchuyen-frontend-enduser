@@ -146,26 +146,46 @@ body {
     .group {
         position: relative;
 
-        img {
-            width: 50px;
-        }
-
         .face {
             position: absolute;
             bottom: 120px;
             right: 0;
+            background-image: url('../assets/images/facebook_default.png');
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+        }
+
+        .face:hover {
+            background-image: url('../assets/images/facebook_hover.png');
         }
 
         .youtube {
             right: 45px;
             position: absolute;
             bottom: 75px;
+            background-image: url('../assets/images/youtube_default.png');
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+        }
+
+        .youtube:hover {
+            background-image: url('../assets/images/youtube_hover.png');
         }
 
         .in {
             position: absolute;
             right: 90px;
             bottom: 30px;
+            background-image: url('../assets/images/in_default.png');
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+        }
+
+        .in:hover {
+            background-image: url('../assets/images/in_hover.png');
         }
     }
 }
@@ -174,6 +194,22 @@ body {
     .navbar-light .navbar-nav .nav-link {
         font-weight: 600;
         font-size: 1.2em;
+    }
+
+    .footer {
+        .group {  
+            .face {
+                right: 30px;
+            }
+    
+            .youtube {
+                right: 75px;
+            }
+    
+            .in {
+                right: 120px;
+            }
+        }
     }
 }
 

@@ -1,19 +1,6 @@
 import { Container, Row, Figure } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-
-import bg from 'assets/images/BG_footer.png';
-import logo from 'assets/icons/logoamban.svg';
-
-import truso from 'assets/icons/truso.svg';
-import dienthoai from 'assets/icons/dienthoai.svg';
-import fax from 'assets/icons/FAX.svg';
-import giayphepkinhdoanh from 'assets/icons/giayphepkinhdoanh.svg';
-import masothue from 'assets/icons/masothue.svg';
-
-import facebook from 'assets/icons/facebook.svg';
-import youtube from 'assets/icons/youtube.svg';
-import inI from 'assets/icons/in.svg';
-
+import IMAGES from 'assets/images/images';
 
 const TheFooter = () => {
     const { t } = useTranslation();
@@ -22,18 +9,18 @@ const TheFooter = () => {
         <footer className="footer">
             <Figure className="main-footer">
                 <Figure.Image
-                    src={bg}
+                    src={IMAGES.BG}
                     width="100%"
                 />
                 <Container>
                     <Row>
-                        <img src={logo} alt="" />
+                        <img src={IMAGES.LOGO} alt="" />
                     </Row>
                     <Row>
                         <h4>{t('footer.companyName')}</h4>
                     </Row>
                     <Row>
-                        <div className="img"><img src={truso} alt="" /></div>
+                        <div className="img"><img src={IMAGES.TRUSO} alt="" /></div>
                         <div>
                             <span>{t('footer.addr')}</span><br />
                             {t('footer.address')}
@@ -41,14 +28,14 @@ const TheFooter = () => {
                     </Row>
                     <Row>
                         <div className="inrow">
-                            <div className="img"><img src={dienthoai} alt="" /></div>
+                            <div className="img"><img src={IMAGES.DIENTHOAI} alt="" /></div>
                             <div>
                                 <span>{t('footer.phone')}</span><br />
                                 (028) 39637678
                             </div>
                         </div>
                         <div className="inrow">
-                            <div className="img"><img src={fax} alt="" /></div>
+                            <div className="img"><img src={IMAGES.FAX} alt="" /></div>
                             <div>
                                 <span>FAX</span><br />
                                 (028) 39637679
@@ -56,14 +43,14 @@ const TheFooter = () => {
                         </div>
                     </Row>
                     <Row>
-                        <div className="img"><img src={giayphepkinhdoanh} alt="" /></div>
+                        <div className="img"><img src={IMAGES.GPKD} alt="" /></div>
                         <div>
                             <span>{t('footer.gpkd')}</span><br />
                             {t('footer.gpkdDetail')}
                         </div>
                     </Row>
                     <Row>
-                        <div className="img"><img src={masothue} alt="" /></div>
+                        <div className="img"><img src={IMAGES.MST} alt="" /></div>
                         <div>
                             <span>{t('footer.mst')}</span><br />
                             0304198513
@@ -74,15 +61,9 @@ const TheFooter = () => {
                     </Row>
                     <Row>
                         <div className="group">
-                            <a className="face" href="https://www.facebook.com/">
-                                <img src={facebook} alt="" />
-                            </a>
-                            <a className="youtube" href="https://www.youtube.com/">
-                                <img src={youtube} alt="" />
-                            </a>
-                            <a className="in" href="https://www.linkedin.com/">
-                                <img src={inI} alt="" />
-                            </a>
+                            <a className="face" href="https://www.facebook.com/"></a>
+                            <a className="youtube" href="https://www.youtube.com/"></a>
+                            <a className="in" href="https://www.linkedin.com/"></a>
                         </div>
                     </Row>
                 </Container>

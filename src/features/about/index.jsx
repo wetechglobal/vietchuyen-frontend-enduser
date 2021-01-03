@@ -24,8 +24,8 @@ const About = () => {
                 </Row>
                 <div className="contain-about">
                     <Row>
-                        <Col xs={{ span: 4, offset: 2 }}>
-                            <img src={IMAGES.MISSION} width="577" alt="mission" />
+                        <Col lg={{ span: 4, offset: 2 }}>
+                            <img src={IMAGES.MISSION} width="100%" alt="mission" />
                         </Col>
                         <Col xs={{ span: 3, offset: 1 }}>
                             <div className="title-about blue">SỨ MỆNH</div>
@@ -41,13 +41,13 @@ const About = () => {
                                 Không ngừng đổi mới và sáng tạo để khẳng định sự khác biệt, đồng thời trân trọng và đề cao con người, bồi dưỡng nguồn nhân lực nhằm đáp ứng ngày một tốt hơn những yêu cầu của khách hàng, những biến chuyển của thị trường, nâng cao giá trị sản phẩm dịch vụ.
                             </div>
                         </Col>
-                        <Col xs={{ span: 6, offset: 1 }}>
-                            <img src={IMAGES.VISION} width="577" alt="vision" />
+                        <Col lg={{ span: 4, offset: 1 }}>
+                            <img src={IMAGES.VISION} width="100%" alt="vision" />
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={{ span: 4, offset: 2 }}>
-                            <img src={IMAGES.CORE_VALUE} width="577" alt="core-value" />
+                        <Col lg={{ span: 4, offset: 2 }}>
+                            <img src={IMAGES.CORE_VALUE} width="100%" alt="core-value" />
                         </Col>
                         <Col xs={{ span: 3, offset: 1 }}>
                             <div className="title-about blue">GIÁ TRỊ CỐT LỖI</div>
