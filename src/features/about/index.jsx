@@ -2,7 +2,7 @@
 import { Row, Col } from 'react-bootstrap';
 import IMAGES from "assets/images/images";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import './familyTree.scss';
 import './style.scss';
 
@@ -72,7 +72,7 @@ const About = () => {
                         <p>Cơ cấu tổ chức của Việt Chuyên SG được chia thành các nhóm chức năng chuyên môn,<br />nhằm phục vụ tốt nhất cho nhu cầu của khách hàng.</p>
                         <br /><br />
                         <div className="tree-map mgBottom70">
-                            <div class="tree">
+                            {/* <div class="tree">
                                 <h1 class="level-1 rectangle">Hội đồng thành viên</h1>
                                 <ol class="level-2-wrapper">
                                     <li>
@@ -117,30 +117,30 @@ const About = () => {
                                                     </li>
                                                 </ol>
                                             </li>
-                                            {/* <li>
+                                            <li>
                                                 <h3 class="level-3 rectangle">P. Nghiên cứu & Phát triển</h3>
-                                            </li> */}
+                                            </li> 
                                         </ol>
                                     </li>
                                     <li>
                                         <h2 class="level-2 rectangle leaf-2 light-green-node">P. Nghiên cứu & Phát triển</h2>
                                     </li>
                                 </ol>
-                            </div>
+                            </div> */}
 
                             <Row>
                                 <Col md={{ span: 8, offset: 4 }}>
-                                    <div className="node white-node txt-uppercase arrowDown">
+                                    <div className="node white-node txt-uppercase">
                                         <p>Hội đồng thành viên</p>
-                                        <FontAwesomeIcon icon={faChevronDown} />
                                     </div>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col md={{ span: 3, offset: 4 }}>
-                                    <div className="node white-node txt-uppercase arrowDown">
+                                    <div className="node white-node txt-uppercase arrowDownLarge arrowRight">
                                         <p>Giám đốc điều hành</p>
                                         <FontAwesomeIcon icon={faChevronDown} />
+                                        <FontAwesomeIcon icon={faChevronRight} />
                                     </div>
                                 </Col>
                                 <Col md={5}>
@@ -149,25 +149,39 @@ const About = () => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row>
-                                <Col md={{ span: 3, offset: 1 }}>
-                                    <div className="node blue-node txt-uppercase"><p>Phó GĐ Kinh doanh</p></div>
-                                    <div className="node blue-node node-child arrowDownSmall"><p>Phòng Dự án</p></div>
-                                    <div className="node blue-node node-child arrowDownSmall"><p>Phòng Marketing</p></div>
-                                    <div className="node blue-node node-child arrowDownSmall"><p>Phòng Kinh doanh</p></div>
-                                </Col>
-                                <Col md={{ span: 3, offset: 0 }}>
-                                    <div className="node yellow-node txt-uppercase"><p>Phó GĐ Điều hành</p></div>
-                                    <div className="node yellow-node node-child arrowDownSmall"><p className="multiple-line">P. Kỹ thuật lắp đặt<br />và dịch vụ hậu mãi</p></div>
-                                    <div className="node yellow-node node-child arrowDownSmall"><p>P. Hành chính & Nhân sự</p></div>
-                                </Col>
-                                <Col md={{ span: 5, offset: 0 }}>
-                                    <div className="node red-node txt-uppercase"><p>TP. Kế toán - Tài chính</p></div>
-                                    <div className="node red-node node-child arrowDownSmall"><p>Kế toán tổng hợp</p></div>
-                                    <div className="node red-node node-child arrowDownSmall"><p>Kế toán thanh toán</p></div>
-                                    <div className="node red-node node-child arrowDownSmall"><p>Kế toán vật tư</p></div>
-                                </Col>
-                            </Row>
+                            <div className="limit-row">
+                                <Row className="wrapper-3 fix-wrapper-3">
+                                    <Col md={{ span: 3, offset: 1 }}>
+                                        <div className="node blue-node txt-uppercase verticalLine arrowDown">
+                                            <p>Phó GĐ Kinh doanh</p>
+                                            <FontAwesomeIcon icon={faChevronDown} />
+                                        </div>
+                                        <div className="node blue-node node-child arrowDownSmall">
+                                            <p>Phòng Dự án</p>
+                                            <FontAwesomeIcon icon={faChevronRight} />
+                                        </div>
+                                        <div className="node blue-node node-child arrowDownSmall"><p>Phòng Marketing</p><FontAwesomeIcon icon={faChevronRight} /></div>
+                                        <div className="node blue-node node-child arrowDownSmall"><p>Phòng Kinh doanh</p><FontAwesomeIcon icon={faChevronRight} /></div>
+                                    </Col>
+                                    <Col md={{ span: 3, offset: 0 }}>
+                                        <div className="node yellow-node txt-uppercase verticalLine child-2 arrowDownLarge topOther">
+                                            <p>Phó GĐ Điều hành</p>
+                                            <FontAwesomeIcon icon={faChevronDown} />
+                                        </div>
+                                        <div className="node yellow-node node-child arrowDownSmall"><p className="multiple-line">P. Kỹ thuật lắp đặt<br />và dịch vụ hậu mãi</p><FontAwesomeIcon icon={faChevronRight} /></div>
+                                        <div className="node yellow-node node-child arrowDownSmall"><p>P. Hành chính & Nhân sự</p><FontAwesomeIcon icon={faChevronRight} /></div>
+                                    </Col>
+                                    <Col md={{ span: 5, offset: 0 }}>
+                                        <div className="node red-node txt-uppercase verticalLine arrowDown">
+                                            <p>TP. Kế toán - Tài chính</p>
+                                            <FontAwesomeIcon icon={faChevronDown} />
+                                        </div>
+                                        <div className="node red-node node-child arrowDownSmall"><p>Kế toán tổng hợp</p><FontAwesomeIcon icon={faChevronRight} /></div>
+                                        <div className="node red-node node-child arrowDownSmall"><p>Kế toán thanh toán</p><FontAwesomeIcon icon={faChevronRight} /></div>
+                                        <div className="node red-node node-child arrowDownSmall"><p>Kế toán vật tư</p><FontAwesomeIcon icon={faChevronRight} /></div>
+                                    </Col>
+                                </Row>
+                            </div>
                         </div>
                     </Col>
                 </Row>
