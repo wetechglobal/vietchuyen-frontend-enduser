@@ -1,5 +1,8 @@
 import { Row, Col, Nav } from 'react-bootstrap';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { faClock } from '@fortawesome/free-solid-svg-icons'
+import { faClock } from '@fortawesome/free-regular-svg-icons'
+
 import IMAGES from "assets/images/images";
 import './style.scss';
 
@@ -60,7 +63,7 @@ const LatestNews = () => {
                             <div className="text">{item.type}</div>
                         </div>
                         <div className="box-date">
-                            <span>{item.date}</span>
+                            <span><FontAwesomeIcon icon={faClock} /> {item.date}</span>
                         </div>
                         <div className="box-lable"><Nav.Link href="/news/:id">{item.label}</Nav.Link></div>
                         <div className="box-bottom">{item.description}</div>
