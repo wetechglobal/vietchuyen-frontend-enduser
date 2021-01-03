@@ -1,7 +1,9 @@
 
 import { Row, Col } from 'react-bootstrap';
 import IMAGES from "assets/images/images";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import './familyTree.scss';
 import './style.scss';
 
 const About = () => {
@@ -69,37 +71,101 @@ const About = () => {
                         <div className="open-letter">Cơ cấu tổ chức</div>
                         <p>Cơ cấu tổ chức của Việt Chuyên SG được chia thành các nhóm chức năng chuyên môn,<br />nhằm phục vụ tốt nhất cho nhu cầu của khách hàng.</p>
                         <br /><br />
-                        <div className="tree-map mgBottom80">
+                        <div className="tree-map mgBottom70">
+                            <div class="tree">
+                                <h1 class="level-1 rectangle">Hội đồng thành viên</h1>
+                                <ol class="level-2-wrapper">
+                                    <li>
+                                        <h2 class="level-2 rectangle white-node">Giám đốc điều hành</h2>
+                                        <ol class="level-3-wrapper">
+                                            <li>
+                                                <h3 class="level-3 rectangle">Phó GĐ Kinh doanh</h3>
+                                                <ol class="level-4-wrapper">
+                                                    <li>
+                                                        <h4 class="level-4 rectangle">Phòng Dự án</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="level-4 rectangle">Phòng Marketing</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="level-4 rectangle leaf-4">Phòng Kinh doanh</h4>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <h3 class="level-3 rectangle">Phó GĐ Điều hành</h3>
+                                                <ol class="level-4-wrapper">
+                                                    <li>
+                                                        <h4 class="level-4 rectangle pdTop10">P. Kỹ thuật lắp đặt<br />và dịch vụ hậu mãi</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="level-4 rectangle leaf-4">P. Hành chính & Nhân sự</h4>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <h3 class="level-3 rectangle">TP. Kế toán - Tài chính</h3>
+                                                <ol class="level-4-wrapper">
+                                                    <li>
+                                                        <h4 class="level-4 rectangle">Kế toán tổng hợp</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="level-4 rectangle">Kế toán thanh toán</h4>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="level-4 rectangle leaf-4">Kế toán vật tư</h4>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            {/* <li>
+                                                <h3 class="level-3 rectangle">P. Nghiên cứu & Phát triển</h3>
+                                            </li> */}
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <h2 class="level-2 rectangle leaf-2 light-green-node">P. Nghiên cứu & Phát triển</h2>
+                                    </li>
+                                </ol>
+                            </div>
+
                             <Row>
                                 <Col md={{ span: 8, offset: 4 }}>
-                                    <div className="node white-node txt-uppercase"><p>Hội đồng thành viên</p></div>
+                                    <div className="node white-node txt-uppercase arrowDown">
+                                        <p>Hội đồng thành viên</p>
+                                        <FontAwesomeIcon icon={faChevronDown} />
+                                    </div>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col md={{ span: 3, offset: 4 }}>
-                                    <div className="node white-node txt-uppercase"><p>Giám đốc điều hành</p></div>
+                                    <div className="node white-node txt-uppercase arrowDown">
+                                        <p>Giám đốc điều hành</p>
+                                        <FontAwesomeIcon icon={faChevronDown} />
+                                    </div>
                                 </Col>
                                 <Col md={5}>
-                                    <div className="node light-green-node txt-uppercase"><p>P. Nghiên cứu & Phát triển</p></div>
+                                    <div className="node light-green-node txt-uppercase">
+                                        <p>P. Nghiên cứu & Phát triển</p>
+                                    </div>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col md={{ span: 3, offset: 1 }}>
                                     <div className="node blue-node txt-uppercase"><p>Phó GĐ Kinh doanh</p></div>
-                                    <div className="node blue-node"><p>Phòng Dự án</p></div>
-                                    <div className="node blue-node"><p>Phòng Marketing</p></div>
-                                    <div className="node blue-node"><p>Phòng Kinh doanh</p></div>
+                                    <div className="node blue-node node-child arrowDownSmall"><p>Phòng Dự án</p></div>
+                                    <div className="node blue-node node-child arrowDownSmall"><p>Phòng Marketing</p></div>
+                                    <div className="node blue-node node-child arrowDownSmall"><p>Phòng Kinh doanh</p></div>
                                 </Col>
                                 <Col md={{ span: 3, offset: 0 }}>
                                     <div className="node yellow-node txt-uppercase"><p>Phó GĐ Điều hành</p></div>
-                                    <div className="node yellow-node"><p className="multiple-line">P. Kỹ thuật lắp đặt<br />và dịch vụ hậu mãi</p></div>
-                                    <div className="node yellow-node"><p>P. Hành chính & Nhân sự</p></div>
+                                    <div className="node yellow-node node-child arrowDownSmall"><p className="multiple-line">P. Kỹ thuật lắp đặt<br />và dịch vụ hậu mãi</p></div>
+                                    <div className="node yellow-node node-child arrowDownSmall"><p>P. Hành chính & Nhân sự</p></div>
                                 </Col>
                                 <Col md={{ span: 5, offset: 0 }}>
                                     <div className="node red-node txt-uppercase"><p>TP. Kế toán - Tài chính</p></div>
-                                    <div className="node red-node"><p>Kế toán tổng hợp</p></div>
-                                    <div className="node red-node"><p>Kế toán thanh toán</p></div>
-                                    <div className="node red-node"><p>Kế toán vật tư</p></div>
+                                    <div className="node red-node node-child arrowDownSmall"><p>Kế toán tổng hợp</p></div>
+                                    <div className="node red-node node-child arrowDownSmall"><p>Kế toán thanh toán</p></div>
+                                    <div className="node red-node node-child arrowDownSmall"><p>Kế toán vật tư</p></div>
                                 </Col>
                             </Row>
                         </div>

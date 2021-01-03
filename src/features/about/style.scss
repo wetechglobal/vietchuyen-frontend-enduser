@@ -6,6 +6,7 @@
         background-size: cover;
         color: white;
         margin-top: 76px;
+        text-align: left;
     }
     .open-letter {
         margin-top: 50px;
@@ -46,8 +47,6 @@
         background: transparent linear-gradient(207deg, #0063b0 0%, #008cf8 100%) 0% 0% no-repeat padding-box;
     }
     .tree-map {
-        //display: table;
-        //margin: auto;
         .node {
             width: 315px;
             height: 67px;
@@ -57,29 +56,74 @@
             padding: 20px 0px;
             margin: 5px 5px 30px 5px;
             text-align: center;
-            .multiple-line{
+            .multiple-line {
                 margin-top: -12px;
             }
         }
+        .node svg {
+            position: absolute;
+            z-index: 1;
+            top: 110%;
+            margin-left: -9px;
+            color: white;
+            font-size: larger;
+        }
+        .arrowDown::after {
+            content: "";
+            position: absolute;
+            top: 71%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 105px;
+            background: var(--black);
+        }
+        .arrowDownSmall{
+            position: relative;
+        }
+        .arrowDownSmall p::before {
+            content: "";
+            position: absolute;
+            top: -30px;
+            left: 49%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 30px;
+            background: var(--black);
+        }
+        .node-child {
+            width: 260px;
+            margin-left: 55px;
+        }
         .white-node {
             color: #0063b0;
-            background-color: white;
+            background-color: white !important;
         }
         .blue-node {
-            background-color: #29a2ff;
+            background-color: #29a2ff !important;
         }
         .red-node {
-            background-color: #d62d2d;
+            background-color: #d62d2d !important;
         }
         .yellow-node {
-            background-color: #eb9b02;
+            background-color: #eb9b02 !important;
         }
         .light-green-node {
             color: #0063b0;
-            background-color: #98fafc;
+            background-color: #98fafc !important;
         }
     }
-    .mgBottom80 .row{
-        margin-bottom: 80px;
+    .mgBottom70 .row {
+        margin-bottom: 70px;
+    }
+    //CUSTOM TREE
+    .leaf-2::before {
+        width: 0px;
+        height: 0px;
+    }
+    .level-4-wrapper::before {
+        height: calc(85% + 22px);
+    }
+    .pdTop10 {
+        padding-top: 10px;
     }
 }
