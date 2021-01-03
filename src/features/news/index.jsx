@@ -172,7 +172,7 @@ const News = () => {
         <Row>
             <Col className="news">
                 {/* BANNER */}
-                <div className="news__banner">
+                <div className="news_banner">
                     <img src={IMAGES.BANNER}/>
                 </div>
 

@@ -32,6 +32,7 @@ import sixtythree from 'assets/images/63+.png';
 import onehundred from 'assets/images/100+.png';
 import threehundred from 'assets/images/300+.png';
 
+import solution_product_banner from 'assets/images/giaiphap-sanpham.png';
 
 const IMAGES = {
     SLIDER1: slider1,
@@ -60,6 +61,7 @@ const IMAGES = {
     VISION: vision,
     CORE_VALUE: coreValue,
     BANNER: imgNewsPage,
+    SOLUTION_PRODUCT_BANNER: solution_product_banner,
     DEFAULT_TECHNEWS: defaultTechNews,
 }
 
