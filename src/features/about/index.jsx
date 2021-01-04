@@ -1,6 +1,7 @@
 
 import { Row, Col } from 'react-bootstrap';
 import IMAGES from "assets/images/images";
+import ICONS from "assets/icons/icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import './familyTree.scss';
@@ -72,61 +73,6 @@ const About = () => {
                         <p>Cơ cấu tổ chức của Việt Chuyên SG được chia thành các nhóm chức năng chuyên môn,<br />nhằm phục vụ tốt nhất cho nhu cầu của khách hàng.</p>
                         <br /><br />
                         <div className="tree-map mgBottom70">
-                            {/* <div class="tree">
-                                <h1 class="level-1 rectangle">Hội đồng thành viên</h1>
-                                <ol class="level-2-wrapper">
-                                    <li>
-                                        <h2 class="level-2 rectangle white-node">Giám đốc điều hành</h2>
-                                        <ol class="level-3-wrapper">
-                                            <li>
-                                                <h3 class="level-3 rectangle">Phó GĐ Kinh doanh</h3>
-                                                <ol class="level-4-wrapper">
-                                                    <li>
-                                                        <h4 class="level-4 rectangle">Phòng Dự án</h4>
-                                                    </li>
-                                                    <li>
-                                                        <h4 class="level-4 rectangle">Phòng Marketing</h4>
-                                                    </li>
-                                                    <li>
-                                                        <h4 class="level-4 rectangle leaf-4">Phòng Kinh doanh</h4>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                            <li>
-                                                <h3 class="level-3 rectangle">Phó GĐ Điều hành</h3>
-                                                <ol class="level-4-wrapper">
-                                                    <li>
-                                                        <h4 class="level-4 rectangle pdTop10">P. Kỹ thuật lắp đặt<br />và dịch vụ hậu mãi</h4>
-                                                    </li>
-                                                    <li>
-                                                        <h4 class="level-4 rectangle leaf-4">P. Hành chính & Nhân sự</h4>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                            <li>
-                                                <h3 class="level-3 rectangle">TP. Kế toán - Tài chính</h3>
-                                                <ol class="level-4-wrapper">
-                                                    <li>
-                                                        <h4 class="level-4 rectangle">Kế toán tổng hợp</h4>
-                                                    </li>
-                                                    <li>
-                                                        <h4 class="level-4 rectangle">Kế toán thanh toán</h4>
-                                                    </li>
-                                                    <li>
-                                                        <h4 class="level-4 rectangle leaf-4">Kế toán vật tư</h4>
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                            <li>
-                                                <h3 class="level-3 rectangle">P. Nghiên cứu & Phát triển</h3>
-                                            </li> 
-                                        </ol>
-                                    </li>
-                                    <li>
-                                        <h2 class="level-2 rectangle leaf-2 light-green-node">P. Nghiên cứu & Phát triển</h2>
-                                    </li>
-                                </ol>
-                            </div> */}
 
                             <Row>
                                 <Col md={{ span: 8, offset: 4 }}>
@@ -183,6 +129,23 @@ const About = () => {
                                 </Row>
                             </div>
                         </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col sm={12} className="percent text-center">
+                        <img src={ICONS.ORG_STRUCT} width="471" alt="org-structure" className="org-structure" />
+                    </Col>
+                    <Col sm={12} className="org-number">
+                        <Row>
+                            <Col sm={4}><div className="number blue">30+</div><b>Nhân viên</b></Col>
+                            <Col sm={4}><div className="number dark-orange">15+</div><b>Kỹ sư/Chuyên gia công nghệ</b></Col>
+                            <Col sm={4}><div className="number green">10+</div><b>Chuyên viên kinh doanh</b></Col>
+                        </Row>
+                        <Row>
+                            <Col sm={4}><div className="number red">60%</div><b>Đại học & Cao đẳng</b></Col>
+                            <Col sm={4}><div className="number light-blue">30%</div><b>Trung cấp/ Kỹ thuật</b></Col>
+                            <Col sm={4}><div className="number orange">10%</div><b>Trình độ khác</b></Col>
+                        </Row>
                     </Col>
                 </Row>
             </Col>
