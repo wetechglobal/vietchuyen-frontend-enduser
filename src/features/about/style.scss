@@ -40,10 +40,11 @@
     .percent::before {
         content: "";
         position: absolute;
-        right: -15px;
-        top: -100%;
-        border-left: 290px solid transparent;
-        border-bottom: 300px solid white;
+        right: 0;
+        height: 400px;
+        top: -250%;
+        border-left: 390px solid transparent;
+        border-bottom: 323px solid white;
         margin-bottom: -110px;
     }
     .percent::after {
