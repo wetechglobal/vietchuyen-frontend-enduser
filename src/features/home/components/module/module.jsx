@@ -1,9 +1,92 @@
 import IMAGES from 'assets/images/images';
 import ICONS from 'assets/icons/icons';
-import { Container, Figure, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Container, Figure, Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import Diamond from './diamond';
 
 const Module = () => {
+    const DIAMOND = [
+        {
+            src: ICONS.SREEN,
+            title: 'Hệ thống màn hình ghép',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.MEET,
+            title: 'Hệ thống hôi nghị trực tuyến',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.CAMERA,
+            title: 'Hệ thống thiết bị camera an ninh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.POWER,
+            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.VETINH,
+            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.NET,
+            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.FIRE,
+            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.PRINT,
+            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.CAM,
+            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.SET,
+            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.UPS,
+            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.ME,
+            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.PAC,
+            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.BTS,
+            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.ATM,
+            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.STRUC,
+            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        }
+    ];
     const { t } = useTranslation();
 
     return (
@@ -88,120 +171,14 @@ const Module = () => {
                                 <h4>TÌM HIỂU</h4>
                             </Row>
                             <Row className="diamond-group">
-                                <OverlayTrigger className="tooltip" key="top" placement="top"
-                                    overlay={
-                                        <div style={{
-                                            backgroundColor: 'white',
-                                            padding: '20px 20px',
-                                            color: 'black',
-                                            borderRadius: 5,
-                                            minWidth: 400
-                                          }}>
-                                              <h2 style={{color: '#0063B0', fontWeight: 'bold'}}>test</h2>
-                                            <span>Hệ thống màn hình ghép</span>
-                                        </div>
-                                    }>
-                                    <div className="item-sreen">
-                                        <div className="content">
-                                            <img src={ICONS.SREEN} alt="" />
-                                            <span>Hệ thống màn hình ghép</span>
-                                        </div>
-                                    </div>
-                                </OverlayTrigger>
-                                <div className="item-meet">
-                                    <div className="content">
-                                        <img src={ICONS.MEET} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-camera">
-                                    <div className="content">
-                                        <img src={ICONS.CAMERA} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-power">
-                                    <div className="content">
-                                        <img src={ICONS.POWER} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-vetinh">
-                                    <div className="content">
-                                        <img src={ICONS.VETINH} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-net">
-                                    <div className="content">
-                                        <img src={ICONS.NET} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-fire">
-                                    <div className="content">
-                                        <img src={ICONS.FIRE} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-print">
-                                    <div className="content">
-                                        <img src={ICONS.PRINT} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-cam">
-                                    <div className="content">
-                                        <img src={ICONS.CAM} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-set">
-                                    <div className="content">
-                                        <img src={ICONS.SET} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-ups">
-                                    <div className="content">
-                                        <img src={ICONS.UPS} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-me">
-                                    <div className="content">
-                                        <img src={ICONS.ME} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-pac">
-                                    <div className="content">
-                                        <img src={ICONS.PAC} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-bts">
-                                    <div className="content">
-                                        <img src={ICONS.BTS} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-atm">
-                                    <div className="content">
-                                        <img src={ICONS.ATM} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
-                                <div className="item-struc">
-                                    <div className="content">
-                                        <img src={ICONS.STRUC} alt="" />
-                                        <span>Hệ thống màn hình ghép</span>
-                                    </div>
-                                </div>
+                                {
+                                    DIAMOND.map((item, idx) => <Diamond key={idx} contain={item.contain} src={item.src} title={item.title} />)
+                                }
                             </Row>
                         </Col>
                     </Row>
                 </Container>
+                
             </Figure>
         </div>
     )
