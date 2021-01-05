@@ -269,7 +269,7 @@
     width: 165%;
     height: 650px;
 
-    div {
+    [class^='item-'] {
         list-style: none;
         position: absolute;
         width: 200px;
@@ -359,6 +359,50 @@
     .item-bts {
         top: 100%;
         left: 40%;
+    }
+
+    .content {
+        transform: rotate(-45deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        
+
+        &:hover {
+            img {
+                width: 90px;
+                margin-top: 60px;
+            }
+
+            span {
+                opacity: 0;
+            }
+        }
+
+        img {
+            width: 60px;
+            margin: -20px auto 5px;
+            transition: all 0.5s;
+        }
+
+        span {
+            left: 0;
+            top: 0;
+            right: 0;
+            margin: 18px auto 0;
+            color: black;
+            text-shadow: unset;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;transition: all 0.5s;
+        }
     }
 }
 

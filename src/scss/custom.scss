@@ -185,6 +185,13 @@ body {
             background-image: url('../assets/images/in_hover.png');
         }
     }
+
+    .srolltop {
+        width: 80px;
+        position: fixed;
+        right: 200px;
+        bottom: 20px;
+    }
 }
 
 @media only screen and (min-width: 1280px) {

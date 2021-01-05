@@ -13,14 +13,6 @@ import vision from './tamnhin.png';
 import coreValue from './giatricotloi.png';
 
 import bg from 'assets/images/BG_footer.png';
-import logo from 'assets/icons/logoamban.svg';
-
-import truso from 'assets/icons/truso.svg';
-import dienthoai from 'assets/icons/dienthoai.svg';
-import fax from 'assets/icons/FAX.svg';
-import giayphepkinhdoanh from 'assets/icons/giayphepkinhdoanh.svg';
-import masothue from 'assets/icons/masothue.svg';
-
 import bgmodule from 'assets/images/bgmodule.png';
 import bgvongtron from 'assets/images/vongtronthemanh.png';
 import linedoc from 'assets/images/line.png';
@@ -32,7 +24,6 @@ import sixtythree from 'assets/images/63+.png';
 import onehundred from 'assets/images/100+.png';
 import threehundred from 'assets/images/300+.png';
 
-
 const IMAGES = {
     SLIDER1: slider1,
     SLIDER2: slider2,
@@ -40,12 +31,6 @@ const IMAGES = {
     SLIDER4: slider4,
     DEFAULT_NEWS: defaultNews,
     BG: bg,
-    LOGO: logo,
-    TRUSO: truso,
-    DIENTHOAI: dienthoai,
-    FAX: fax,
-    GPKD: giayphepkinhdoanh,
-    MST: masothue,
     BGMODULE: bgmodule,
     BGVONGTRON: bgvongtron,
     LINEDOC: linedoc,

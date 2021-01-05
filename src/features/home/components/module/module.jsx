@@ -1,5 +1,6 @@
 import IMAGES from 'assets/images/images';
-import { Container, Figure, Row, Col } from 'react-bootstrap';
+import ICONS from 'assets/icons/icons';
+import { Container, Figure, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
 const Module = () => {
@@ -87,27 +88,116 @@ const Module = () => {
                                 <h4>TÌM HIỂU</h4>
                             </Row>
                             <Row className="diamond-group">
-                                <div className="item-sreen">
-                                    <div>
-                                        <img src={IMAGES.TWENTY} alt=""/>
+                                <OverlayTrigger className="tooltip" key="top" placement="top"
+                                    overlay={
+                                        <div style={{
+                                            backgroundColor: 'white',
+                                            padding: '20px 20px',
+                                            color: 'black',
+                                            borderRadius: 5,
+                                            minWidth: 400
+                                          }}>
+                                              <h2 style={{color: '#0063B0', fontWeight: 'bold'}}>test</h2>
+                                            <span>Hệ thống màn hình ghép</span>
+                                        </div>
+                                    }>
+                                    <div className="item-sreen">
+                                        <div className="content">
+                                            <img src={ICONS.SREEN} alt="" />
+                                            <span>Hệ thống màn hình ghép</span>
+                                        </div>
+                                    </div>
+                                </OverlayTrigger>
+                                <div className="item-meet">
+                                    <div className="content">
+                                        <img src={ICONS.MEET} alt="" />
                                         <span>Hệ thống màn hình ghép</span>
                                     </div>
                                 </div>
-                                <div className="item-meet">meet</div>
-                                <div className="item-camera">camera</div>
-                                <div className="item-power">power</div>
-                                <div className="item-vetinh">vetinh</div>
-                                <div className="item-net">net</div>
-                                <div className="item-fire">fire</div>
-                                <div className="item-print">print</div>
-                                <div className="item-cam">cam</div>
-                                <div className="item-set">set</div>
-                                <div className="item-ups">ups</div>
-                                <div className="item-me">me</div>
-                                <div className="item-pac">pac</div>
-                                <div className="item-bts">bts</div>
-                                <div className="item-atm">atm</div>
-                                <div className="item-struc">struc</div>
+                                <div className="item-camera">
+                                    <div className="content">
+                                        <img src={ICONS.CAMERA} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-power">
+                                    <div className="content">
+                                        <img src={ICONS.POWER} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-vetinh">
+                                    <div className="content">
+                                        <img src={ICONS.VETINH} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-net">
+                                    <div className="content">
+                                        <img src={ICONS.NET} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-fire">
+                                    <div className="content">
+                                        <img src={ICONS.FIRE} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-print">
+                                    <div className="content">
+                                        <img src={ICONS.PRINT} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-cam">
+                                    <div className="content">
+                                        <img src={ICONS.CAM} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-set">
+                                    <div className="content">
+                                        <img src={ICONS.SET} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-ups">
+                                    <div className="content">
+                                        <img src={ICONS.UPS} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-me">
+                                    <div className="content">
+                                        <img src={ICONS.ME} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-pac">
+                                    <div className="content">
+                                        <img src={ICONS.PAC} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-bts">
+                                    <div className="content">
+                                        <img src={ICONS.BTS} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-atm">
+                                    <div className="content">
+                                        <img src={ICONS.ATM} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-struc">
+                                    <div className="content">
+                                        <img src={ICONS.STRUC} alt="" />
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
                             </Row>
                         </Col>
                     </Row>
