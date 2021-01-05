@@ -14,11 +14,53 @@
         font-weight: bold;
         text-transform: uppercase;
     }
+    .contain-about::before {
+        content: "";
+        position: absolute;
+        left: -15px;
+        bottom: -310px;
+        border-right: 150px solid transparent;
+        border-top: 200px solid #fff;
+    }
+    .contain-about::after {
+        content: "";
+        position: absolute;
+        right: -15px;
+        bottom: 0px;
+        border-left: 423px solid transparent;
+        border-bottom: 400px solid #0065b3;
+        margin-bottom: -110px;
+    }
+    .percent {
+        background-color: white;
+        .org-structure {
+            margin-top: -150px;
+        }
+    }
+    .percent::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 400px;
+        top: -250%;
+        border-left: 390px solid transparent;
+        border-bottom: 323px solid white;
+        margin-bottom: -110px;
+    }
+    .percent::after {
+        content: "";
+        position: absolute;
+        left: -15px;
+        /* top: -72px; */
+        border-right: 300px solid transparent;
+        border-top: 400px solid #008bf6;
+    }
     .contain-about {
         margin-top: 121px;
         color: #1d1d1f;
         font-size: 20px;
         font-weight: bold;
+        position: relative;
         .title-about {
             font-size: 65px;
         }
@@ -149,10 +191,10 @@
                 left: calc(17% + 35px);
                 width: calc(51% + 3px);
             }
-            .arrowRight::after{
+            .arrowRight::after {
                 width: 65px !important;
             }
-            .arrowRight .fa-chevron-right{
+            .arrowRight .fa-chevron-right {
                 left: 95% !important;
             }
         }
@@ -167,7 +209,7 @@
             background-color: #0063b0;
             z-index: 1;
         }
-        .arrowRight .fa-chevron-right{
+        .arrowRight .fa-chevron-right {
             top: 24px;
             left: 85%;
             z-index: 2;
@@ -207,5 +249,36 @@
     }
     .pdTop10 {
         padding-top: 10px;
+    }
+    //
+    .number {
+        font-size: 80px;
+        font-weight: bolder;
+        div {
+            font-weight: bolder;
+        }
+    }
+    .org-number {
+        .row {
+            margin: 5% 25%;
+        }
+        .blue {
+            color: #0063b0;
+        }
+        .dark-orange {
+            color: #f17f3c;
+        }
+        .green {
+            color: #84b381;
+        }
+        .red {
+            color: #d0343d;
+        }
+        .light-blue {
+            color: #2ca1b8;
+        }
+        .orange {
+            color: #fc9017;
+        }
     }
 }
