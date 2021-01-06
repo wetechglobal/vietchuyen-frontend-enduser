@@ -1,7 +1,8 @@
 import { OverlayTrigger } from 'react-bootstrap';
+import './style.scss';
 
 const Diamond = (props) => {
-    const {contain, src, title} = props;
+    const {contain, src, title, className} = props;
 
     return (
         <OverlayTrigger className="tooltip" key="top" placement="top"
@@ -17,10 +18,10 @@ const Diamond = (props) => {
                     <span>{contain}</span>
                 </div>
             }>
-            <div className="item">
+            <div className={className}>
                 <div className="content">
                     <img src={src} alt="" />
-                    <span>{title}</span>
+                    <span className="title">{title}</span>
                 </div>
             </div>
         </OverlayTrigger>
