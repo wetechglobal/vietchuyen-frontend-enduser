@@ -266,17 +266,26 @@
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
-    width: 165%;
-    height: 650px;
+    display: block;
+
+    .group {
+        display: flex;
+        justify-content: center;
+        &--three{
+            justify-content: space-around;
+        }
+        &--four{
+            justify-content: flex-start;
+        }
+    }
 
     [class^='item'] {
-        position: absolute;
         width: 200px;
         height: 200px;
         background: white;
         transform: rotate(45deg);
-        margin: 100px;
-        overflow: hidden;
+        margin: -20px 60px;
+        position: relative;
         border-radius: 20px;
     }
 

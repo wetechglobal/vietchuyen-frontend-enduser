@@ -71,24 +71,68 @@ const Module = () => {
             title: 'giai-phap-hoi-nghi-truyen-hinh',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
-        {
-            src: ICONS.BTS,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
-        },
-        {
-            src: ICONS.ATM,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
-        },
-        {
-            src: ICONS.STRUC,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
-        }
+        // {
+        //     src: ICONS.BTS,
+        //     title: 'giai-phap-hoi-nghi-truyen-hinh',
+        //     contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        // },
+        // {
+        //     src: ICONS.ATM,
+        //     title: 'giai-phap-hoi-nghi-truyen-hinh',
+        //     contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        // },
+        // {
+        //     src: ICONS.STRUC,
+        //     title: 'giai-phap-hoi-nghi-truyen-hinh',
+        //     contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        // }
     ];
     const { t } = useTranslation();
 
+    let rows = [], cols = []
+    let index = 0, int = 0
+    let three = true;
+
+    for (index; index < DIAMOND.length; index++) {
+
+        cols.push(<Diamond key={index} contain={DIAMOND[index].contain} src={DIAMOND[index].src} title={DIAMOND[index].title} />)
+
+        if (three && (int + 1) % 3 === 0) {
+            rows.push(
+                <div className="group" key={index}>
+                    {cols}
+                </div>
+            )
+            cols = []
+            int = 0
+            three = false
+            continue
+        }
+
+        if (three === false && (int + 1) % 4 === 0) {
+            rows.push(
+                <div className="group" key={index}>
+                    {cols}
+                </div>
+            )
+            cols = []
+            int = 0
+            three = true
+            continue
+        }
+
+        if (index === DIAMOND.length - 1) {
+            const className = three ? 'group group--three' : 'group group--four';
+            rows.push(
+                <div className={className} key={index}>
+                    {cols}
+                </div>
+            )
+        }
+
+        int++;
+    }
+ 
     return (
         <div className="strength">
             <Figure className="main-strength">
@@ -171,14 +215,12 @@ const Module = () => {
                                 <h4>TÌM HIỂU</h4>
                             </Row>
                             <Row className="diamond-group">
-                                {
-                                    DIAMOND.map((item, idx) => <Diamond key={idx} contain={item.contain} src={item.src} title={item.title} />)
-                                }
+                                {rows}
                             </Row>
                         </Col>
                     </Row>
                 </Container>
-                
+
             </Figure>
         </div>
     )
