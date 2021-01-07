@@ -3,11 +3,12 @@ import { Container, Figure, Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import Solution from './solution/index';
 import Strength from './strength/index';
+import ThreeVerticalLine from '../verticalLine/index'
 import './style.scss';
 
 const Module = () => {
     const { t } = useTranslation();
- 
+
     return (
         <div className="module">
             <Figure className="main-module">
@@ -15,10 +16,15 @@ const Module = () => {
                     src={IMAGES.BGMODULE}
                     width="100%"
                 />
+                <div className="xemthem">
+                    <ThreeVerticalLine borderLeft="5px solid #0063B0" />
+                    <a href="/news">XEM THÊM<br />TIN TỨC</a>
+                    <ThreeVerticalLine borderLeft="5px solid #0063B0" />
+                </div>
                 <Container>
-                    <Strength/>
+                    <Strength />
                     <Row className="giaiphap">
-                        <Solution/>
+                        <Solution />
                     </Row>
                 </Container>
             </Figure>

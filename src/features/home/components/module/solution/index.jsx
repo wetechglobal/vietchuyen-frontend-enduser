@@ -1,5 +1,6 @@
 import Diamond from '../diamon/index';
 import ICONS from 'assets/icons/icons';
+import ThreeVerticalLine from '../../verticalLine/index';
 import './style.scss';
 
 const Solution = () => {
@@ -21,67 +22,67 @@ const Solution = () => {
         },
         {
             src: ICONS.POWER,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.VETINH,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.NET,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.FIRE,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.PRINT,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.CAM,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.SET,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.UPS,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.ME,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.PAC,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.BTS,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.ATM,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.STRUC,
-            title: 'giai-phap-hoi-nghi-truyen-hinh',
+            title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         }
     ];
@@ -147,7 +148,11 @@ const Solution = () => {
         <div className="diamond-group">
             <div className="title">
                 <h1>GIẢI PHÁP - SẢN PHẨM</h1>
-                <h4>TÌM HIỂU</h4>
+                <div className="timhieu">
+                    <ThreeVerticalLine borderLeft="5px solid white"/>
+                    <a href="/solution">TÌM HIỂU</a>
+                    <ThreeVerticalLine borderLeft="5px solid white"/>
+                </div>
             </div>
             {rows}
         </div>

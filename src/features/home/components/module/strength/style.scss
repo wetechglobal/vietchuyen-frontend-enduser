@@ -126,35 +126,46 @@
     }
 }
 
-@media only screen and (max-width: 1279px) {
+@media only screen and (min-width: 1499px) {
     .strength {
         .main-group {
-            height: 60px;
-
+    
             span {
-                top: 90px;
+                top: 150px;
             }
         }
+    }
+}
 
-        .linedoc {
-            height: 20%;
+@media only screen and (min-width: 1024px) and (max-width: 1398px){
+    .strength {
+
+        .center {
+            margin-top: 25%;
         }
 
         .col {
-            height: 740px;
+            height: 750px;
+        }
+
+        .left {
+            margin-top: 7%;
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
         }
 
         span {
-            font-size: smaller;
-            line-height: 1.2;
+            font-size: 12px;
         }
 
-        .long {
-            height: 100px;
+        .main-group {
+            margin-bottom: 70px;
+    
+            span {
+                top: 90px;
+            }
         }
     }
 }

@@ -30,5 +30,43 @@
             width: 320px;
             margin: auto;
         }
+
+        .timhieu {
+            position: relative;
+            display: flex;
+            width: 400px;
+            margin: auto;
+            margin-top: 40px;
+
+            a {
+                margin: auto;
+                font-weight: 700;
+                text-shadow: 1px 1px 10px;
+                transition: all 0.2s;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -9px;
+                font-size: 20px;
+                cursor: pointer;
+                color: white !important;
+
+                &:hover {
+                    font-size: 25px;
+                    top: -13px;
+                    text-decoration: none !important;
+                }
+            }
+        }        
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1398px){
+    .diamond-group {
+        .title {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
     }
 }

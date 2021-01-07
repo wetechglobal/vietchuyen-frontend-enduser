@@ -198,6 +198,11 @@ body {
     .navbar-light .navbar-nav .nav-link {
         font-weight: 600;
         font-size: 1.2em;
+
+        &:hover {
+            text-decoration: none !important;
+            color: #0063b0;
+        }
     }
 
     .footer {
