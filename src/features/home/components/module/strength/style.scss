@@ -1,0 +1,171 @@
+
+.strength {
+    position: relative;
+
+    .col {
+        display: flex;
+        height: 900px;
+    }
+
+    .left {
+        margin-top: 20%;
+    }
+
+    .center {
+        margin-top: 30%;
+    }
+
+    .right {
+        margin-top: 5%;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        text-shadow: 1px 1px 10px;
+        margin-bottom: 20px;
+    }
+
+    .linedoc {
+        // border-left: 10px solid transparent;
+        // border-right: 10px solid transparent;
+        // border-image: url('../../assets/images/line.png') 20 round;
+        height: 35%;
+        margin-right: 20px;
+    }
+
+    .center {
+        .linedoc {
+            margin-top: 100px;
+        }
+    }
+
+    .right {
+        .one {
+            margin-top: 300px;
+        }
+
+        .two {
+            margin-top: 100px;
+        }
+    }
+
+    .linedoc:last-child {
+        height: 35%;
+        margin-right: -20px;
+    }
+
+    .content-num {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .main-group {
+        position: relative;
+        margin-bottom: 100px;
+
+        span {
+            position: absolute;
+            top: 120px;
+        }
+    }
+
+    .group {
+        position: relative;
+    }
+
+    .vongtron {
+        -webkit-transition: all 0.2s; 
+        -moz-transition: all 0.2s; 
+        transition: all 0.2s;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .group:hover .vongtron {
+        top: 10px;
+    }
+
+    .num {
+        -webkit-transition: all 0.2s; 
+        -moz-transition: all 0.2s; 
+        transition: all 0.2s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        margin: auto;
+        z-index: 1;
+    }
+
+    .group:hover .num{
+        bottom: 30px;
+    }
+
+    span {
+        font-weight: 500;
+        text-shadow: 0 1px 8px;
+        font-size: small;
+        line-height: 1.5;
+        text-align: justify;
+
+        span {
+            color: #98FAFC;
+            font-weight: bold;
+        }
+    }
+
+    .padding-bottom {
+        padding-bottom: 1px;
+    }
+}
+
+@media only screen and (min-width: 1499px) {
+    .strength {
+        .main-group {
+    
+            span {
+                top: 150px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1398px){
+    .strength {
+
+        .center {
+            margin-top: 25%;
+        }
+
+        .col {
+            height: 750px;
+        }
+
+        .left {
+            margin-top: 7%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        .main-group {
+            margin-bottom: 70px;
+    
+            span {
+                top: 90px;
+            }
+        }
+    }
+}
