@@ -5,7 +5,6 @@ import dienthoai from 'assets/icons/dienthoai.svg';
 import fax from 'assets/icons/FAX.svg';
 import giayphepkinhdoanh from 'assets/icons/giayphepkinhdoanh.svg';
 import masothue from 'assets/icons/masothue.svg';
-
 import sreen from 'assets/icons/manhinhghep.svg';
 import meet from 'assets/icons/hoinghitruyenhinh.svg';
 import camera from 'assets/icons/cameraanninh.svg';
@@ -22,6 +21,8 @@ import pac from 'assets/icons/maylanhchinhxac.svg';
 import bts from 'assets/icons/tramphatsongBTS.svg';
 import atm from 'assets/icons/mayATM.svg';
 import struc from 'assets/icons/capcautruc.svg';
+import orgChart from './sodococautochuc.svg';
+import orgStruct from './cocautochuc.svg';
 
 const ICONS = {
     TOP: top,
@@ -46,7 +47,9 @@ const ICONS = {
     PAC: pac,
     BTS: bts,
     ATM: atm,
-    STRUC: struc
+    STRUC: struc,
+    ORG_CHART: orgChart,
+    ORG_STRUCT: orgStruct
 }
 
 export default ICONS;
