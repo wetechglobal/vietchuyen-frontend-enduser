@@ -14,7 +14,7 @@ import coreValue from './giatricotloi.png';
 
 import bg from 'assets/images/BG_footer.png';
 import bgmodule from 'assets/images/bgmodule.png';
-import bgvongtron from 'assets/images/vongtronthemanh.png';
+import bgvongtron from 'assets/images/vongtron.png';
 import linedoc from 'assets/images/line.png';
 
 import six from 'assets/images/6+.png';
