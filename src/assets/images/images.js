@@ -17,13 +17,6 @@ import bgmodule from 'assets/images/bgmodule.png';
 import bgvongtron from 'assets/images/vongtron.png';
 import linedoc from 'assets/images/line.png';
 
-import six from 'assets/images/6+.png';
-import ten from 'assets/images/10+.png';
-import twenty from 'assets/images/20+.png';
-import sixtythree from 'assets/images/63+.png';
-import onehundred from 'assets/images/100+.png';
-import threehundred from 'assets/images/300+.png';
-
 import doitac from 'assets/images/doitac.png';
 
 const IMAGES = {
@@ -36,12 +29,6 @@ const IMAGES = {
     BGMODULE: bgmodule,
     BGVONGTRON: bgvongtron,
     LINEDOC: linedoc,
-    SIX: six,
-    TEN: ten,
-    TWENTY: twenty,
-    SIXTYTHREE: sixtythree,
-    ONEDUNDRED: onehundred,
-    THREEHUNDRED: threehundred,
     BG_ABOUT_VC: aboutVC,
     MISSION: mission,
     VISION: vision,
