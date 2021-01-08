@@ -24,6 +24,8 @@ import sixtythree from 'assets/images/63+.png';
 import onehundred from 'assets/images/100+.png';
 import threehundred from 'assets/images/300+.png';
 
+import doitac from 'assets/images/doitac.png';
+
 const IMAGES = {
     SLIDER1: slider1,
     SLIDER2: slider2,
@@ -46,6 +48,7 @@ const IMAGES = {
     CORE_VALUE: coreValue,
     BANNER: imgNewsPage,
     DEFAULT_TECHNEWS: defaultTechNews,
+    DOITAC: doitac
 }
 
 export default IMAGES;
