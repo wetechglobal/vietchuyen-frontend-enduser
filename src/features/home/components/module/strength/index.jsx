@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import IMAGES from 'assets/images/images';
 import { Row, Col } from 'react-bootstrap';
 import './style.scss';
+import CountUp from '../../countup';
 
 const Strength = () => {
 
@@ -24,21 +25,21 @@ const Strength = () => {
                 <div className="content-num">
                     <div className="main-group">
                         <div className="group">
-                            <img className="num" src={IMAGES.TEN} alt="" />
+                            <CountUp point={10}/>
                             <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
                         </div>
                         <span>{t('strengths.10')}</span>
                     </div>
                     <div className="main-group padding-bottom">
                         <div className="group">
-                            <img className="num" src={IMAGES.TWENTY} alt="" />
+                            <CountUp point={20}/>
                             <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
                         </div>
                         <span>{t('strengths.20')}</span>
                     </div>
                     <div className="main-group">
                         <div className="group">
-                            <img className="num" src={IMAGES.ONEDUNDRED} alt="" />
+                            <CountUp point={100}/>
                             <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
                         </div>
                         <span>{t('strengths.100')}</span>
@@ -50,21 +51,21 @@ const Strength = () => {
                 <div className="content-num">
                     <div className="main-group long">
                         <div className="group">
-                            <img className="num" src={IMAGES.THREEHUNDRED} alt="" />
+                            <CountUp point={300}/>
                             <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
                         </div>
                         <span>{t('strengths.300')}</span>
                     </div>
                     <div className="main-group padding-bottom">
                         <div className="group">
-                            <img className="num" src={IMAGES.SIXTYTHREE} alt="" />
+                            <CountUp point={63}/>
                             <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
                         </div>
                         <span>{t('strengths.63')}</span>
                     </div>
                     <div className="main-group long">
                         <div className="group">
-                            <img className="num" src={IMAGES.SIX} alt="" />
+                            <CountUp point={6}/>
                             <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
                         </div>
                         <span>{t('strengths.6')}</span>
