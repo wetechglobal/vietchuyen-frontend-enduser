@@ -14,7 +14,7 @@ import coreValue from './giatricotloi.png';
 
 import bg from 'assets/images/BG_footer.png';
 import bgmodule from 'assets/images/bgmodule.png';
-import bgvongtron from 'assets/images/vongtronthemanh.png';
+import bgvongtron from 'assets/images/vongtron.png';
 import linedoc from 'assets/images/line.png';
 
 import six from 'assets/images/6+.png';
@@ -23,6 +23,8 @@ import twenty from 'assets/images/20+.png';
 import sixtythree from 'assets/images/63+.png';
 import onehundred from 'assets/images/100+.png';
 import threehundred from 'assets/images/300+.png';
+
+import doitac from 'assets/images/doitac.png';
 
 const IMAGES = {
     SLIDER1: slider1,
@@ -46,6 +48,7 @@ const IMAGES = {
     CORE_VALUE: coreValue,
     BANNER: imgNewsPage,
     DEFAULT_TECHNEWS: defaultTechNews,
+    DOITAC: doitac
 }
 
 export default IMAGES;

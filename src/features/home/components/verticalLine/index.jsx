@@ -7,10 +7,10 @@ const ThreeVerticalLine = (props) => {
         borderLeft: borderLeft,
     }
     return (
-        <div class="group-line">
-            <div class="vline" style={myStyle}></div>
-            <div class="vline" style={myStyle}></div>
-            <div class="vline" style={myStyle}></div>
+        <div className="group-line">
+            <div className="vline" style={myStyle}></div>
+            <div className="vline" style={myStyle}></div>
+            <div className="vline" style={myStyle}></div>
         </div>
     )
 }
