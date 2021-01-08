@@ -16,10 +16,10 @@
         }
 
         .carousel-picture {
-            width: 170px !important;
+            width: 190px !important;
             height: 150px;
             border-right: 3px solid transparent;
-            border-image-source: linear-gradient( #FAFAFA 20% , #EDEDED , #FAFAFA 80%);
+            border-image-source: linear-gradient( #FAFAFA50 20% , #EDEDED , #FAFAFA50 80%);
             border-image-slice: 1;
         }
     }

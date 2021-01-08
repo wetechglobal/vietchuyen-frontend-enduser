@@ -96,7 +96,7 @@
         transition: all 0.2s;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 15%;
         right: 0;
         bottom: 0;
         width: fit-content;
@@ -170,6 +170,10 @@
             span {
                 top: 90px;
             }
+        }
+
+        .num {
+            font-size: 60px;
         }
     }
 }
