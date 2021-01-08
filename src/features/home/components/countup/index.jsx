@@ -30,7 +30,7 @@ class CountUp extends Component {
             <div className="num"><Waypoint
                 onEnter={this.animateCounter.bind()}
                 onPositionChange={this.animateUpdateCounter.bind()}
-            />{this.state.count}<sup>+</sup></div>
+            />{this.state.count}{this.props.ext}</div>
         );
     }
 }

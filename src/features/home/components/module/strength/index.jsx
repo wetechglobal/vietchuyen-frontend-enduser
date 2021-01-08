@@ -25,21 +25,21 @@ const Strength = () => {
                 <div className="content-num">
                     <div className="main-group">
                         <div className="group">
-                            <CountUp point={10}/>
+                            <CountUp point={10} ext={<sup>+</sup>}/>
                             <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
                         </div>
                         <span>{t('strengths.10')}</span>
                     </div>
                     <div className="main-group padding-bottom">
                         <div className="group">
-                            <CountUp point={20}/>
+                            <CountUp point={20} ext={<sup>+</sup>}/>
                             <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
                         </div>
                         <span>{t('strengths.20')}</span>
                     </div>
                     <div className="main-group">
                         <div className="group">
-                            <CountUp point={100}/>
+                            <CountUp point={100} ext={<sup>+</sup>}/>
                             <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
                         </div>
                         <span>{t('strengths.100')}</span>
@@ -51,21 +51,21 @@ const Strength = () => {
                 <div className="content-num">
                     <div className="main-group long">
                         <div className="group">
-                            <CountUp point={300}/>
+                            <CountUp point={300} ext={<sup>+</sup>}/>
                             <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
                         </div>
                         <span>{t('strengths.300')}</span>
                     </div>
                     <div className="main-group padding-bottom">
                         <div className="group">
-                            <CountUp point={63}/>
+                            <CountUp point={63} ext={<sup>+</sup>}/>
                             <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
                         </div>
                         <span>{t('strengths.63')}</span>
                     </div>
                     <div className="main-group long">
                         <div className="group">
-                            <CountUp point={6}/>
+                            <CountUp point={6} ext={<sup>+</sup>}/>
                             <img className="vongtron" src={IMAGES.BGVONGTRON} alt="" />
                         </div>
                         <span>{t('strengths.6')}</span>

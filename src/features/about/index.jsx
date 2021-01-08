@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import parse from 'html-react-parser';
 import './familyTree.scss';
 import './style.scss';
+import CountUp from '../home/components/countup/index'
 
 const About = () => {
     const { t } = useTranslation();
@@ -130,14 +131,14 @@ const About = () => {
                     </Col>
                     <Col sm={12} className="org-number">
                         <Row>
-                            <Col sm={4}><div className="number blue">30+</div><b>{t('about.employee')}</b></Col>
-                            <Col sm={4}><div className="number dark-orange">15+</div><b>{t('about.engineer')}</b></Col>
-                            <Col sm={4}><div className="number green">10+</div><b>{t('about.business')}</b></Col>
+                            <Col sm={4} className="blue"><div className="number blue"><CountUp point={30} ext="+"/></div><b>{t('about.employee')}</b></Col>
+                            <Col sm={4} className="dark-orange"><div className="number dark-orange"><CountUp point={15} ext="+"/></div><b>{t('about.engineer')}</b></Col>
+                            <Col sm={4} className="green"><div className="number green"><CountUp point={10} ext="+"/></div><b>{t('about.business')}</b></Col>
                         </Row>
                         <Row>
-                            <Col sm={4}><div className="number red">60%</div><b>{t('about.college')}</b></Col>
-                            <Col sm={4}><div className="number light-blue">30%</div><b>{t('about.intermediate')}</b></Col>
-                            <Col sm={4}><div className="number orange">10%</div><b>{t('about.otherLevel')}</b></Col>
+                            <Col sm={4} className="red"><div className="number red"><CountUp point={60} ext="%"/></div><b>{t('about.college')}</b></Col>
+                            <Col sm={4} className="light-blue"><div className="number light-blue"><CountUp point={30} ext="%"/></div><b>{t('about.intermediate')}</b></Col>
+                            <Col sm={4} className="orange"><div className="number orange"><CountUp point={10} ext="%"/></div><b>{t('about.otherLevel')}</b></Col>
                         </Row>
                     </Col>
                 </Row>
