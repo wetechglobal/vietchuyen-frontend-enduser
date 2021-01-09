@@ -78,6 +78,39 @@ const Module = () => {
                             <img className="linedoc two" src={IMAGES.LINEDOC} alt="" />
                         </Col>
                     </Row>
+                    <Row className="giaiphap">
+                        <Col>
+                            <Row>
+                                <h1>GIẢI PHÁP - SẢN PHẨM</h1>
+                            </Row>
+                            <Row>
+                                <h4>TÌM HIỂU</h4>
+                            </Row>
+                            <Row className="diamond-group">
+                                <div className="item-sreen">
+                                    <div>
+                                        <img src={IMAGES.TWENTY} alt=""/>
+                                        <span>Hệ thống màn hình ghép</span>
+                                    </div>
+                                </div>
+                                <div className="item-meet">meet</div>
+                                <div className="item-camera">camera</div>
+                                <div className="item-power">power</div>
+                                <div className="item-vetinh">vetinh</div>
+                                <div className="item-net">net</div>
+                                <div className="item-fire">fire</div>
+                                <div className="item-print">print</div>
+                                <div className="item-cam">cam</div>
+                                <div className="item-set">set</div>
+                                <div className="item-ups">ups</div>
+                                <div className="item-me">me</div>
+                                <div className="item-pac">pac</div>
+                                <div className="item-bts">bts</div>
+                                <div className="item-atm">atm</div>
+                                <div className="item-struc">struc</div>
+                            </Row>
+                        </Col>
+                    </Row>
                 </Container>
             </Figure>
         </div>
