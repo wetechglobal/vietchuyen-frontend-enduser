@@ -84,6 +84,11 @@ const Solution = () => {
             src: ICONS.STRUC,
             title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+        },
+        {
+            src: ICONS.STRUC,
+            title: 'Hệ thống hôi nghị trực tuyến',
+            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         }
     ];
 
@@ -93,7 +98,7 @@ const Solution = () => {
 
     for (index; index < DIAMOND.length; index++) {
 
-        cols.push(<Diamond key={index} contain={DIAMOND[index].contain} src={DIAMOND[index].src} title={DIAMOND[index].title} className="item"/>)
+        cols.push(<Diamond key={index} contain={DIAMOND[index].contain} src={DIAMOND[index].src} title={DIAMOND[index].title} bgColor='white'/>)
 
         if (index === 1) {
             rows.push(
@@ -132,7 +137,7 @@ const Solution = () => {
 
         if (index === DIAMOND.length - 1) {
             if(four === true && cols.length === 1) {
-                cols.push(<Diamond className="item hidden"/>)
+                cols.push(<Diamond hidden='hidden'/>)
             }
             const className = four === false ? 'group group--three' : cols.length === 3 || cols.length === 1 ? 'group group--four' : 'group';
             rows.push(

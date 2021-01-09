@@ -1,15 +1,10 @@
 [class^='item'] {
     width: 200px;
     height: 200px;
-    background: white;
     transform: rotate(45deg);
     margin: -20px 60px;
     position: relative;
     border-radius: 20px;
-    
-    &.hidden {
-        visibility: hidden;
-    }
 }
 
 .content {
