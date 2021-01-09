@@ -63,5 +63,29 @@
     "college":"Đại học & Cao đẳng",
     "intermediate":"Trung cấp/ Kỹ thuật",
     "otherLevel":"Trình độ khác"
+  },
+
+  "contact": {
+    "headQuarter": "Trụ sở",
+    "hdAddress": "302 Tòa nhà Độc Lập A, Phường Tân Quý, Quận Tân Phú, TP. HCM",
+    "supportCenter":"Hệ thống đại lý và trung tâm hỗ trợ kỹ thuật",
+    "HN": "1. Trung tâm hỗ trợ kỹ thuật và <br> dịch vụ tại Hà Nội",
+    "HNname": "Văn phòng đại diện Công ty TNHH Công Nghệ <br> Việt Chuyên SG",
+    "HNadd" : "Số 81, Ngõ 530 đường Thụy Khuê, Phường Bưởi, Quận Tây Hồ, TP. HN",
+    "DN" : "2. Trung tâm hỗ trợ kỹ thuật và <br> dịch vụ tại Đà Nẵng",
+    "DNname": "Công ty TNHH TM DV Sao Nam Sông Hàn",
+    "DNadd" : "185 Bế Văn Đàn, Phường Chính Gián, Quận Thanh Khê, TP. Đà Nẵng",
+    "CT" : "3. Trung tâm hỗ trợ kỹ thuật và <br> dịch vụ tại Cần Thơ",
+    "CTname": "Công Ty TNHH MTV Công Nghệ An Phát Minh",
+    "CTadd" : "E1 Đường số 56, KDC 586, P.Phú Thứ, Q.Cái Răng, TP.Cần Thơ",
+    "TV" : "4. Trung tâm hỗ trợ kỹ thuật và <br> dịch vụ tại Trà Vinh",
+    "TVname": "Trung Tâm Bảo Hành Sửa Chữa Thiết Bị VT- CNTT <br> VNPT Trà Vinh",
+    "TVadd" : "70 Hùng Vương, P.4, TP.Trà Vinh, Tỉnh Trà Vinh",
+    "contactNow" : "Liên hệ ngay",
+    "fullname": " Họ và tên ",
+    "content": "Nội dung yêu cầu",
+    "submit": "GỬI YÊU CẦU"
+
   }
+
 }
