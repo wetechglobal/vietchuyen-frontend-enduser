@@ -84,11 +84,6 @@ const Solution = () => {
             src: ICONS.STRUC,
             title: 'Hệ thống hôi nghị trực tuyến',
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
-        },
-        {
-            src: ICONS.STRUC,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         }
     ];
 
