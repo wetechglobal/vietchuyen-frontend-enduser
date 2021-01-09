@@ -34,23 +34,42 @@
         position: relative;
         margin-top: 70px;
         padding: 48px;
+        width: 722px;
+        height: 280px;
     }
     .diachi {
         font-weight: bolder;
         color: #737373;
-        font-size: xx-large;
+        font-size: 25px;
+    }
+
+    .img-dienthoai {
+        width: 44px;
+        position: relative;
     }
     .dienthoai {
         font-weight: bolder;
         color: #e60000;
-        font-size: x-large;
+        font-size: 25px;
         margin-top: 20px;
     }
     .fax {
         font-weight: bolder;
         color: #0063b0;
-        font-size: x-large;
+        font-size: 25px;
         margin-top: 20px;
+    }
+    
+    .border-HN {
+
+        border: 2px solid #efefef;
+        border-radius: 12px;
+        position: relative;
+        margin-top: 70px;
+        padding: 15px;
+        width: 722px;
+        height: 348px;
+
     }
     .dailyhethongicon {
         top: 1219px;
@@ -61,22 +80,37 @@
     .dailyhethongtext {
         text-align: left;
         // font: normal normal normal 40px/54px SVN-Gotham;
-        letter-spacing: -1.6px;
         color: #1d1d1f;
-        text-transform: capitalize;
+        margin-left: 12px;
+        text-align: left;
+        letter-spacing: -1.6px;
         opacity: 1;
-        font-size: xxx-large;
-        font-weight: 500;
+        font-size: 40px;
+        font-weight: 600;
     }
     .vanphongtext {
         color: #0063b0;
-        font-size: xx-large;
-        font-weight: 500;
+        margin-left: 12px;
+        font-size: 25px;
+        font-weight: 600;
     }
     .diachitext {
-        font-size: large;
+        font-size: 16px;
+        margin-left: 12px;
         font-weight: 500;
         margin-top: 20px;
+    }
+
+    .border-DN {
+
+        border: 2px solid #efefef;
+        border-radius: 12px;
+        position: relative;
+        margin-top: 70px;
+        padding: 15px;
+        width: 722px;
+        height: 319px;
+
     }
     .lienhengay {
         top: 2588px;
@@ -147,4 +181,85 @@
     .BG-input:valid ~ .placeholder {
         display: none;
     }
+
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1520px) {
+        .trusochinh {
+            margin-left: 5px;
+            top: 557px;
+            left: 468px;
+            width: 130px;
+            height: 110px;
+        }
+
+        .text-truso {
+            font-size: 45px;
+            font-weight: bolder;
+            margin-top: 20px;
+        }
+
+        .infoborder {
+            width: 608px;
+            height: 223px;
+        }
+        
+        .muitenxam {
+            width: 25px;
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+
+        .diachi {
+            font-weight: bolder;
+            color: #737373;
+            font-size: 20px;
+        }
+        .dienthoai {
+            font-weight: bolder;
+            color: #e60000;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .fax {
+            font-weight: bolder;
+            color: #0063b0;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .img-dienthoai {
+            width: 34px;
+            position: relative;
+        }
+        .dailyhethongicon {
+            width: 85px;
+            height: 85px;
+        }
+
+        .border-HN {
+
+            width: 608px;
+            height: 305px;
+    
+        }
+
+        .dailyhethongtext {
+            font-size: 35px;
+            font-weight: 600;
+        }
+
+        .vanphongtext {
+            color: #0063b0;
+            margin-left: 12px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .border-DN {
+
+            width: 608px;
+            height: 285px;
+    
+        }
+
+    }
 }
+
