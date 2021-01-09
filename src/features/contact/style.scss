@@ -1,15 +1,18 @@
 .contact {
     .title {
-        background-image: url("../../assets/images/lienhe.png");
-        background-image: cover;
+        background-image: url("../../assets/images/BG_veVietChuyen.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: 100% 100%;
-        min-height: 470px;
+        background-size: cover;
+        color: white;
+        margin-top: 76px;
     }
     .title-img {
-        width: 1920px;
-        height: 450px;
+        margin-top: 50px;
+        font-size: 77px;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 100%;
     }
     .trusochinh {
         margin-left: 10px;
