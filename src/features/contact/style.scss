@@ -1,11 +1,11 @@
 .contact {
     .title {
-        background-image: url("../../assets/images/BG_veVietChuyen.png");
+        background-image: url("../../assets/images/lienhe.png");
+        background-image: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: cover;
-        color: white;
-        margin-top: 76px;
+        background-size: 100% 100%;
+        min-height: 470px;
     }
     .title-img {
         margin-top: 50px;
