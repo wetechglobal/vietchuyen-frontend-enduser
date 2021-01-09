@@ -9,6 +9,7 @@ import React from "react";
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage,
 MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from "mdbreact";
 import  IMAGES from "assets/images/images";
+import Solution1 from './Content-solution/index';
 // import Carousel from 'react-bootstrap/Carousel'
 import "react-multi-carousel/lib/styles.css";
 // import Module from '../home/components/module/module.jsx'
@@ -40,9 +41,12 @@ const Solution = () => {
                     <img src={IMAGES.BANNERSOLUTION}/>
                 </div>
                 <Row className="latest-Solution1">
-                    {/* <Col md={12} className="title">{t('Banner.BannerSolution')}</Col> */}
-                    <Col md={12} className="title-solution">Chúng Tôi Cung Cấp</Col>
-                    {/* <LatestNews /> */}
+                    
+                    <Col className="title-solution">Chúng Tôi Cung Cấp</Col>
+                  
+                    {/* <Row className="giaiphap"> */}
+                        <Solution1 />
+                    {/* </Row> */}
                 </Row>
                 <div className="news__banner">
                     <img src={IMAGES.DOITAC}/>
@@ -64,7 +68,7 @@ const Solution = () => {
                 </Col>
             </Row>
            
-
+          
 
 
     <Carousel className="carousel-res"

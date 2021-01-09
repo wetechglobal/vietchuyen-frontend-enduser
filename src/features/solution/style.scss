@@ -2,7 +2,8 @@
     img {
         height: 100%;
         width: 100%;
-        object-fit: 'contain'
+        object-fit: 'contain';
+        // position: fixed
     }
 }
 
@@ -43,9 +44,12 @@
     text-align: center;
     // margin-bottom: 55px;
     text-transform: uppercase;
-    color: #008CF8;
+    background: -webkit-linear-gradient(#0063B0, #0097CF,#008CF8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 200px;
     // bottom:100px;
-    position: relative;
+    // position: relative;
     
 
     
@@ -61,7 +65,7 @@
     background: -webkit-linear-gradient(#0063B0, #0097CF,#008CF8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    bottom:10%;
+    bottom:6%;
 
     
     
@@ -71,8 +75,13 @@
 .latest-Solution{
     width: 65%;
     margin-left:20%;
-    bottom: 8%;
+    bottom: 5%;
     position: relative;
+}
+
+.latest-Solution1{
+  height: 1000px;
+  position: relative;
 }
 
 
@@ -80,7 +89,7 @@
     font-size: 20px;
 
     text-align: center;
-    // margin-bottom: 55px;
+    margin-bottom: 3%;
     // text-transform: uppercase;
     color: black;
     position: relative;
@@ -404,7 +413,7 @@ max-height: 100px;
   }
 
   .carousel-res{
-      bottom:5%;
+      bottom:1%;
   }
 
   /////////////////========================/////////////@extend
@@ -492,3 +501,8 @@ max-height: 100px;
         top:10px;
         margin-bottom: 5px;
     }
+
+    .giaiphap {
+      position: relative;
+      // top: 20%;
+  }
