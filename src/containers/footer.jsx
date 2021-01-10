@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import { Container, Row, Figure } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import IMAGES from 'assets/images/images';

@@ -31,6 +31,9 @@ import twenty from 'assets/images/20+.png';
 import sixtythree from 'assets/images/63+.png';
 import onehundred from 'assets/images/100+.png';
 import threehundred from 'assets/images/300+.png';
+import rounded_star from 'assets/images/rounded_star.png';
+
+import view_more from 'assets/images/view_more.png';
 
 
 const IMAGES = {
@@ -61,6 +64,8 @@ const IMAGES = {
     CORE_VALUE: coreValue,
     BANNER: imgNewsPage,
     DEFAULT_TECHNEWS: defaultTechNews,
+    ROUNDED_STAR: rounded_star,
+    VIEW_MORE: view_more,
 }
 
 export default IMAGES;
