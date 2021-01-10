@@ -1,0 +1,81 @@
+.module {
+    position: relative;
+
+    .main-module {
+        width: 100%;
+    }
+
+    .container {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 60%;
+        color: white;
+        box-shadow: unset;
+    }
+
+    .giaiphap {
+        position: relative;
+        top: 20%;
+    }
+
+    .xemthem {
+        position: absolute;
+        display: flex;
+        width: 450px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+
+        a {
+            text-align: center;
+            font-weight: 700;
+            text-shadow: 1px 1px 10px;
+            transition: all 0.2s;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -20px;
+            font-size: 20px;
+            cursor: pointer;
+            color: #0063B0 !important;
+
+            &:hover {
+                font-size: 25px;
+                top: -30px;
+                text-decoration: none !important;
+                color: #E50019 !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1499px) {
+    .module {
+        .giaiphap {
+            position: relative;
+            top: 22%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1399px) and (max-width: 1498px){
+    .module {
+        .giaiphap {
+            position: relative;
+            top: 17%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1398px){
+    .module {
+        .giaiphap {
+            position: relative;
+            top: 13%;
+        }
+    }
+}

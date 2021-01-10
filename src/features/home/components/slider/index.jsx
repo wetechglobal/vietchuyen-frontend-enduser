@@ -1,6 +1,7 @@
 
 import { Carousel } from 'react-bootstrap';
 import IMAGES from "assets/images/images";
+import './style.scss';
 
 const Slider = () => {
     const sliders = [

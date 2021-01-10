@@ -20,6 +20,9 @@ body {
 .pointer {
     cursor: pointer;
 }
+.txt-uppercase {
+    text-transform: uppercase;
+}
 /*margin common*/
 .latest-new {
     margin-bottom: 55px;
@@ -123,6 +126,11 @@ body {
         right: 15%;
     }
 
+    .companyInfo {
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
     .img {
         align-self: center;
 
@@ -185,12 +193,24 @@ body {
             background-image: url('../assets/images/in_hover.png');
         }
     }
+
+    .srolltop {
+        width: 80px;
+        position: fixed;
+        right: 200px;
+        bottom: 20px;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
     .navbar-light .navbar-nav .nav-link {
         font-weight: 600;
         font-size: 1.2em;
+
+        &:hover {
+            text-decoration: none !important;
+            color: #0063b0;
+        }
     }
 
     .footer {
