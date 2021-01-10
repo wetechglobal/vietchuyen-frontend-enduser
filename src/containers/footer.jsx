@@ -28,9 +28,10 @@ const TheFooter = () => {
                         <h4>{t('footer.companyName')}</h4>
                     </Row>
                     <Row>
+                        <div className="img"><img src={IMAGES.TRUSO} alt=""/></div>
                         <div className="img"><img src={ICONS.TRUSO} alt="" /></div>
                         <div>
-                            <span>{t('footer.addr')}</span><br />
+                            <span className='companyInfo'>{t('footer.addr')}</span><br />
                             {t('footer.address')}
                         </div>
                     </Row>
@@ -38,34 +39,34 @@ const TheFooter = () => {
                         <div className="inrow">
                             <div className="img"><img src={ICONS.DIENTHOAI} alt="" /></div>
                             <div>
-                                <span>{t('footer.phone')}</span><br />
-                                (028) 39637678
+                                <span className='companyInfo'>{t('footer.phone')}</span><br />
+                                (028) 3963 7678
                             </div>
                         </div>
                         <div className="inrow">
                             <div className="img"><img src={ICONS.FAX} alt="" /></div>
                             <div>
-                                <span>FAX</span><br />
-                                (028) 39637679
+                                <span className='companyInfo'>FAX</span><br />
+                                (028) 3963 7679
                             </div>
                         </div>
                     </Row>
                     <Row>
                         <div className="img"><img src={ICONS.GPKD} alt="" /></div>
                         <div>
-                            <span>{t('footer.gpkd')}</span><br />
+                            <span className='companyInfo'>{t('footer.gpkd')}</span><br />
                             {t('footer.gpkdDetail')}
                         </div>
                     </Row>
                     <Row>
                         <div className="img"><img src={ICONS.MST} alt="" /></div>
                         <div>
-                            <span>{t('footer.mst')}</span><br />
+                            <span className='companyInfo'>{t('footer.mst')}</span><br />
                             0304198513
                     </div>
                     </Row>
                     <Row className="copyright">
-                        <span>Copyright @ 2020 | vietchuyen.com</span>
+                        <span className='companyInfo'>Copyright @ 2020 | vietchuyen.com</span>
                     </Row>
                     <Row>
                         <div className="group">
@@ -77,7 +78,7 @@ const TheFooter = () => {
                 </Container>
             </Figure>
 
-            <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62712.096755965526!2d106.63502353718317!3d10.772500054351118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ede0aa80245%3A0x2b6b5c4999a448ce!2zNzQwIFPGsCBW4bqhbiBI4bqhbmgsIFBoxrDhu51uZyAxMiwgUXXhuq1uIDEwLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1607483130626!5m2!1sen!2s"
+            <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.23696364562!2d106.62428871406844!3d10.793154492310165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c007f436d81%3A0x4b4529747ba52d36!2zQ2h1bmcgQ8awIMSQ4buZYyBM4bqtcCBC!5e0!3m2!1svi!2s!4v1610253207388!5m2!1svi!2s"
                 frameBorder="0" allowFullScreen="" aria-hidden="false" tabIndex="0" title="map"></iframe>
             <img className="srolltop" src={ICONS.TOP} alt="" onClick={ScrollToTop}/>
         </footer>
