@@ -1,3 +1,4 @@
+const ICONS = {
 import top from 'assets/icons/topscroll.svg';
 import logo from 'assets/icons/logoamban.svg';
 import truso from 'assets/icons/truso.svg';

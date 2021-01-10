@@ -17,6 +17,13 @@ import bgmodule from 'assets/images/bgmodule.png';
 import bgvongtron from 'assets/images/vongtron.png';
 import linedoc from 'assets/images/line.png';
 
+import six from 'assets/images/6+.png';
+import ten from 'assets/images/10+.png';
+import twenty from 'assets/images/20+.png';
+import sixtythree from 'assets/images/63+.png';
+import onehundred from 'assets/images/100+.png';
+import threehundred from 'assets/images/300+.png';
+import rounded_star from 'assets/images/rounded_star.png';
 import doitac from 'assets/images/doitac.png';
 
 const IMAGES = {
@@ -35,6 +42,7 @@ const IMAGES = {
     CORE_VALUE: coreValue,
     BANNER: imgNewsPage,
     DEFAULT_TECHNEWS: defaultTechNews,
+    ROUNDED_STAR: rounded_star,
     DOITAC: doitac
 }
 
