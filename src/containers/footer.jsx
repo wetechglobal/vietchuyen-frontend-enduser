@@ -20,9 +20,9 @@ const TheFooter = () => {
                         <h4>{t('footer.companyName')}</h4>
                     </Row>
                     <Row>
-                        <div className="img"><img src={IMAGES.TRUSO} alt="" /></div>
+                        <div className="img"><img src={IMAGES.TRUSO} alt=""/></div>
                         <div>
-                            <span>{t('footer.addr')}</span><br />
+                            <span className='companyInfo'>{t('footer.addr')}</span><br />
                             {t('footer.address')}
                         </div>
                     </Row>
@@ -30,34 +30,34 @@ const TheFooter = () => {
                         <div className="inrow">
                             <div className="img"><img src={IMAGES.DIENTHOAI} alt="" /></div>
                             <div>
-                                <span>{t('footer.phone')}</span><br />
-                                (028) 39637678
+                                <span className='companyInfo'>{t('footer.phone')}</span><br />
+                                (028) 3963 7678
                             </div>
                         </div>
                         <div className="inrow">
                             <div className="img"><img src={IMAGES.FAX} alt="" /></div>
                             <div>
-                                <span>FAX</span><br />
-                                (028) 39637679
+                                <span className='companyInfo'>FAX</span><br />
+                                (028) 3963 7679
                             </div>
                         </div>
                     </Row>
                     <Row>
                         <div className="img"><img src={IMAGES.GPKD} alt="" /></div>
                         <div>
-                            <span>{t('footer.gpkd')}</span><br />
+                            <span className='companyInfo'>{t('footer.gpkd')}</span><br />
                             {t('footer.gpkdDetail')}
                         </div>
                     </Row>
                     <Row>
                         <div className="img"><img src={IMAGES.MST} alt="" /></div>
                         <div>
-                            <span>{t('footer.mst')}</span><br />
+                            <span className='companyInfo'>{t('footer.mst')}</span><br />
                             0304198513
                     </div>
                     </Row>
                     <Row className="copyright">
-                        <span>Copyright @ 2020 | vietchuyen.com</span>
+                        <span className='companyInfo'>Copyright @ 2020 | vietchuyen.com</span>
                     </Row>
                     <Row>
                         <div className="group">
