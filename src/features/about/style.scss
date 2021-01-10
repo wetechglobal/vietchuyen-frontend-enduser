@@ -257,7 +257,7 @@
     }
     .org-number {
         .row {
-            margin: 5% 25%;
+            margin: 5% 20%;
         }
         .blue {
             color: #0063b0;
@@ -276,6 +276,36 @@
         }
         .orange {
             color: #fc9017;
+        }
+        .col-sm-4 {
+            text-align: center;
+            padding: 3%;
+            &:hover{
+                color: white;
+                border-radius: 20px;
+            }
+            &.blue:hover{
+                background-color: #0063b0;
+            }
+            &.dark-orange:hover{
+                background-color: #f17f3c;
+            }
+            &.green:hover{
+                background-color: #84b381;
+            }
+            &.red:hover{
+                background-color: #d0343d;
+            }
+            &.light-blue:hover{
+                background-color: #2ca1b8;
+            }
+            &.orange:hover{
+                background-color: #fc9017;
+            }
+            &:hover .blue, &:hover .dark-orange, &:hover .green,
+            &:hover .red, &:hover .light-blue, &:hover .orange {
+                color: white;
+            }
         }
     }
     @media only screen and (min-device-width: 992px) and (max-device-width: 1520px) {

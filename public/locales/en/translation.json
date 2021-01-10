@@ -63,5 +63,27 @@
     "college": "University & College",
     "intermediate": "Intermediate / Technical",
     "otherLevel": "Other Levels"
+  },
+  "contact": {
+    "headQuarter": "Head Quarter",
+    "hdAddress": "302 Independence Building A, Tan Quy Ward, Tan Phu District, City. HCM City",
+    "supportCenter":"Agent system and technical support center",
+    "HN": "1. Technical support center and services in Ha Noi",
+    "HNname": "Representative office of Viet Chuyen SG Technology <br> Limited Company",
+    "HNadd" : "81, Alley 530 Thuy Khue Street, Buoi Ward, Tay Ho District, Ha Noi City",
+    "DN" : "2. Technical support center and services in Da Nang",
+    "DNname": "South Star Han River Star Service Limited Company",
+    "DNadd" : "185 Be Van Dan, Chinh Gian Ward, Thanh Khe District, Da Nang City",
+    "CT" : "3. Technical support center and services in Can Tho",
+    "CTname": "An Phat Minh Technology Company Limited",
+    "CTadd" : "E1 Street 56, KDC 586, Phu Thu Ward, Cai Rang District, Can Tho City",
+    "TV" : "4. Technical support center and services in Tra Vinh",
+    "TVname": "Equipment Maintenance and Repair Center Tra Vinh",
+    "TVadd" : "70 Hung Vuong, Ward 4, Tra Vinh City, Tra Vinh Province",
+    "contactNow" : "Contact",
+    "fullname": " Fullname ",
+    "content": "Required Content",
+    "submit": "SUBMIT"
+
   }
 }
