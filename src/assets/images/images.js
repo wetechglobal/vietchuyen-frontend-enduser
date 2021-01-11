@@ -60,7 +60,14 @@ const IMAGES = {
     EVN:evn,
     VIETBANK:vietbank,
     ROUNDED_STAR: rounded_star,
-    DOITAC: doitac
+    DOITAC: doitac,
+    SIX:six,
+    TEN:ten,
+    TWENTY:twenty,
+    SIXTYTHREE:sixtythree,
+    ONEHUNDRED:onehundred,
+    THREEHUNDRED:threehundred,
+
 }
 
 export default IMAGES;
