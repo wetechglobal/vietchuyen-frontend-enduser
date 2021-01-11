@@ -1,9 +1,10 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import  IMAGES from "assets/images/images";
+import { Row, Col,Card,CardGroup,CardDeck } from 'react-bootstrap';
+import './style.scss';
 
-// import './style.scss';
-
-const Marquee = (props) => {
+const Marquee1 = (props) => {
     // const { title, datas } = props;
     const responsive = {
         superLargeDesktop: {
@@ -26,9 +27,9 @@ const Marquee = (props) => {
     };
 
     return (
-        <div className="marquee">
+        <div className="">
             {/* <h1>{title}</h1> */}
-            <Carousel
+            <Carousel className="carousel-res-part2"
  swipeable={true}
  draggable={true}
  responsive={responsive}
@@ -36,7 +37,7 @@ const Marquee = (props) => {
  infinite={true}
  autoPlay={true}
  arrows={false}
- autoPlaySpeed={3000}
+ autoPlaySpeed={500}
  partialVisible={true}
  customTransition="transform 300ms ease-in-out"
  transitionDuration={500}
@@ -45,13 +46,111 @@ const Marquee = (props) => {
  dotListClass="custom-dot-list-style"
  minimumTouchDrag="50"
 >
-  {/* <div>Item 1</div>
-  <div>Item 2</div>
-  <div>Item 3</div>
-  <div>Item 4</div> */}
+<div className="general-content-part2">
+
+    <div className="card-part2">
+        <div className="mini-title">Điện lực</div>
+        <div className="background-img-part2">
+            <img className="card-img-part2"  src={IMAGES.EXIMBANK} alt="" />
+    </div>
+<Row>
+    <Col md={1} > 
+    </Col>
+    <Col className="header-content" md={11}>Chi Nhánh Tổng Công Ty Điện Lực Miền Nam Tnhh - Công Ty Thí Nghiệm Điện Miền Nam (Etc2)Cung cấp hệ thống camera giám sát cho TBA 110kV Cần Giuộc. 
+    </Col>
+</Row>
+<Row>
+    <Col md={2} > 
+    </Col>
+    <Col className="header-content-link" md={10}>Cung cấp hệ thống camera giám sát cho TBA 110kV Cần Giuộc. 
+    </Col>
+</Row>
+<Row>
+    <Col md={2} className="header-content-link"> 
+    </Col >
+    <Col className="header-content-link" md={10}>Cung cấp hàng kẹp và phụ kiện các loại cho tủ bảng điện.
+    </Col>
+</Row>
+       
+
+  
+
+
+    </div>
+</div>
+
+<div className="Ggeneral-content-part2">
+
+    <div className="card-part2">
+    <div className="mini-title-blue">Ngân hàng</div>
+        <div className="background-img-part2">
+            <img className="card-img-part2"  src={IMAGES.EXIMBANK} alt="" />
+        </div>
+  
+        <Row>
+    <Col md={1} > 
+    </Col>
+    <Col className="header-content" md={11}>Chi Nhánh Tổng Công Ty Điện Lực Miền Nam Tnhh - Công Ty Thí Nghiệm Điện Miền Nam (Etc2)Cung cấp hệ thống camera giám sát cho TBA 110kV Cần Giuộc. 
+    </Col>
+</Row>
+<Row>
+    <Col md={2} > 
+    </Col>
+    <Col className="header-content-link" md={10}>Cung cấp hệ thống camera giám sát cho TBA 110kV Cần Giuộc. 
+    </Col>
+</Row>
+<Row>
+    <Col md={2} className="header-content-link"> 
+    </Col >
+    <Col className="header-content-link" md={10}>Cung cấp hàng kẹp và phụ kiện các loại cho tủ bảng điện.
+    </Col>
+</Row>
+  
+
+
+    </div>
+</div>
+
+
+<div className="general-content-part2">
+
+    <div className="card-part2">
+    <div className="mini-title-blue">Điện lực</div>
+        <div className="background-img-part2">
+            <img className="card-img-part2"  src={IMAGES.EXIMBANK} alt="" />
+        </div>
+        <Row>
+    <Col md={1} > 
+    </Col>
+    <Col className="header-content" md={11}>Chi Nhánh Tổng Công Ty Điện Lực Miền Nam Tnhh - Công Ty Thí Nghiệm Điện Miền Nam (Etc2)Cung cấp hệ thống camera giám sát cho TBA 110kV Cần Giuộc. 
+    </Col>
+</Row>
+<Row>
+    <Col md={2} > 
+    </Col>
+    <Col className="header-content-link" md={10}>Cung cấp hệ thống camera giám sát cho TBA 110kV Cần Giuộc. 
+    </Col>
+</Row>
+<Row>
+    <Col md={2} className="header-content-link"> 
+    </Col >
+    <Col className="header-content-link" md={10}>Cung cấp hàng kẹp và phụ kiện các loại cho tủ bảng điện.
+    </Col>
+</Row>
+
+  
+
+
+    </div>
+</div>
+
+
+
+
+
 </Carousel>
         </div>
     )
 }
 
-export default Marquee
+export default Marquee1

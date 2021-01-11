@@ -13,7 +13,7 @@ import Solution1 from './Content-solution/index';
 // import Carousel from 'react-bootstrap/Carousel'
 import "react-multi-carousel/lib/styles.css";
 // import Module from '../home/components/module/module.jsx'
-const Solution = () => {
+const Solution1 = () => {
     // const { t } = useTranslation();
     const responsive = {
         desktop: {
@@ -37,25 +37,26 @@ const Solution = () => {
         <Row>
             <Col className="news">
                 {/* BANNER */}
-                <div className="news__banner_1st">
+                <div className="news__banner">
                     <img src={IMAGES.BANNERSOLUTION}/>
                 </div>
-
-<Col className="background">
-                
                 <Row className="latest-Solution1">
                     
-                    <Col md={8} className="title-solution">
-                        <p>Chúng Tôi Cung Cấp</p></Col>
+                    <Col className="title-solution">Chúng Tôi Cung Cấp</Col>
                   
+                    {/* <Row className="giaiphap"> */}
                         <Solution1 />
+                    {/* </Row> */}
                 </Row>
                 <div className="news__banner">
                     <img src={IMAGES.DOITAC}/>
                 </div>
-<Col className="container-part2">
+  
+                {/* <Module /> */}
+
+  
                     <Col md={12} className="title-solution-sd">Khách Hàng Tiêu Biểu</Col>
-                <Row className="latest-Solution">
+            <Row className="latest-Solution">
                 <Col md={12} className="detail-Solution" >
                             
                             <div className="detail-solution-content">
@@ -118,7 +119,7 @@ const Solution = () => {
 </Row>
   </div> 
   <Row className="content-icon">
-    <Col className="content-background-icon"  md={4} >
+    <Col className="content-background-icon"  md={4}>
     <img className="icon_1"  src={IMAGES.BIDV} alt="" />
     </Col>
     <Col className="content-background-icon"   md={4}>
@@ -246,7 +247,7 @@ const Solution = () => {
 </Row>
   </div> 
   <Row className="content-icon">
-    <Col className="content-background-icon"  md={4} >
+    <Col className="content-background-icon"  md={4}>
     <img className="icon_1"  src={IMAGES.BIDV} alt="" />
     </Col>
     <Col className="content-background-icon"   md={4}>
@@ -268,7 +269,7 @@ const Solution = () => {
 {/* <Row style=" padding-bottom: 40px;"> */}
 <Row className="tittle-part2">
   <Row className="latest-Solution">
-        <Col md={12} className="title-solution-sd-2nd">DỰ ÁN TIÊU BIỂU   
+        <Col md={12} className="title-solution">DỰ ÁN TIÊU BIỂU   
         </Col>
   </Row>  
 
@@ -298,24 +299,24 @@ const Solution = () => {
 <div className="general-content-part2">
 
     <div className="card-part2">
-        <div className="mini-title" >Điện lực</div>
+        <div className="mini-title">Điện lực</div>
         <div className="background-img-part2">
             <img className="card-img-part2"  src={IMAGES.EXIMBANK} alt="" />
     </div>
 <Row>
-<Col md={1} className="header-content-arrow">
+    <Col md={1} > 
     </Col>
     <Col className="header-content" md={11}>Chi Nhánh Tổng Công Ty Điện Lực Miền Nam Tnhh - Công Ty Thí Nghiệm Điện Miền Nam (Etc2)Cung cấp hệ thống camera giám sát cho TBA 110kV Cần Giuộc. 
     </Col>
 </Row>
 <Row>
-<Col md={2} className="header-content-arrow">> 
+    <Col md={2} > 
     </Col>
     <Col className="header-content-link" md={10}>Cung cấp hệ thống camera giám sát cho TBA 110kV Cần Giuộc. 
     </Col>
 </Row>
 <Row>
-    <Col md={2} className="header-content-arrow">> 
+    <Col md={2} className="header-content-link"> 
     </Col >
     <Col className="header-content-link" md={10}>Cung cấp hàng kẹp và phụ kiện các loại cho tủ bảng điện.
     </Col>
@@ -343,15 +344,15 @@ const Solution = () => {
     </Col>
 </Row>
 <Row>
-    <Col md={2} className="header-content-arrow">>
+    <Col md={2} > 
     </Col>
     <Col className="header-content-link" md={10}>Cung cấp hệ thống camera giám sát cho TBA 110kV Cần Giuộc. 
     </Col>
 </Row>
 <Row>
-    <Col md={2} className="header-content-arrow">>
+    <Col md={2} className="header-content-link"> 
     </Col >
-    <Col href="#" className="header-content-link" md={10}>Cung cấp hàng kẹp và phụ kiện các loại cho tủ bảng điện.
+    <Col className="header-content-link" md={10}>Cung cấp hàng kẹp và phụ kiện các loại cho tủ bảng điện.
     </Col>
 </Row>
   
@@ -369,19 +370,19 @@ const Solution = () => {
             <img className="card-img-part2"  src={IMAGES.EXIMBANK} alt="" />
         </div>
         <Row>
-        <Col md={1} className="header-content-arrow">
+    <Col md={1} > 
     </Col>
     <Col className="header-content" md={11}>Chi Nhánh Tổng Công Ty Điện Lực Miền Nam Tnhh - Công Ty Thí Nghiệm Điện Miền Nam (Etc2)Cung cấp hệ thống camera giám sát cho TBA 110kV Cần Giuộc. 
     </Col>
 </Row>
 <Row>
-<Col md={2} className="header-content-arrow">> 
+    <Col md={2} > 
     </Col>
     <Col className="header-content-link" md={10}>Cung cấp hệ thống camera giám sát cho TBA 110kV Cần Giuộc. 
     </Col>
 </Row>
 <Row>
-<Col md={2} className="header-content-arrow">> 
+    <Col md={2} className="header-content-link"> 
     </Col >
     <Col className="header-content-link" md={10}>Cung cấp hàng kẹp và phụ kiện các loại cho tủ bảng điện.
     </Col>
@@ -399,11 +400,8 @@ const Solution = () => {
 
 </Carousel>
 </Col>
+</Col>
 
-
-</Col>
-</Col>
-</Col>
 
 
 
@@ -414,4 +412,4 @@ const Solution = () => {
 
     );
 }
-export default Solution
+export default Solution1

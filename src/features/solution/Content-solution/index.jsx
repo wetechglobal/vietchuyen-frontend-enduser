@@ -148,11 +148,11 @@ const Solution1 = () => {
         <div className="diamond-group">
             <div className="title">
                 {/* <h1>GIẢI PHÁP - SẢN PHẨM</h1> */}
-                <div className="timhieu">
+                {/* <div className="timhieu">
                     <ThreeVerticalLine borderLeft="5px solid white"/>
                     <a href="/solution">TÌM HIỂU</a>
                     <ThreeVerticalLine borderLeft="5px solid white"/>
-                </div>
+                </div> */}
             </div>
             {rows}
         </div>
