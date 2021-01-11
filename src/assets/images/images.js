@@ -23,6 +23,14 @@ import twenty from 'assets/images/20+.png';
 import sixtythree from 'assets/images/63+.png';
 import onehundred from 'assets/images/100+.png';
 import threehundred from 'assets/images/300+.png';
+import giaiphapsanpham from 'assets/images/giaiphap-sanpham.png';
+import congan from 'assets/images/congan.png';
+import dienluc from 'assets/images/dienluc.png';
+import bidv from 'assets/images/client-logo/BIDV.png';
+import acb from 'assets/images/client-logo/ACB.png';
+import eximbank from 'assets/images/client-logo/EXIMBANK.png';
+import evn from 'assets/images/client-logo/EVN.png';
+import vietbank from 'assets/images/client-logo/VIETBANK.png';
 import rounded_star from 'assets/images/rounded_star.png';
 import doitac from 'assets/images/doitac.png';
 
@@ -42,8 +50,22 @@ const IMAGES = {
     CORE_VALUE: coreValue,
     BANNER: imgNewsPage,
     DEFAULT_TECHNEWS: defaultTechNews,
+    BANNERSOLUTION: giaiphapsanpham,
+    CONGAN: congan,
+    DIENLUC: dienluc,
+    BIDV:bidv,
+    ACB:acb,
+    EXIMBANK:eximbank,
+    EVN:evn,
+    VIETBANK:vietbank,
     ROUNDED_STAR: rounded_star,
-    DOITAC: doitac
+    DOITAC: doitac,
+    SIX:six,
+    TEN:ten,
+    TWENTY:twenty,
+    SIXTYTHREE:sixtythree,
+    ONEHUNDRED:onehundred,
+    THREEHUNDRED:threehundred
 }
 
 export default IMAGES;
