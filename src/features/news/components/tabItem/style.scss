@@ -1,0 +1,21 @@
+.news__tab {
+    display: flex;
+    align-items: center;
+}
+
+.news__tab span {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.news__tab--active span {
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+
+.news__tab:not(:last-child) {
+    justify-content: flex-end;
+}

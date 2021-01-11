@@ -13,16 +13,8 @@ import vision from './tamnhin.png';
 import coreValue from './giatricotloi.png';
 
 import bg from 'assets/images/BG_footer.png';
-import logo from 'assets/icons/logoamban.svg';
-
-import truso from 'assets/icons/truso.svg';
-import dienthoai from 'assets/icons/dienthoai.svg';
-import fax from 'assets/icons/FAX.svg';
-import giayphepkinhdoanh from 'assets/icons/giayphepkinhdoanh.svg';
-import masothue from 'assets/icons/masothue.svg';
-
 import bgmodule from 'assets/images/bgmodule.png';
-import bgvongtron from 'assets/images/vongtronthemanh.png';
+import bgvongtron from 'assets/images/vongtron.png';
 import linedoc from 'assets/images/line.png';
 
 import six from 'assets/images/6+.png';
@@ -32,16 +24,16 @@ import sixtythree from 'assets/images/63+.png';
 import onehundred from 'assets/images/100+.png';
 import threehundred from 'assets/images/300+.png';
 
-import giaiphapsanpham from 'assets/images/giaiphap-sanpham.png'
-import doitac from 'assets/images/doitac.png'
-import congan from 'assets/images/congan.png'
-import dienluc from 'assets/images/dienluc.png'
-
-import bidv from 'assets/images/client-logo/BIDV.png'
-import acb from 'assets/images/client-logo/ACB.png'
-import eximbank from 'assets/images/client-logo/EXIMBANK.png'
-import evn from 'assets/images/client-logo/EVN.png'
-import vietbank from 'assets/images/client-logo/VIETBANK.png'
+import giaiphapsanpham from 'assets/images/giaiphap-sanpham.png';
+import congan from 'assets/images/congan.png';
+import dienluc from 'assets/images/dienluc.png';
+import bidv from 'assets/images/client-logo/BIDV.png';
+import acb from 'assets/images/client-logo/ACB.png';
+import eximbank from 'assets/images/client-logo/EXIMBANK.png';
+import evn from 'assets/images/client-logo/EVN.png';
+import vietbank from 'assets/images/client-logo/VIETBANK.png';
+import rounded_star from 'assets/images/rounded_star.png';
+import doitac from 'assets/images/doitac.png';
 
 const IMAGES = {
     SLIDER1: slider1,
@@ -50,21 +42,9 @@ const IMAGES = {
     SLIDER4: slider4,
     DEFAULT_NEWS: defaultNews,
     BG: bg,
-    LOGO: logo,
-    TRUSO: truso,
-    DIENTHOAI: dienthoai,
-    FAX: fax,
-    GPKD: giayphepkinhdoanh,
-    MST: masothue,
     BGMODULE: bgmodule,
     BGVONGTRON: bgvongtron,
     LINEDOC: linedoc,
-    SIX: six,
-    TEN: ten,
-    TWENTY: twenty,
-    SIXTYTHREE: sixtythree,
-    ONEDUNDRED: onehundred,
-    THREEHUNDRED: threehundred,
     BG_ABOUT_VC: aboutVC,
     MISSION: mission,
     VISION: vision,
@@ -72,14 +52,15 @@ const IMAGES = {
     BANNER: imgNewsPage,
     DEFAULT_TECHNEWS: defaultTechNews,
     BANNERSOLUTION: giaiphapsanpham,
-    DOITAC: doitac,
     CONGAN: congan,
     DIENLUC: dienluc,
     BIDV:bidv,
     ACB:acb,
     EXIMBANK:eximbank,
     EVN:evn,
-    VIETBANK:vietbank
+    VIETBANK:vietbank,
+    ROUNDED_STAR: rounded_star,
+    DOITAC: doitac
 }
 
 export default IMAGES;
