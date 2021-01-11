@@ -23,7 +23,6 @@ import twenty from 'assets/images/20+.png';
 import sixtythree from 'assets/images/63+.png';
 import onehundred from 'assets/images/100+.png';
 import threehundred from 'assets/images/300+.png';
-
 import giaiphapsanpham from 'assets/images/giaiphap-sanpham.png';
 import congan from 'assets/images/congan.png';
 import dienluc from 'assets/images/dienluc.png';
@@ -66,8 +65,7 @@ const IMAGES = {
     TWENTY:twenty,
     SIXTYTHREE:sixtythree,
     ONEHUNDRED:onehundred,
-    THREEHUNDRED:threehundred,
-
+    THREEHUNDRED:threehundred
 }
 
 export default IMAGES;
