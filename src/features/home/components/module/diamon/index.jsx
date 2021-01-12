@@ -12,7 +12,8 @@ const Diamond = (props) => {
                     padding: '20px 20px',
                     color: 'black',
                     borderRadius: 10,
-                    width: 400
+                    width: 400,
+                    boxShadow: '1px 2px 10px'
                 }}>
                     <h4 style={{ color: '#0063B0', fontWeight: 'bold', }}>{title}</h4>
                     <span>{contain}</span>
