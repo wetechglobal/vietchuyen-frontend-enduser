@@ -7,83 +7,115 @@ const Solution = () => {
     const DIAMOND = [
         {
             src: ICONS.SREEN,
-            title: 'Hệ thống màn hình ghép',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống màn hình ghép',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.MEET,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.CAMERA,
-            title: 'Hệ thống thiết bị camera an ninh',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống thiết bị camera an ninh',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.POWER,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.VETINH,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.NET,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.FIRE,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.PRINT,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.CAM,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.SET,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.UPS,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.ME,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.PAC,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.BTS,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.ATM,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         },
         {
             src: ICONS.STRUC,
-            title: 'Hệ thống hôi nghị trực tuyến',
-            contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: 'Hệ thống hôi nghị trực tuyến',
+            provider: 'Hệ thống màn hình ghép',
+            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
+            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         }
     ];
 
@@ -93,7 +125,8 @@ const Solution = () => {
 
     for (index; index < DIAMOND.length; index++) {
 
-        cols.push(<Diamond key={index} contain={DIAMOND[index].contain} src={DIAMOND[index].src} title={DIAMOND[index].title} bgColor='white'/>)
+        cols.push(<Diamond key={index} name={DIAMOND[index].name} provider={DIAMOND[index].provider}
+            property={DIAMOND[index].property} benefit={DIAMOND[index].benefit} src={DIAMOND[index].src} name={DIAMOND[index].name} bgColor='white'/>)
 
         if (index === 1) {
             rows.push(
@@ -146,7 +179,7 @@ const Solution = () => {
     }
     return (
         <div className="diamond-group">
-            <div className="title">
+            <div className="name">
                 <h1>GIẢI PHÁP - SẢN PHẨM</h1>
                 <div className="timhieu">
                     <ThreeVerticalLine borderLeft="5px solid white"/>
