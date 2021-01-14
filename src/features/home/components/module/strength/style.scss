@@ -173,6 +173,11 @@
 
         .num {
             font-size: 60px;
+            bottom: 20px;
+        }
+
+        .group:hover .num{
+            bottom: 50px;
         }
     }
 }

@@ -29,7 +29,6 @@ const TheFooter = () => {
                         <h4>{t('footer.companyName')}</h4>
                     </Row>
                     <Row>
-                        <div className="img"><img src={IMAGES.TRUSO} alt=""/></div>
                         <div className="img"><img src={ICONS.TRUSO} alt="" /></div>
                         <div>
                             <span className='companyInfo'>{t('footer.addr')}</span><br />
