@@ -197,10 +197,6 @@
       background-color: #0063b0;
     }
     @media screen and (max-width: 1560px) {
-      .fix-wrapper-3::before {
-        left: calc(17% + 35px);
-        width: calc(51% + 3px);
-      }
       .arrowRight .fa-chevron-right {
         left: 95% !important;
       }
@@ -330,6 +326,10 @@
         border-radius: 19px;
         font-size: 15px;
       }
+      .fix-wrapper-3::before {
+        left: calc(17% + 35px);
+        width: calc(51% + -6px)
+    }
     }
     .offset-md-1 {
       margin-left: 8.33333%;
@@ -338,11 +338,10 @@
     .col-md-5 {
       flex: 0 0 41.66667%;
       max-width: 41.66667%;
-      left: 9px;
     }
     .tree-map .arrowRight::after {
-      left: calc(100% + 29px);
-      width: 74px !important;
+        left: calc(100% + 19px);
+        width: 64px !important;
     }
-  }
+  } 
 }
