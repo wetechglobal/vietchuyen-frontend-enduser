@@ -1,121 +1,123 @@
-import Diamond from '../diamon/index';
+import Diamond from '../../../../../common/diamon/index';
 import ICONS from 'assets/icons/icons';
-import ThreeVerticalLine from '../../verticalLine/index';
+import { useTranslation } from 'react-i18next';
+import ThreeVerticalLine from '../../../../../common/verticalLine/index';
 import './style.scss';
 
 const Solution = () => {
+    const { t } = useTranslation();
     const DIAMOND = [
         {
             src: ICONS.SREEN,
-            name: 'Hệ thống màn hình ghép',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.sreenName'),
+            provider: t('diamond.sreenProvider'),
+            property: t('diamond.sreenProperty'),
+            benefit: t('diamond.sreenBenefit')
         },
         {
             src: ICONS.MEET,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.meetName'),
+            provider: t('diamond.meetProvider'),
+            property: t('diamond.meetProperty'),
+            benefit: t('diamond.meetBenefit')
         },
         {
             src: ICONS.CAMERA,
-            name: 'Hệ thống thiết bị camera an ninh',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.cameraName'),
+            provider: t('diamond.cameraProvider'),
+            property: t('diamond.cameraProperty'),
+            benefit: t('diamond.cameraBenefit')
         },
         {
             src: ICONS.POWER,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.powerName'),
+            provider: t('diamond.powerProvider'),
+            property: t('diamond.powerProperty'),
+            benefit: t('diamond.powerBenefit')
         },
         {
             src: ICONS.VETINH,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.vetinhName'),
+            provider: t('diamond.vetinhProvider'),
+            property: t('diamond.vetinhProperty'),
+            benefit: t('diamond.vetinhBenefit')
         },
         {
             src: ICONS.NET,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.netName'),
+            provider: t('diamond.netProvider'),
+            property: t('diamond.netProperty'),
+            benefit: t('diamond.netBenefit')
         },
         {
             src: ICONS.FIRE,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.fireName'),
+            provider: t('diamond.fireProvider'),
+            property: t('diamond.fireProperty'),
+            benefit: t('diamond.fireBenefit')
         },
         {
             src: ICONS.PRINT,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.printName'),
+            provider: t('diamond.printProvider'),
+            property: t('diamond.printProperty'),
+            benefit: t('diamond.printBenefit')
         },
         {
             src: ICONS.CAM,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.camName'),
+            provider: t('diamond.camProvider'),
+            property: t('diamond.camProperty'),
+            benefit: t('diamond.camBenefit')
         },
         {
             src: ICONS.SET,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.setName'),
+            provider: t('diamond.setProvider'),
+            property: t('diamond.setProperty'),
+            benefit: t('diamond.setBenefit')
         },
         {
             src: ICONS.UPS,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.upsName'),
+            provider: t('diamond.upsProvider'),
+            property: t('diamond.upsProperty'),
+            benefit: t('diamond.upsBenefit')
         },
         {
             src: ICONS.ME,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.meName'),
+            provider: t('diamond.meProvider'),
+            property: t('diamond.meProperty'),
+            benefit: t('diamond.meBenefit')
         },
         {
             src: ICONS.PAC,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.pacName'),
+            provider: t('diamond.pacProvider'),
+            property: t('diamond.pacProperty'),
+            benefit: t('diamond.pacBenefit')
         },
         {
             src: ICONS.BTS,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.btsName'),
+            provider: t('diamond.btsProvider'),
+            property: t('diamond.btsProperty'),
+            benefit: t('diamond.btsBenefit')
         },
         {
             src: ICONS.ATM,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.atmName'),
+            provider: t('diamond.atmProvider'),
+            property: t('diamond.atmProperty'),
+            benefit: t('diamond.atmBenefit')
         },
         {
             src: ICONS.STRUC,
-            name: 'Hệ thống hôi nghị trực tuyến',
-            provider: 'Hệ thống màn hình ghép',
-            property: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...',
-            benefit: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
+            name: t('diamond.strucName'),
+            provider: t('diamond.strucProvider'),
+            property: t('diamond.strucProperty'),
+            benefit: t('diamond.strucBenefit')
         }
     ];
 
@@ -180,10 +182,10 @@ const Solution = () => {
     return (
         <div className="diamond-group">
             <div className="name">
-                <h1>GIẢI PHÁP - SẢN PHẨM</h1>
+                <h1>{t('diamond.product')}</h1>
                 <div className="timhieu">
                     <ThreeVerticalLine borderLeft="5px solid white"/>
-                    <a href="/solution">TÌM HIỂU</a>
+                    <a href="/solution">{t('diamond.research')}</a>
                     <ThreeVerticalLine borderLeft="5px solid white"/>
                 </div>
             </div>

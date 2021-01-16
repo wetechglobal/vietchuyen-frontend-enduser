@@ -59,11 +59,20 @@ const TheFooter = () => {
                         </div>
                     </Row>
                     <Row>
-                        <div className="img"><img src={ICONS.MST} alt="" /></div>
-                        <div>
-                            <span className='companyInfo'>{t('footer.mst')}</span><br />
-                            0304198513
-                    </div>
+                        <div className="inrow">
+                            <div className="img"><img src={ICONS.MST} alt="" /></div>
+                            <div>
+                                <span className='companyInfo'>{t('footer.mst')}</span><br />
+                                0304198513
+                            </div>
+                        </div>
+                        <div className="inrow">
+                            <div className="img"><img src={ICONS.FAX} alt="" /></div>
+                            <div>
+                                <span className='companyInfo'>Email</span><br />
+                                info@vietchuyen.vn
+                            </div>
+                        </div>
                     </Row>
                     <Row className="copyright">
                         <span className='companyInfo'>Copyright @ 2020 | vietchuyen.com</span>

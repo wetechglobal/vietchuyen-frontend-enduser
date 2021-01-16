@@ -1,5 +1,5 @@
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import "common/marquee/node_modules/react-multi-carousel/lib/styles.css";
 import  IMAGES from "assets/images/images";
 import { Row, Col,Card,CardGroup,CardDeck } from 'react-bootstrap';
 import './style.scss';

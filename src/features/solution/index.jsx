@@ -6,7 +6,6 @@ import 'react-multi-carousel/lib/styles.css';
 import React from "react";
 import IMAGES from "assets/images/images";
 import Solution1 from './Content-solution/index';
-import "react-multi-carousel/lib/styles.css";
 // import { useTranslation } from 'react-i18next';
 // import Carousel from 'react-bootstrap/Carousel'
 // import Module from '../home/components/module/module.jsx'

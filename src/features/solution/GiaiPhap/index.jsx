@@ -4,14 +4,14 @@ import './style.scss';
 import Marquee1 from './component/marquee';
 // import { useTranslation } from 'react-i18next';
 import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import 'common/marquee/node_modules/react-multi-carousel/lib/styles.css';
 import React from "react";
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage,
 MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from "mdbreact";
 import  IMAGES from "assets/images/images";
 import Solution1 from './Content-solution/index';
 // import Carousel from 'react-bootstrap/Carousel'
-import "react-multi-carousel/lib/styles.css";
+import "common/marquee/node_modules/react-multi-carousel/lib/styles.css";
 // import Module from '../home/components/module/module.jsx'
 const Solution1 = () => {
     // const { t } = useTranslation();
