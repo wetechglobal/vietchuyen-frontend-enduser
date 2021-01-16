@@ -20,14 +20,14 @@
         }
     }
 
-    .title {
+    .name {
         text-align: center;
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 3.4rem;
             font-weight: 700;
             text-shadow: 1px 1px 10px;
-            width: 320px;
+            width: 330px;
             margin: auto;
         }
 
@@ -41,7 +41,6 @@
             a {
                 margin: auto;
                 font-weight: 700;
-                text-shadow: 1px 1px 10px;
                 transition: all 0.2s;
                 position: absolute;
                 left: 0;
@@ -63,7 +62,7 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1398px){
     .diamond-group {
-        .title {
+        .name {
             h1 {
                 font-size: 2.5rem;
             }

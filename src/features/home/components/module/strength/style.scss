@@ -98,7 +98,7 @@
         top: 0;
         left: 15%;
         right: 0;
-        bottom: 0;
+        bottom: 60px;
         width: fit-content;
         height: 100%;
         margin: auto;
@@ -109,12 +109,11 @@
     }
 
     .group:hover .num{
-        bottom: 30px;
+        bottom: 90px;
     }
 
     span {
         font-weight: 500;
-        text-shadow: 0 1px 8px;
         font-size: small;
         line-height: 1.5;
         text-align: justify;
@@ -174,6 +173,11 @@
 
         .num {
             font-size: 60px;
+            bottom: 20px;
+        }
+
+        .group:hover .num{
+            bottom: 50px;
         }
     }
 }

@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import IMAGES from 'assets/images/images';
 import { Row, Col } from 'react-bootstrap';
 import './style.scss';
-import CountUp from '../../countup';
+import CountUp from '../../../../../common/countup';
 
 const Strength = () => {
 

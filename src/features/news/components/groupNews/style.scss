@@ -1,0 +1,97 @@
+$red-color: #e50019;
+
+.box-col {
+    display: flex;
+
+    .box {
+        width: 359px;
+        float: left;
+        margin: 10px;
+
+        .box-top {
+            position: relative;
+
+            .news-line {
+                width: 400px;
+                height: 312px;
+
+                .line {
+                    fill: transparent;
+                    stroke: $red-color;
+                    stroke-width: 2;
+                }
+                
+                .blue {
+                    stroke: #0063b0;
+                }
+            }
+
+            .box-thumbnail {
+                position: absolute;
+                width: 358px;
+                height: 285px;
+            }
+            
+            .pattern-img {
+                position: absolute;
+            }
+
+            .text {
+                color: $red-color;
+                font-weight: bold;
+                position: absolute;
+                bottom: 4px;
+                left: 0px;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            
+            .circle {
+                position: absolute;
+                bottom: 0px;
+                left: 108px;
+            }
+        }
+
+        .box-date {
+            span {
+                background-color: #f5f5f5;
+                font-size: 11px;
+                border-radius: 5px;
+                padding: 2px 5px;
+                color: #ccc;
+            }
+        }
+
+        .box-label {
+            font-size: 22px;
+
+            .nav-link {
+                padding: unset;
+            }
+
+            a:hover {
+                text-decoration: underline !important;
+            }
+        }
+    }
+}
+
+.box-col:nth-child(1), .box-col:nth-child(4) {
+    justify-content: flex-start;
+}
+
+.box-col:nth-child(2), .box-col:nth-child(5) {
+    justify-content: center;
+}
+
+.box-col:nth-child(3), .box-col:nth-child(6) {
+    justify-content: flex-end;
+}
+
+//
+@media screen and (max-width : 768px) {
+    .box-col {
+        justify-content: center;
+    }
+}
