@@ -1,0 +1,179 @@
+.box {
+    width: 359px;
+    float: left;
+    margin: 10px;
+
+    .box-top {
+        position: relative;
+
+        .figure {
+            width: 100%;
+
+            .figure-img {
+                width: 100%;
+            }
+
+            .thumnail::before {
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                border-left: 90px solid transparent;
+                border-bottom: 90px solid #fff;
+            }
+
+            .thumnail.red::before {
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                border-left: 80px solid transparent;
+                border-bottom: 80px solid #fff;
+            }
+
+            .text-highlight {
+                position: absolute;
+                right: 10px;
+                bottom: 35px;
+                transform: rotate(-45deg);
+                color: #fff;
+                display: none;
+            }
+
+            .text-highlight.highlight {
+                display: block;
+            }
+
+            .line {
+                position: absolute;
+                bottom: 3px;
+                right: 0;
+                
+                &.red {
+                    width: 55%;
+                }
+                &.blue {
+                    width: 65%;
+                }
+                &.highlight {
+                    width: 65%;
+                }
+            }
+        }
+
+        .box-thumbnail {
+            position: absolute;
+            width: 358px;
+            height: 285px;
+        }
+
+        .pattern-img {
+            position: absolute;
+        }
+
+        .news-line {
+            width: 400px;
+            height: 312px;
+
+            .line {
+                fill: transparent;
+                stroke: #E50019;
+                stroke-width: 2;
+            }
+        }
+
+        .circle {
+            position: absolute;
+            bottom: 0px;
+            left: 108px;
+        }
+
+        .text {
+            font-weight: bold;
+            position: absolute;
+            bottom: 4px;
+            left: 0px;
+            font-size: 12px;
+            text-transform: uppercase;
+        
+            &.blue {
+                color: #0063b0;
+            }
+            &.red {
+                color: #E50019;
+            }
+        }
+    }
+
+    .box-date span {
+        background-color: #f5f5f5;
+        font-size: 11px;
+        border-radius: 5px;
+        padding: 2px 5px;
+        color: #ccc;
+    }
+
+    .box-lable {
+        font-size: 22px;
+
+        .nav-link {
+            padding: unset;
+        }
+        
+        a:hover {
+            text-decoration: underline !important;
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px){
+    .box {    
+        .box-top {
+            .figure {
+                .line.blue {
+                    width: 75%;
+                }
+
+                .line.red {
+                    width: 65%;
+                }
+
+                .thumnail::before {
+                    border-left: 135px solid transparent;
+                    border-bottom: 135px solid #fff;
+                }
+    
+                .thumnail.red::before {
+                    border-left: 120px solid transparent;
+                    border-bottom: 120px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1367px) {
+    .box {    
+        .box-top {
+            .figure {
+                .line.blue {
+                    width: 80%;
+                }
+
+                .line.red {
+                    width: 75%;
+                }
+
+                .thumnail::before {
+                    border-left: 200px solid transparent;
+                    border-bottom: 200px solid #fff;
+                }
+    
+                .thumnail.red::before {
+                    border-left: 190px solid transparent;
+                    border-bottom: 190px solid #fff;
+                }
+            }
+        }
+    }
+}

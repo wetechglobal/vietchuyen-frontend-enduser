@@ -8,7 +8,7 @@ import IMAGES from 'assets/images/images';
 import PARTNER from 'assets/images/partner-logo/partner'
 import CLIENT from 'assets/images/client-logo/client'
 import './style.scss';
-import Marquee from './components/marquee';
+import Marquee from '../../common/marquee';
 const Home = () => {
     const { t } = useTranslation();
     const partner = [

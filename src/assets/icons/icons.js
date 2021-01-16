@@ -23,6 +23,11 @@ import atm from 'assets/icons/mayATM.svg';
 import struc from 'assets/icons/capcautruc.svg';
 import orgChart from './sodococautochuc.svg';
 import orgStruct from './cocautochuc.svg';
+import email from './email.svg';
+import linedo from './linedo.svg';
+import linexanh from './linexanh.svg';
+import linenoibat from './linenoibat.svg';
+
 
 const ICONS = {
     TOP: top,
@@ -49,7 +54,11 @@ const ICONS = {
     ATM: atm,
     STRUC: struc,
     ORG_CHART: orgChart,
-    ORG_STRUCT: orgStruct
+    ORG_STRUCT: orgStruct,
+    EMAIL: email,
+    REDLINE: linedo,
+    BLUELINE: linexanh,
+    HIGHLIGHTLINE: linenoibat
 }
 
 export default ICONS;

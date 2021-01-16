@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 import parse from 'html-react-parser';
 import './familyTree.scss';
 import './style.scss';
-import CountUp from '../home/components/countup/index'
+import CountUp from '../../common/countup/index'
 
 const About = () => {
     const { t } = useTranslation();

@@ -1,10 +1,12 @@
 import { OverlayTrigger, Button } from 'react-bootstrap';
 import React, { useState } from "react";
+import parse from 'html-react-parser';
+import { useTranslation } from 'react-i18next';
 import './style.scss';
 
 const Diamond = (props) => {
     const {name, provider, property, benefit, src, bgColor, hidden} = props;
-    const [show, setShow] = useState(false);
+    const { t } = useTranslation();
 
     return (
         <OverlayTrigger className="tooltip" key="top" trigger="click" placement="top"
@@ -23,14 +25,14 @@ const Diamond = (props) => {
                     <span>{property}</span><br/><br/>
                     <span>{benefit}</span><br/><br/>
                     <Button variant="primary" size="lg" active>
-                        LIÊN HỆ BÁO GIÁ
+                        {t('diamond.btnQuote')}
                     </Button>
                 </div>
             }>
             <div className="item" style={{backgroundColor: bgColor, visibility : hidden}}>
                 <div className="content">
                     <img src={src} alt="" />
-                    <span className="title">{name}</span>
+                    <span className="title">{parse(name)}</span>
                 </div>
             </div>
         </OverlayTrigger>
