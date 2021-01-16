@@ -14,6 +14,14 @@
         font-weight: bold;
         text-transform: uppercase;
     }
+    .offset-2 {
+        margin-left: 16.66667%;
+        margin-top: 10%;
+        .col-3 {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
     .contain-about::before {
         content: "";
         position: absolute;
