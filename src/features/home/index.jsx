@@ -49,8 +49,8 @@ const Home = () => {
                 </Row>
                 <Module />
                 <img className="shakehands" src={IMAGES.DOITAC} width="100%" alt=""/>
-                <Marquee title="ĐỐI TÁC" datas={partner}/>
-                <Marquee title="KHÁCH HÀNG" datas={client}/>
+                <Marquee title={t('news.partner')} datas={partner}/>
+                <Marquee title={t('news.client')} datas={client}/>
             </Col>
         </Row>
     );
