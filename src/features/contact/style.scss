@@ -170,17 +170,6 @@
         border-radius: 13px;
         opacity: 1;
     }
-    .placeholder {
-        position: absolute;
-        left: 105px;
-        top: 25px;
-        background-color: #f5f5f7;
-        padding: 0 20px;
-    }
-    .BG-input:focus ~ .placeholder,
-    .BG-input:valid ~ .placeholder {
-        display: none;
-    }
 
     @media only screen and (min-device-width: 992px) and (max-device-width: 1520px) {
         .trusochinh {
@@ -260,6 +249,16 @@
     
         }
 
+    }
+
+      .placeholder {
+        position: absolute;
+        left: 106px;
+        top: auto;
+        background-color: #f5f5f7;
+        padding: 0 20px;
+        bottom: 106px;
+        color: gray;      
     }
 }
 
