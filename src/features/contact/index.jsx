@@ -93,7 +93,7 @@ const Contact = () => {
 
                                 <Row>
                                     <Col className='dienthoai'>
-                                        <img src={dienthoai} className='img-dienthoai' alt="" style={{ marginLeft: '25px' }} /> ((028) 3963 7678
+                                        <img src={dienthoai} className='img-dienthoai' alt="" style={{ marginLeft: '25px' }} /> 0911 538 999
                             </Col>
                                 </Row>
 
@@ -159,7 +159,7 @@ const Contact = () => {
                                     </Col>
 
                                     <Col className='fax' md={6}>
-                                        <img src={fax} className='img-dienthoai' alt="" /> Fax: 00292 3737 980
+                                        <img src={fax} className='img-dienthoai' alt="" /> Fax:  0292 3737 980
                                     </Col>
                                 </Row>
 
@@ -258,11 +258,11 @@ const Contact = () => {
                                             <img src={noidungyeucau} className='noidungyeucau' alt="" />
                                         </InputGroup.Text>
                                     </InputGroup.Prepend>
-                                    <FormControl className='BG-input' style={{ height: '155px' }} required
-                                        placeholder={t('contact.content')}
-                                        aria-label="email"
+                                    <FormControl className='BG-input' style={{ height: '155px', borderTopRightRadius: '13px', borderBottomRightRadius: '13px' }} required
+                                        aria-label="text"
                                         aria-describedby="basic-addon1"
                                     />
+                                    <span className="placeholder">{t('contact.content')}</span>
                                 </InputGroup>
                             </Col>
                         </Row>
