@@ -2,6 +2,7 @@ import { OverlayTrigger, Button } from 'react-bootstrap';
 import React, { useState } from "react";
 import parse from 'html-react-parser';
 import { useTranslation } from 'react-i18next';
+import { HashLink } from 'react-router-hash-link';
 import './style.scss';
 
 const Diamond = (props) => {
@@ -24,9 +25,9 @@ const Diamond = (props) => {
                     <hr/>
                     <span>{property}</span><br/><br/>
                     <span>{benefit}</span><br/><br/>
-                    <Button variant="primary" size="lg" active>
+                    <HashLink to="/contact#contact"><Button variant="primary" size="lg" active>
                         {t('diamond.btnQuote')}
-                    </Button>
+                    </Button></HashLink>
                 </div>
             }>
             <div className="item" style={{backgroundColor: bgColor, visibility : hidden}}>
