@@ -6,6 +6,13 @@
     "news": "Tin Tức",
     "contact": "Liên Hệ"
   },
+  "Solution":{
+    "title":"Chúng Tôi Cung Cấp",
+    "solutioncontent":"Hiện nay Việt Chuyên SG được nhìn nhận là công ty phân phối sản phẩm và giải pháp về cấu trúc hạ tầng mạng CNTT - VT chuyên nghiệp và các giải pháp công nghệ tiên tiến, các sản phẩm nguồn cho hạ tầng trung tâm cơ sở dữ liệu data center, hệ thống quản trị tòa nhà thông minh, Viễn thông – BTS,….",
+    "solutioncontentsd":" Với kinh nghiệm tham gia vào nhiều dự án lớn tiêu biểu trong tất cả lĩnh vực, bao gồm: Chính phủ, Tài chính-Ngân hàng, Dầu khí, Cao ốc thương mại, Giáo dục, Cơ điện và Viễn thông…. cùng sự tín nhiệm cao của nhiều khách hàng, Việt Chuyên SG cam kết đáp ứng đầy đủ các sản phẩm và giải pháp tiên tiến nhất hiện nay theo xu hướng phát triển chung của Việt Nam, đặc biệt trong ngành Viễn thông - Công nghệ Thông tin.",
+    "police":"CÔNG AN",
+    "bank":"Ngân Hàng"
+  },
   "news": {
     "latestNews": "Tin Tức mới nhất",
     "eventType": "Tin sự kiện",
