@@ -1,10 +1,11 @@
-.diamond-group {
+.diamond-group-solution {
     position: absolute;
-    top: 55%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
+    width:100%;
     display: block;
 
     .group {
@@ -12,7 +13,7 @@
         justify-content: center;
 
         &--three{
-            justify-content: space-around;
+            justify-content: space-evenly;
         }
         
         &--four{
@@ -62,7 +63,8 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1398px){
-    .diamond-group {
+    .diamond-group-solution {
+        top: 55%;
         .title {
             h1 {
                 font-size: 2.5rem;

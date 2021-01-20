@@ -5,7 +5,7 @@ const Diamond2 = (props) => {
     const {contain, src, title, bgColor, hidden} = props;
 
     return (
-        <OverlayTrigger className="tooltip" key="top" placement="top"
+        <OverlayTrigger className="tooltip-diamond" key="top" placement="top"
             overlay={
                 <div style={{
                     backgroundColor: 'white',
@@ -18,10 +18,10 @@ const Diamond2 = (props) => {
                     <span>{contain}</span>
                 </div>
             }>
-            <div className="item" style={{backgroundColor: bgColor, visibility : hidden}}>
-                <div className="content">
+            <div className="item-diamond" style={{backgroundColor: bgColor, visibility : hidden}}>
+                <div className="content-diamond">
                     <img src={src} alt="" />
-                    <span className="title">{title}</span>
+                    <span className="title-diamond">{title}</span>
                 </div>
             </div>
         </OverlayTrigger>

@@ -1,9 +1,9 @@
 import Diamond2 from '../diamond/index';
+import Diamond from '../../../../src/common/diamon/';
 import ICONS from '../../../assets/icons/icons';
-import ThreeVerticalLine from '../verticalLine/index';
 import './style.scss';
 
-const Solution1 = () => {
+const Solutiondiamond = (props) => {
     const DIAMOND = [
         {
             src: ICONS.SREEN,
@@ -86,11 +86,10 @@ const Solution1 = () => {
             contain: 'Giải pháp hội nghị truyền hình hay họp trực tuyến là hệ thống thiết bị (bao gồm cả phần cứng và phần mềm) hỗ trợ truyền tải hình ảnh và âm thanh...'
         }
     ];
-
+    const {i} = props;
     let rows = [], cols = []
     let index = 0, int = 0
     let four = true;
-
     for (index; index < DIAMOND.length; index++) {
 
         cols.push(<Diamond2 key={index} contain={DIAMOND[index].contain} src={DIAMOND[index].src} title={DIAMOND[index].title} bgColor='#F5F5F5'/>)
@@ -117,8 +116,9 @@ const Solution1 = () => {
             four = false
             continue
         }
+        
 
-        if (four === false && (int + 1) % 3 === 0) {
+        if (four === false && (int + 1) % i === 0) {
             rows.push(
                 <div className="group" key={index}>
                     {cols}
@@ -145,7 +145,7 @@ const Solution1 = () => {
         int++;
     }
     return (
-        <div className="diamond-group">
+        <div className="diamond-group-solution">
             <div className="title">
                 {/* <h1>GIẢI PHÁP - SẢN PHẨM</h1> */}
                 {/* <div className="timhieu">
@@ -159,4 +159,4 @@ const Solution1 = () => {
     )
 }
 
-export default Solution1
+export default Solutiondiamond
