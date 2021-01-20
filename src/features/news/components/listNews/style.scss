@@ -1,0 +1,85 @@
+.news__col {
+    .box-group {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 55px;
+
+        .box {
+            .box-top {
+                .thumnail.highlight {
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 100%;
+
+                    img {
+                        display: block;
+                        transition: transform .4s;   /* smoother zoom */
+                    }
+                }
+
+                .thumnail.highlight:hover {
+                    img{
+                        transform: scale(1.05);
+                        transform-origin: 50% 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px){
+    .news__col {
+        .box {    
+            .box-top {
+                .figure {
+                    .line.blue {
+                        width: 60%;
+                    }
+    
+                    .line.red {
+                        width: 60%;
+                    }
+    
+                    .thumnail::before {
+                        border-left: 110px solid transparent;
+                        border-bottom: 110px solid #fff;
+                    }
+        
+                    .thumnail.red::before {
+                        border-left: 110px solid transparent;
+                        border-bottom: 110px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1367px) {
+    .news__col {
+        .box {    
+            .box-top {
+                .figure {
+                    .line.blue {
+                        width: 55%;
+                    }
+    
+                    .line.red {
+                        width: 55%;
+                    }
+    
+                    .thumnail::before {
+                        border-left: 110px solid transparent;
+                        border-bottom: 110px solid #fff;
+                    }
+        
+                    .thumnail.red::before {
+                        border-left: 110px solid transparent;
+                        border-bottom: 110px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}

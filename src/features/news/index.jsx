@@ -1,24 +1,24 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useState, useEffect } from "react";
 import { Col, Row, Image } from 'react-bootstrap';
-import GroupNews from './components/groupNews/index';
 import TabItem from './components/tabItem/index';
-import GroupNewsHighlight from './components/groupNewsHighlight/index';
-// import IMAGES from "assets/images/images";
-import IMAGES from "../../assets/images/images";
-import DATA_NEWS from './data/data_news';
-import dataHightlight from './data/data_news_highlight';
+import HighlightNews from './components/highlightNews/index';
+import ListNews from './components/listNews/index';
+import IMAGES from "assets/images/images";
+import dataNews from './data/dataNews';
+import dataHighlight from './data/dataHighlight';
 import './style.scss';
-// import { useTranslation } from 'react-i18next';
 
 const dataTabs = [{id: 1, title: 'Tin tức sự kiện'}, {id: 2, title: 'Tin tức công nghệ'}];
 
 const News = () => {
     const [dataType, setDataType] = useState(1);
-    const [dataNews, setDataNews] = useState([]);
+    const [newsData, setNewsData] = useState([]);
+    const [newsHighlightData, setNewsHighlightData] = useState([]);
 
     useEffect(() => {
-        setDataNews(DATA_NEWS.filter(x => x.type === dataType));
+        setNewsData(dataNews.filter(x => x.typeId === dataType));
+        setNewsHighlightData(dataHighlight.filter(x => x.typeId === dataType));
     }, [dataType]);
 
     return (    
@@ -28,9 +28,7 @@ const News = () => {
                 <Image src={IMAGES.BANNER} className="news__banner--image"/>
             </Row>
 
-            {/* --- LIST --- */}
-            <Col>
-                {/* --- TABS --- */}
+            <Col className="news__col">
                 <div className="news__row news__header">
                 { 
                     dataTabs.map(({id,title}) => <TabItem 
@@ -42,13 +40,10 @@ const News = () => {
                 }
                 </div>
 
-                <div className="news__row news__highlight">
-                   <GroupNewsHighlight data={dataHightlight}/>
-                </div>
-
-                <div className="news__row news__list">
-                    { dataNews && <GroupNews data={dataNews}/> }
-                </div>
+                <Row>
+                    <HighlightNews data={newsHighlightData}/>
+                    <ListNews data={newsData}/>
+                </Row>
 
                 <div className="news__row news__footer">
                     <span>XEM THÊM<br/>TIN TỨC</span>
