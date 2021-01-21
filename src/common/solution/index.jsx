@@ -1,7 +1,7 @@
-import Diamond from '../../../../../common/diamon/index';
+import Diamond from '../diamon/index';
 import ICONS from 'assets/icons/icons';
 import { useTranslation } from 'react-i18next';
-import ThreeVerticalLine from '../../../../../common/verticalLine/index';
+import ThreeVerticalLine from '../verticalLine/index';
 import './style.scss';
 
 const Solution = () => {

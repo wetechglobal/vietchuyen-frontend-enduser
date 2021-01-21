@@ -202,7 +202,7 @@ const Contact = () => {
                     </Row>
                 </Col>
             </Row>
-            <Row >
+            <Row id="contact">
                 <Col md={5}>
                     <Row style={{ marginTop: '100px' }}>
                         <Col md={{ span: 5, offset: 7 }} >

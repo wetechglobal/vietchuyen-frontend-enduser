@@ -1,7 +1,7 @@
 import IMAGES from 'assets/images/images';
 import { Container, Figure, Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import Solution from './solution/index';
+import Solution from '../../../../common/solution/index';
 import Strength from './strength/index';
 import parse from 'html-react-parser';
 import ThreeVerticalLine from '../../../../common/verticalLine/index'
