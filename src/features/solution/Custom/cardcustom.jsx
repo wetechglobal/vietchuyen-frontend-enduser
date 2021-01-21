@@ -5,15 +5,8 @@ import IMAGES from "assets/images/images";
 import CLIENT from 'assets/images/client-logo/client';
 const CardCustom = (props) => {
     const { colorbg, cardimg, linecolor, cardcontent, clientcustom, totalnumber, countnumber } = props
-    const dienluc = [
-        { dienluc: CLIENT.ACB },
-        { dienluc: CLIENT.BIDV },
-        { dienluc: CLIENT.CAVN },
-        { dienluc: CLIENT.ACB },
-        { dienluc: CLIENT.BIDV },
-        { dienluc: CLIENT.CAVN },
-    ]
     return (
+        <div className="Ccardcustom">
         <div className="card" style={{ backgroundImage: colorbg }}>
             <div className={cardimg}></div>
             <div className="card-content">{cardcontent}</div>
@@ -36,12 +29,12 @@ const CardCustom = (props) => {
                 </Row>
             </div>
             <Row className="content-icon">
-                {/*  */}
-                {dienluc.map((item, idx) =>
+                {clientcustom.map((item, idx) =>
                     <Col className="content-background-icon" md={3} >
-                        <img className="icon_1" key={idx} src={item.dienluc} alt="" />
+                        <img className="icon_1" key={idx} src={item} alt="" />
                     </Col>)}
             </Row>
+        </div>
         </div>
     )
 }

@@ -1,5 +1,8 @@
 import IMAGES from "assets/images/images";
+import { useTranslation } from 'react-i18next';
+
 const khTieubieu = [
+  
     {
       "title": "TÀI CHÍNH NGÂN HÀNG",
       "countProject": "6+",
@@ -9,13 +12,13 @@ const khTieubieu = [
       "cardimg":[
         "card-img2"
       ],
-      "dsLogo": [
-        "../../../assets/images/client-logo/ACB.png",
-        "../../../assets/images/client-logo/BIDV.png",
-        "../../../assets/images/client-logo/CA_VN.png",
-        "../../../assets/images/client-logo/ACB.png",
-        "../../../assets/images/client-logo/BIDV.png",
-        "../../../assets/images/client-logo/ACB.png"
+      dsLogo: [
+        IMAGES.EXIMBANK,
+        IMAGES.ACB,
+        IMAGES.EVN,
+        IMAGES.EXIMBANK,
+        IMAGES.ACB,
+        IMAGES.EVN,
       ]
     },
     {
@@ -27,12 +30,12 @@ const khTieubieu = [
       "cardimg":[
         "card-img"
       ],
-      "dsLogo": [
-        "../../../assets/images/client-logo/ACB.png",
-        "../../../assets/images/client-logo/BIDV.png",
-        "../../../assets/images/client-logo/CA_VN.png",
-        "../../../assets/images/client-logo/ACB.png",
-        "../../../assets/images/client-logo/BIDV.png"
+      dsLogo: [
+        IMAGES.EXIMBANK,
+        IMAGES.ACB,
+        IMAGES.EVN,
+        IMAGES.EXIMBANK,
+        IMAGES.ACB,
       ]
     },
     {
@@ -42,12 +45,10 @@ const khTieubieu = [
       "color":["linear-gradient(#0063B0, #008CF8)"],
       "linecolor":["numb"],
       "cardimg":["card-img2"],
-      "dsLogo": [
-        "../../../assets/images/client-logo/ACB.png",
-        "../../../assets/images/client-logo/BIDV.png",
-        "../../../assets/images/client-logo/CA_VN.png",
-        "../../../assets/images/client-logo/ACB.png",
-        "../../../assets/images/client-logo/BIDV.png"
+      dsLogo: [
+        IMAGES.EXIMBANK,
+        IMAGES.ACB,
+        IMAGES.EVN,
       ]
     },
     {
@@ -59,12 +60,12 @@ const khTieubieu = [
           "card-img1"
         ],
         "tonggiatridautu": "21+",
-        "dsLogo": [
-          "../../../assets/images/client-logo/ACB.png",
-          "../../../assets/images/client-logo/BIDV.png",
-          "../../../assets/images/client-logo/CA_VN.png",
-          "../../../assets/images/client-logo/ACB.png",
-          "../../../assets/images/client-logo/BIDV.png"
+        dsLogo: [
+          IMAGES.EXIMBANK,
+          IMAGES.ACB,
+          IMAGES.EVN,
+          IMAGES.ACB,
+          IMAGES.BIDV,
         ]
       }
   ]

@@ -8,7 +8,8 @@ import Solutiondiamond from './Content-solution/index';
 import { useTranslation } from 'react-i18next';
 import Carouselcustom from './Custom/carouselcustom'
 import CarouselcustomProject from './Custom/carouselcustomProject'
-const Solution = () => {
+// import Solution from '../../../src/common/solution/index';
+const SolutionPage = () => {
     const { t } = useTranslation();
     return (
         <Row className="Page-Solution">
@@ -23,10 +24,10 @@ const Solution = () => {
                             <p>{t('Solution.title')}</p></Col>
                         <Solutiondiamond i='5' />
                     </Row>
-                    <div className="news__banner">
+                    <div className="news__banner_2nd">
                         <img src={IMAGES.DOITAC} alt="" /></div>
                     <Col className="container-part2">
-                        <Col md={12} className="title-solution-sd">Khách Hàng Tiêu Biểu</Col>
+                        <Col md={12} className="title-solution-sd">{t('Solution.titlecustomer')}</Col>
                         <Row className="latest-Solution">
                             <Col md={12} className="detail-Solution" >
                                 <div className="detail-solution-content">
@@ -39,7 +40,7 @@ const Solution = () => {
                         <Col className="general-content-part2">
                             <Row className="tittle-part2">
                                 <Row className="latest-Solution">
-                                    <Col md={12} className="title-solution-sd-2nd">DỰ ÁN TIÊU BIỂU</Col>
+                                    <Col md={12} className="title-solution-sd-2nd">{t('Solution.titleproject')}</Col>
                                 </Row>
                             </Row>
                             <CarouselcustomProject />
@@ -50,4 +51,4 @@ const Solution = () => {
         </Row>
     );
 }
-export default Solution
+export default SolutionPage
