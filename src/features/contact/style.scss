@@ -1,4 +1,8 @@
 .contact {
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+      }
     .title {
         background-image: url("../../assets/images/lienhe.png");
         background-image: cover;
@@ -8,9 +12,18 @@
         min-height: 470px;
     }
     .title-img {
-        margin-top: 50px;
+        height: 450px;
         width: 100%;
-    }
+        position: fixed;
+        z-index: 0;
+      }
+
+    .background {
+        position: relative;
+        padding-bottom: 300px;
+        z-index: 1;
+        top: 450px;
+      }
     .trusochinh {
         margin-left: 10px;
         top: 557px;
