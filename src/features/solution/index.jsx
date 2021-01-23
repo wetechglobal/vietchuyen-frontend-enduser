@@ -8,7 +8,7 @@ import Solutiondiamond from './Content-solution/index';
 import { useTranslation } from 'react-i18next';
 import Carouselcustom from './Custom/carouselcustom'
 import CarouselcustomProject from './Custom/carouselcustomProject'
-// import Solution from '../../../src/common/solution/index';
+import Solution from '../../../src/common/solution/index';
 const SolutionPage = () => {
     const { t } = useTranslation();
     return (
@@ -21,8 +21,10 @@ const SolutionPage = () => {
                 <Col className="background-solution">
                     <Row className="latest-Solution1">
                         <Col md={8} className="title-solution">
-                            <p>{t('Solution.title')}</p></Col>
-                        <Solutiondiamond i='5' />
+                            <p>{t('Solution.title')}</p>
+                            </Col>
+                        {/* <Solution className="title-banner-solution" diamondresearch={t('Solution.title')} backgroundcolor='#F5F5F5'/> */}
+                        <Solution backgroundcolor='#F5F5F5'/>
                     </Row>
                     <div className="news__banner_2nd">
                         <img src={IMAGES.DOITAC} alt="" /></div>
