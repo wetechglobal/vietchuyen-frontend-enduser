@@ -43,7 +43,7 @@ const Carouselcustom = (props) => {
         minimumTouchDrag="50"
         >
 
-       {khTieubieu.map((item, idx) => <CardCustom cardcontent={item.title} linecolor={item.linecolor} cardimg={item.cardimg}colorbg={item.color}/>)}
+       {khTieubieu.map((item, idx) => <CardCustom clientcustom={item.dsLogo}  cardcontent={item.title} linecolor={item.linecolor} cardimg={item.cardimg}colorbg={item.color}/>)}
         
     </Carousel> 
     )
