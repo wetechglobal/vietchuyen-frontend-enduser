@@ -4,7 +4,7 @@ import './style.scss';
 import 'react-multi-carousel/lib/styles.css';
 import React from "react";
 import IMAGES from "assets/images/images";
-import Solutiondiamond from './Content-solution/index';
+// import Solutiondiamond from './Content-solution/index';
 import { useTranslation } from 'react-i18next';
 import Carouselcustom from './Custom/carouselcustom'
 import CarouselcustomProject from './Custom/carouselcustomProject'
