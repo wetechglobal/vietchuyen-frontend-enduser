@@ -1,0 +1,62 @@
+.contact {
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+   
+    .info-box {
+        border: 2px solid #efefef;
+        border-radius: 12px;
+        width: 699px;
+        height: 300px;
+        margin-top: 25px;
+    }
+
+    .img-phone {
+        width: 36px;
+        &--hidden{
+            visibility: hidden;
+        }
+    }
+    .phone {
+        font-weight: bolder;
+        color: #e60000;
+        font-size: 23px;
+    }
+    .fax {
+        font-weight: bolder;
+        color: #0063b0;
+        font-size: 23px;
+        &--hidden{
+            visibility: hidden;
+        }
+    }
+
+    .agent-name {
+        text-align: left;
+        // font: normal normal normal 40px/54px SVN-Gotham;
+        color: #1d1d1f;
+        margin-left: 20px;
+        text-align: left;
+        letter-spacing: -1.6px;
+        opacity: 1;
+        font-size: 40px;
+        font-weight: 600;
+        &--hidden{
+            visibility: hidden;
+        }
+    }
+
+    .office-name {
+        color: #0063b0;
+        margin-left: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        &--hidden{
+            visibility: hidden;
+        }
+        padding-top: 10px;
+    }
+
+    
+}

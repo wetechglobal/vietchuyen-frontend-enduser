@@ -33,6 +33,7 @@ import evn from 'assets/images/client-logo/EVN.png';
 import vietbank from 'assets/images/client-logo/VIETBANK.png';
 import rounded_star from 'assets/images/rounded_star.png';
 import doitac from 'assets/images/doitac.png';
+import contactImg from 'assets/images/lienhe.png';
 
 const IMAGES = {
     SLIDER1: slider1,
@@ -65,7 +66,8 @@ const IMAGES = {
     TWENTY:twenty,
     SIXTYTHREE:sixtythree,
     ONEHUNDRED:onehundred,
-    THREEHUNDRED:threehundred
+    THREEHUNDRED:threehundred,
+    CONTACTIMG: contactImg
 }
 
 export default IMAGES;
