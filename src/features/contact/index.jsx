@@ -1,228 +1,70 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 
 import { Row, Col, Form, Button, InputGroup, FormControl } from 'react-bootstrap';
-import title from 'assets/images/lienhe.png';
-import header from 'assets/icons/trusochinh.svg';
-import dienthoai from 'assets/icons/dienthoai.svg'
-import fax from 'assets/icons/FAXxanh.svg';
-import muitenxam from 'assets/icons/muitenxam.svg';
-import hethongdaily from 'assets/icons/hethongdaily.svg';
-import lienhengay from 'assets/icons/lienhengay.svg';
-import hovaten from 'assets/icons/hoten.svg'
-import email from 'assets/icons/email.svg'
-import noidungyeucau from 'assets/icons/noidungyeucau.svg'
 import './style.scss';
 import { useTranslation } from 'react-i18next';
 import parse from 'html-react-parser';
+import ContactIcon from './contact-icon/index';
+import ContactBox from './contact-box/index';
+import ICONS from 'assets/icons/icons';
+import IMAGES from 'assets/images/images';
 const Contact = () => {
     const { t } = useTranslation();
     return (
         <div className="contact">
-            <Row>
-                <Col>
-                    <div>
-                        <img src={title} className='title-img' alt="" />
-                    </div>
-                </Col>
-            </Row>
+            <div >
+                <img src={IMAGES.CONTACTIMG} className='title-img' />
+            </div>
+
             <div className="background">
-            <Row>
-                <Col xl={5} lg={5} md={5}>
-                    <Row style={{ marginTop: '100px' }}>
-                        <Col xl={{ span: 5, offset: 7 }} lg={{ span: 8, offset: 5 }} md={{ span: 10, offset: 1 }}>
-                            <img src={header} className='trusochinh' alt="" />
-                            <p className='text-truso'>
-                                {t('contact.headQuarter')}
-                                <img src={muitenxam} className='muitenxam' alt="" />
-                            </p>
-                        </Col>
-                    </Row>
-                </Col>
-                <Col xl={6} lg={7} md={7}>
-                    <div className='infoborder'>
-                        <Row className='diachi' >
-                            <Col >
-                                {parse(t('contact.hdAddress'))}
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col className='dienthoai' md={5} >
-                                <img src={dienthoai} className='img-dienthoai' alt="" /> (028) 3963 7678
+                <Row style={{ marginTop: '50px' }}>
+                    <Col lg={5}>
+                        <ContactIcon src={ICONS.HEADOFFICE} title={t('contact.headQuarter')} arrow={ICONS.GREYARROW}></ContactIcon>
                     </Col>
-                            <Col className='fax' md={6}>
-                                <img src={fax} className='img-dienthoai' alt="" /> Fax: (028) 3963 7679
-                        </Col>
-                        </Row>
+                    <Col lg={6}>
+                        <ContactBox addressStyle = 'header-address'
+                            address={t('contact.hdAddress')} phone='0292 3918 118' fax='Fax: (028) 3963 7679' hidden='hidden'>
+                        </ContactBox>
+                    </Col>
+                </Row>
 
-                    </div>
+                <Row style={{ marginTop: '100px' }}>
+                    <Col lg={5}>
+                        <ContactIcon  src={ICONS.AGENTSYSTEM} title={t('contact.supportCenter')} arrow={ICONS.GREYARROW}></ContactIcon>
+                    </Col>
+                    <Col lg={6}>
+                        <ContactBox title={parse(t('contact.HN'))} addressStyle = 'address' companyName={parse(t('contact.HNname'))}
+                            address={t('contact.CTadd')} phone='(028) 3963 7678' hidden='hidden'
+                        >
+                        </ContactBox>
+                        <ContactBox title={parse(t('contact.DN'))} addressStyle = 'address' companyName={t('contact.DNname')}
+                            address={t('contact.DNadd')} phone='0511 3679 222' icon={ICONS.FAXXANH} fax='Fax: 0511 3679 224'
+                        >
+                        </ContactBox>
+                        <ContactBox title={parse(t('contact.CT'))}  addressStyle = 'address' companyName={t('contact.CTname')}
+                            address={t('contact.CTadd')} phone='0292 3918 118' icon={ICONS.FAXXANH} fax='Fax: 0292 3737 980'
+                        >
+                        </ContactBox>
+                        <ContactBox title={parse(t('contact.TV'))}  addressStyle = 'address' companyName={parse(t('contact.TVname'))}
+                            address={t('contact.TVadd')} phone='(074) 3 855 777' icon={ICONS.FAXXANH} fax='Fax: (074) 3 853 444'
+                        >
+                        </ContactBox>
+                    </Col>
+                </Row>
 
-                </Col>
-            </Row>
-            <Row style={{ marginTop: '100px' }}>
-                <Col xl={5} lg={5} md={5}>
-                    <Row style={{ marginTop: '100px' }}>
-                        <Col xl={{ span: 5, offset: 7 }} lg={{ span: 8, offset: 5 }} md={{ span: 10, offset: 1 }} style={{ marginTop: '300px' }} >
-                            <img src={hethongdaily} className='dailyhethongicon' alt="daily-hethong" />
+                <Row style={{ marginTop: '100px' }}>
+                    <Col lg={5}>
+                        <ContactIcon src={ICONS.CONTACTNOW}  arrow={ICONS.GREYARROW} title={t('contact.contactNow')}></ContactIcon>
+                    </Col>
+                    <Col lg={6}>
 
-                            <p className='text-truso' >
-                                {t('contact.supportCenter')}
-                                <img src={muitenxam} className='muitenxam' alt="muiten-xam" />
-                            </p>
-                        </Col>
-                    </Row>
-                </Col>
-                <Col xl={6} lg={7} md={7}>
-                    <Row>
-                        <Col md={12} >
-                            <div className='border-HN'>
-                                <Row className='dailyhethongtext'>
-                                    <Col >
-                                        {parse(t('contact.HN'))}
-                                    </Col>
-                                </Row>
-                                <Row className='vanphongtext' >
-                                    <Col >
-                                        {parse(t('contact.HNname'))}
-                                    </Col>
-                                </Row>
-
-                                <Row className='diachitext' >
-                                    <Col >
-                                        {t('contact.HNadd')}
-                                    </Col>
-                                </Row>
-
-                                <Row>
-                                    <Col className='dienthoai'>
-                                        <img src={dienthoai} className='img-dienthoai' alt="" style={{ marginLeft: '25px' }} /> 0911 538 999
-                            </Col>
-                                </Row>
-
-                            </div>
-
-                        </Col>
-
-                        <Col md={12} >
-                            <div className='border-DN'>
-                                <Row className='dailyhethongtext'>
-                                    <Col >
-                                        {parse(t('contact.DN'))}
-                                    </Col>
-                                </Row>
-                                <Row className='vanphongtext' >
-                                    <Col >
-                                        {t('contact.DNname')}
-                                    </Col>
-                                </Row>
-
-                                <Row className='diachitext' >
-                                    <Col >
-                                        {t('contact.DNadd')}
-                                    </Col>
-                                </Row>
-
-                                <Row>
-                                    <Col className='dienthoai' md={6}>
-                                        <img src={dienthoai} className='img-dienthoai' alt="" style={{ marginLeft: '25px' }} /> 0511 3679 222
-                                    </Col>
-
-                                    <Col className='fax' md={6}>
-                                        <img src={fax} className='img-dienthoai' alt="" /> Fax: 0511 3679 224
-                                    </Col>
-                                </Row>
-
-                            </div>
-
-                        </Col>
-
-                        <Col md={12} >
-                            <div className='border-DN'>
-                                <Row className='dailyhethongtext'>
-                                    <Col >
-                                        {parse(t('contact.CT'))}
-                                    </Col>
-                                </Row>
-                                <Row className='vanphongtext' >
-                                    <Col >
-                                        {t('contact.CTname')}
-                                    </Col>
-                                </Row>
-
-                                <Row className='diachitext' >
-                                    <Col >
-                                        {t('contact.CTadd')}
-                                    </Col>
-                                </Row>
-
-                                <Row>
-                                    <Col className='dienthoai' md={6}>
-                                        <img src={dienthoai} className='img-dienthoai' alt="" style={{ marginLeft: '25px' }} /> 0292 3918 118
-                                    </Col>
-
-                                    <Col className='fax' md={6}>
-                                        <img src={fax} className='img-dienthoai' alt="" /> Fax:  0292 3737 980
-                                    </Col>
-                                </Row>
-
-                            </div>
-
-                        </Col>
-
-                        <Col md={12} >
-                            <div className='border-HN'>
-                                <Row className='dailyhethongtext'>
-                                    <Col >
-                                        {parse(t('contact.TV'))}
-                                    </Col>
-                                </Row>
-                                <Row className='vanphongtext' >
-                                    <Col >
-                                        {parse(t('contact.TVname'))}
-                                    </Col>
-                                </Row>
-
-                                <Row className='diachitext' >
-                                    <Col >
-                                        {t('contact.TVadd')}
-                                    </Col>
-                                </Row>
-
-                                <Row>
-                                    <Col className='dienthoai' md={6}>
-                                        <img src={dienthoai} className='img-dienthoai' alt="" style={{ marginLeft: '25px' }} /> (074) 3 855 777
-                                    </Col>
-
-                                    <Col className='fax' md={6}>
-                                        <img src={fax} className='img-dienthoai' alt="" /> Fax: (074) 3 853 444
-                                    </Col>
-                                </Row>
-
-                            </div>
-
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
-            <Row >
-                <Col md={5}>
-                    <Row style={{ marginTop: '100px' }}>
-                        <Col md={{ span: 5, offset: 7 }} >
-                            <img src={lienhengay} className='lienhengay' alt="" />
-                            <p className='text-truso'>
-                                {t('contact.contactNow')}
-                                <img src={muitenxam} className='muitenxam' alt="" />
-                            </p>
-                        </Col>
-                    </Row>
-                </Col>
-                <Col md={4} style={{ marginTop: '100px' }}>
                     <Form>
                         <Row >
                             <Col >
                                 <InputGroup className="mb-3 ">
                                     <InputGroup.Prepend>
                                         <InputGroup.Text id="exampleInputFullName" className='BG-hoten ' >
-                                            <img src={hovaten} className='hoten' alt="" />
+                                            <img src={ICONS.FULLNAME} className='hoten' alt="" />
                                         </InputGroup.Text>
                                     </InputGroup.Prepend>
                                     <FormControl className='BG-input' required
@@ -239,7 +81,7 @@ const Contact = () => {
                                 <InputGroup className="mb-3 form-group">
                                     <InputGroup.Prepend>
                                         <InputGroup.Text id="basic-addon1" className='BG-hoten' >
-                                            <img src={email} className='email' alt="" />
+                                            <img src={ICONS.EMAIL} className='email' alt="" />
                                         </InputGroup.Text>
                                     </InputGroup.Prepend>
                                     <FormControl className='BG-input' required
@@ -256,7 +98,7 @@ const Contact = () => {
                                 <InputGroup className="mb-3">
                                     <InputGroup.Prepend>
                                         <InputGroup.Text id="basic-addon1" className='BG-hoten' style={{ height: '155px' }}>
-                                            <img src={noidungyeucau} className='noidungyeucau' alt="" />
+                                            <img src={ICONS.REQUESTCONTENT} className='noidungyeucau' alt="" />
                                         </InputGroup.Text>
                                     </InputGroup.Prepend>
                                     <FormControl className='BG-input' style={{ height: '155px', borderTopRightRadius: '13px', borderBottomRightRadius: '13px' }} required
@@ -275,9 +117,9 @@ const Contact = () => {
                             </Col>
                         </Row>
                     </Form>
-                </Col>
-            </Row>
-        </div>
+                    </Col>
+                </Row>
+            </div>
         </div>
     );
 }

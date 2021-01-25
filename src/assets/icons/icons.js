@@ -1,8 +1,10 @@
 import top from 'assets/icons/topscroll.svg';
 import logo from 'assets/icons/logoamban.svg';
 import truso from 'assets/icons/truso.svg';
+import trusochinh from 'assets/icons/trusochinh.svg';
 import dienthoai from 'assets/icons/dienthoai.svg';
 import fax from 'assets/icons/FAX.svg';
+import faxXanh from 'assets/icons/FAXxanh.svg';
 import giayphepkinhdoanh from 'assets/icons/giayphepkinhdoanh.svg';
 import masothue from 'assets/icons/masothue.svg';
 import sreen from 'assets/icons/manhinhghep.svg';
@@ -27,6 +29,11 @@ import email from './email.svg';
 import linedo from './linedo.svg';
 import linexanh from './linexanh.svg';
 import linenoibat from './linenoibat.svg';
+import greyArrow from './muitenxam.svg'
+import agentSystem from 'assets/icons/hethongdaily.svg';
+import lienhengay from 'assets/icons/lienhengay.svg';
+import hovaten from 'assets/icons/hoten.svg';
+import noidungyeucau from 'assets/icons/noidungyeucau.svg'
 
 
 const ICONS = {
@@ -35,6 +42,7 @@ const ICONS = {
     TRUSO: truso,
     DIENTHOAI: dienthoai,
     FAX: fax,
+    FAXXANH: faxXanh,
     GPKD: giayphepkinhdoanh,
     MST: masothue,
     SREEN: sreen,
@@ -58,7 +66,13 @@ const ICONS = {
     EMAIL: email,
     REDLINE: linedo,
     BLUELINE: linexanh,
-    HIGHLIGHTLINE: linenoibat
+    HIGHLIGHTLINE: linenoibat,
+    HEADOFFICE: trusochinh,
+    GREYARROW: greyArrow,
+    AGENTSYSTEM: agentSystem,
+    CONTACTNOW: lienhengay,
+    FULLNAME: hovaten,
+    REQUESTCONTENT: noidungyeucau
 }
 
 export default ICONS;
