@@ -5,7 +5,7 @@ import ThreeVerticalLine from '../verticalLine/index';
 import './style.scss';
 
 const Solution = (props) => {
-    const {backgroundcolor,diamondtitle,diamondresearch,timhieu} = props;
+    const {backgroundcolor,diamondtitle,diamondresearch,timhieu,hiddensolution} = props;
     const { t } = useTranslation();
     const DIAMOND = [
         {
@@ -186,7 +186,7 @@ const Solution = (props) => {
                 {/* <h1>{t('diamond.product')}</h1> */}
                 <h1>{diamondtitle}</h1>
                 {/* <div className="timhieu"> */}
-                <div className={timhieu}>
+                <div className='timhieu' style={{visibility : hiddensolution}}>
                     <ThreeVerticalLine borderLeft="5px solid white"/>
                     {/* <a href="/solution">{t('diamond.research')}</a> */}
                     <a href="/solution">{diamondresearch}</a>
