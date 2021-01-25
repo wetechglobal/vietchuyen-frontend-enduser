@@ -25,6 +25,7 @@ const Contact = () => {
                     </div>
                 </Col>
             </Row>
+            <div className="background">
             <Row>
                 <Col xl={5} lg={5} md={5}>
                     <Row style={{ marginTop: '100px' }}>
@@ -202,7 +203,7 @@ const Contact = () => {
                     </Row>
                 </Col>
             </Row>
-            <Row id="contact">
+            <Row >
                 <Col md={5}>
                     <Row style={{ marginTop: '100px' }}>
                         <Col md={{ span: 5, offset: 7 }} >
@@ -276,6 +277,7 @@ const Contact = () => {
                     </Form>
                 </Col>
             </Row>
+        </div>
         </div>
     );
 }
