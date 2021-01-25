@@ -4,7 +4,7 @@ import './style.scss';
 import 'react-multi-carousel/lib/styles.css';
 import React from "react";
 import IMAGES from "assets/images/images";
-import Solutiondiamond from './Content-solution/index';
+// import Solutiondiamond from './Content-solution/index';
 import { useTranslation } from 'react-i18next';
 import Carouselcustom from './Custom/carouselcustom'
 import CarouselcustomProject from './Custom/carouselcustomProject'
@@ -24,7 +24,8 @@ const SolutionPage = () => {
                             <p>{t('Solution.title')}</p>
                             </Col>
                         {/* <Solution className="title-banner-solution" diamondresearch={t('Solution.title')} backgroundcolor='#F5F5F5'/> */}
-                        <Solution backgroundcolor='#F5F5F5'/>
+                        <Solution hiddensolution='hidden' backgroundcolor='#F5F5F5'/>
+                        {/* <Solution backgroundcolor='#F5F5F5'/> */}
                     </Row>
                     <div className="news__banner_2nd">
                         <img src={IMAGES.DOITAC} alt="" /></div>
