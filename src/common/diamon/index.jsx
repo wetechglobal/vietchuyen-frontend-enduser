@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import parse from 'html-react-parser';
 import { useTranslation } from 'react-i18next';
 import { HashLink } from 'react-router-hash-link';
+import ICONS from 'assets/icons/icons';
 import './style.scss';
 
 const Diamond = (props) => {
@@ -18,13 +19,26 @@ const Diamond = (props) => {
                     color: 'black',
                     borderRadius: 10,
                     width: 500,
-                    boxShadow: '1px 2px 10px'
+                    boxShadow: '1px 2px 10px',
+                    zIndex: 2
                 }}>
-                    <h4 style={{ color: '#0063B0', fontWeight: 'bold', }}>{name}</h4>
-                    <h5 style={{ color: 'red', fontWeight: 'bold', textTransform: 'uppercase'}}>{provider}</h5>
+                    <h3 style={{ color: '#0063B0', fontWeight: 'bold', }}>{name}</h3>
+                    <h6 style={{ color: 'red', fontWeight: 'bold', textTransform: 'uppercase'}}>{provider}</h6>
+                    <div>
+                        <div>
+                            <img src={ICONS.BULLET} alt="" width="15" />
+                            <span style={{ color: '#0063B0', fontWeight: 'bold', lineHeight : 2, marginLeft: 5}}>{t('diamond.character')}</span>
+                        </div>
+                        <div style={{ marginLeft: 20}}>{property}</div>
+                    </div>
                     <hr/>
-                    <span>{property}</span><br/><br/>
-                    <span>{benefit}</span><br/><br/>
+                    <div>
+                        <div>
+                            <img src={ICONS.BULLET} alt="" width="15" />
+                            <span style={{ color: '#0063B0', fontWeight: 'bold', lineHeight : 2, marginLeft: 5}}>{t('diamond.benefit')}</span>
+                        </div>
+                        <div style={{ marginLeft: 20}}>{benefit}</div><br/>
+                    </div>
                     <HashLink to="/contact#contact"><Button variant="primary" size="lg" active>
                         {t('diamond.btnQuote')}
                     </Button></HashLink>

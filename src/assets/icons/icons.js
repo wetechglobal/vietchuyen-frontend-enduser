@@ -27,6 +27,7 @@ import email from './email.svg';
 import linedo from './linedo.svg';
 import linexanh from './linexanh.svg';
 import linenoibat from './linenoibat.svg';
+import bullet from './bullet.svg';
 
 
 const ICONS = {
@@ -58,7 +59,8 @@ const ICONS = {
     EMAIL: email,
     REDLINE: linedo,
     BLUELINE: linexanh,
-    HIGHLIGHTLINE: linenoibat
+    HIGHLIGHTLINE: linenoibat,
+    BULLET: bullet
 }
 
 export default ICONS;
