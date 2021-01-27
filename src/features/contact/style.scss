@@ -1,100 +1,67 @@
 .contact {
+    @media only screen and (max-device-width: 1920px) and (min-device-width: 1281px) {
+        .title-img {
+            background-image: url("../../assets/images/lienhe.png");
+            margin-top: 77px;
+            height: 470px;
+            width: 100%;
+            position: fixed;
+            z-index: 0;
+        }
 
-    .title-img {
-        background-image: url("../../assets/images/lienhe.png");
-        background-image: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        min-height: 470px;
-        margin-top: 77px;
-        width: 100%;
-        //position: fixed;
-        z-index: 0;
-    }
+        .background {
+            z-index: 1;
+            top: 450px;
+            position: relative;
+            background-color: white;
+            padding-bottom: 300px;
+        }
 
-    .background {
-        //position: relative;
-        bottom: 300px;
-        z-index: 1;
-        top: 450px;
-    }
+        .header-address {
+            font-weight: bolder;
+            color: #737373;
+            font-size: 23px;
+            margin-left: 20px;
+            margin-top: 80px;
+        }
 
-    .header-address {
-        font-weight: bolder;
-        color: #737373;
-        font-size: 23px;
-        margin-left: 20px;
-        margin-top: 80px;
-    }
-
-    .address {
-        font-weight: bolder;
-        color: #1d1d1f;
-        font-size: 16px;
-        margin-left: 20px;
-        margin-top: 10px;
+        .address {
+            font-weight: bolder;
+            color: #1d1d1f;
+            font-size: 16px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
     }
 
-    .boxform {
-        top: 2603px;
-        left: 829px;
-        width: 651px;
-        height: 92px;
-        background: #f5f5f7 0% 0% no-repeat padding-box;
-        border-radius: 13px;
-        opacity: 1;
-    }
-    .hoten {
-        top: 2628px;
-        left: 860px;
-        width: 90px;
-        height: 37px;
-    }
-    .BG-hoten {
-        background-color: #f5f5f7;
-        border: 0px;
-        border-top-left-radius: 13px;
-        border-bottom-left-radius: 13px;
-    }
-    .BG-input {
-        height: 92px;
-        background-color: #f5f5f7;
-        border: 0px;
-        border-top-right-radius: 13px;
-        border-bottom-right-radius: 13px;
-        position: relative;
-        outline: none;
-    }
-    .email {
-        top: 2753px;
-        left: 864px;
-        width: 90px;
-        height: 26px;
-    }
-    .noidungyeucau {
-        top: 2864px;
-        left: 863px;
-        width: 90px;
-        height: 27px;
-        margin-bottom: 80px;
-    }
-    .guiyeucau {
-        top: 3014px;
-        left: 829px;
-        width: 651px;
-        height: 92px;
-        background: #0063b0 0% 0% no-repeat padding-box;
-        border-radius: 13px;
-        opacity: 1;
-    }
-    .placeholder {
-        position: absolute;
-        left: 106px;
-        top: auto;
-        background-color: #f5f5f7;
-        padding: 0 20px;
-        bottom: 106px;
-        color: gray;      
+    @media only screen and (max-device-width: 1280px) {
+        .title-img {
+            min-height: 340px;
+            width: 100%;
+            margin-top: 77px;
+        }
+
+        .background {
+            //position: relative;
+            bottom: 300px;
+            z-index: 1;
+            top: 450px;
+        }
+
+        .header-address {
+            font-weight: bolder;
+            color: #737373;
+            font-size: 20px;
+            margin-left: 20px;
+            margin-top: 50px;
+        }
+
+        .address {
+            font-weight: bolder;
+            color: #1d1d1f;
+            font-size: 12px;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
     }
 }

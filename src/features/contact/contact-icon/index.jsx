@@ -7,8 +7,8 @@ import './style.scss';
 const ContactIcon = (props) => {
     const { src, title, arrow } = props
     return (
-        <div className='contact-icon' style={{marginTop:'100px'}}>
-            <div style={{float:'right' , width:'50%'}} >
+        <div className='contact-icon'>
+            <div className='icon-position' >
             <Row>
                 <Col>
                     <img src={src} className='image' alt="" />
