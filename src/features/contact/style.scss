@@ -9,6 +9,7 @@
             z-index: 0;
         }
 
+<<<<<<< HEAD
         .background {
             z-index: 1;
             top: 450px;
@@ -24,6 +25,23 @@
             margin-left: 20px;
             margin-top: 80px;
         }
+=======
+    .title-img {
+        background-image: url("../../assets/images/lienhe.png");
+        height: 300px;
+        width: 100%;
+        position: fixed;
+        z-index: 0;
+    }
+
+    .background {
+        position: relative;
+        background-color: white;
+        top: 300px;
+        padding-bottom: 300px;
+        z-index: 1;
+    }
+>>>>>>> ea7bddaf877c0c9c10b0f6d4a16c5b527c341127
 
         .address {
             font-weight: bolder;
