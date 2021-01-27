@@ -11,27 +11,26 @@
     }
 
     .shakehands {
-        margin-top: -75px;
+        margin-top: -250px;
         z-index: 1;
         margin-bottom: -120px;
         position: relative;
     }
 }
 
-@media only screen and (min-width: 1150px) {
-    .home {
-    
+@media only screen and (width: 1280px) {
+    .home {   
         .shakehands {
-            margin-top: -200px;
+            margin-top: -150px;
         }
     }
 }
 
-@media only screen and (min-width: 1070px) and (max-width: 1149px) {
+@media only screen and (width: 1366px){
     .home {
     
         .shakehands {
-            margin-top: -125px;
+            margin-top: -150px;
         }
     }
 }
