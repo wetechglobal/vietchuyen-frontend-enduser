@@ -1,34 +1,10 @@
 .contact {
     @media only screen and (max-device-width: 1920px) and (min-device-width: 1281px) {
-        .title-img {
-            background-image: url("../../assets/images/lienhe.png");
-            margin-top: 77px;
-            height: 470px;
-            width: 100%;
-            position: fixed;
-            z-index: 0;
-        }
 
-<<<<<<< HEAD
-        .background {
-            z-index: 1;
-            top: 450px;
-            position: relative;
-            background-color: white;
-            padding-bottom: 300px;
-        }
-
-        .header-address {
-            font-weight: bolder;
-            color: #737373;
-            font-size: 23px;
-            margin-left: 20px;
-            margin-top: 80px;
-        }
-=======
     .title-img {
         background-image: url("../../assets/images/lienhe.png");
-        height: 300px;
+        margin-top: 77px;
+        height: 470px;
         width: 100%;
         position: fixed;
         z-index: 0;
@@ -37,11 +13,18 @@
     .background {
         position: relative;
         background-color: white;
-        top: 300px;
-        padding-bottom: 300px;
+        top: 570px;
+        padding-bottom: 570px;
         z-index: 1;
     }
->>>>>>> ea7bddaf877c0c9c10b0f6d4a16c5b527c341127
+
+    .header-address {
+        font-weight: bolder;
+        color: #737373;
+        font-size: 23px;
+        margin-left: 20px;
+        margin-top: 80px;
+    }
 
         .address {
             font-weight: bolder;
@@ -57,13 +40,16 @@
             min-height: 340px;
             width: 100%;
             margin-top: 77px;
+            position: fixed;
+            z-index: 0;
         }
 
         .background {
-            //position: relative;
-            bottom: 300px;
+            position: relative;
+            background-color: white;
+            top: 430px;
+            padding-bottom: 430px;
             z-index: 1;
-            top: 450px;
         }
 
         .header-address {
