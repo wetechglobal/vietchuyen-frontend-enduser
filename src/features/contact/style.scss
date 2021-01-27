@@ -2,22 +2,18 @@
 
     .title-img {
         background-image: url("../../assets/images/lienhe.png");
-        background-image: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        min-height: 470px;
-        margin-top: 77px;
+        height: 300px;
         width: 100%;
-        //position: fixed;
+        position: fixed;
         z-index: 0;
     }
 
     .background {
-        //position: relative;
-        bottom: 300px;
+        position: relative;
+        background-color: white;
+        top: 300px;
+        padding-bottom: 300px;
         z-index: 1;
-        top: 450px;
     }
 
     .header-address {
