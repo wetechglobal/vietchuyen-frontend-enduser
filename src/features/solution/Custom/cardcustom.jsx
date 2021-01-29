@@ -2,7 +2,7 @@ import "react-multi-carousel/lib/styles.css";
 import './style.scss';
 import { Row, Col } from 'react-bootstrap';
 import IMAGES from "assets/images/images";
-import CLIENT from 'assets/images/client-logo/client';
+
 const CardCustom = (props) => {
     const { colorbg, cardimg, linecolor, cardcontent, clientcustom, totalnumber, countnumber } = props
     return (

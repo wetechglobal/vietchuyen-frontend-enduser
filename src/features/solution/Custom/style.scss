@@ -235,45 +235,6 @@
 
 }
 
-.mini-title {
-  height: 27px;
-  width: 80px;
-  background-color: #FFE0E3;
-  border-radius: 15px;
-  text-align: center;
-  color: #E50019;
-  position: relative;
-  top: 5px;
-  left: 1%;
-}
-
-.mini-title-blue {
-  height: 27px;
-  width: 100px;
-  background-color: #D1EBFF;
-  border-radius: 15px;
-  text-align: center;
-  color: #0063B0;
-  position: relative;
-  top: 5px;
-  left: 1%;
-}
-
-.general-content-part2 {
-  background-color: #F5F5F5;
-  //   opacity: 100%;
-  //   bottom:70px;
-  position: relative;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 100%;
-}
-
-.tittle-part2 {
-  padding-bottom: 50px;
-  padding-top: 80px;
-}
-
 .card-img-part2 {
   width: 220px;
   height: 70px;
@@ -332,37 +293,6 @@
   left: 10%;
 }
 
-
-
-@media only screen and (min-width: 1920px) {
-  .latest-Solution1 {
-    height: 1000px;
-    position: relative;
-    top: 1%;
-  }
-
-  .title-solution-sd {
-    font-size: 16px;
-    font-size: 3vw;
-    font-weight: bolder;
-    text-align: center;
-    padding-bottom: 1%;
-    text-transform: uppercase;
-    background: -webkit-linear-gradient(#0063B0, #0097CF, #008CF8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    bottom: 6%;
-  }
-
-  .detail-solution-content {
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 3%;
-    color: black;
-    position: relative;
-    width: 100%;
-  }
-
   .card-img-part2 {
     width: 350px;
     height: 70px;
@@ -370,37 +300,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
-    position: relative;
-  }
-
-  .mini-title {
-    height: 37px;
-    width: 80px;
-    background-color: #FFE0E3;
-    border-radius: 15px;
-    text-align: center;
-    color: #E50019;
-    position: relative;
-    top: 5px;
-    left: 1%;
-  }
-
-  .mini-title-blue {
-    height: 37px;
-    width: 100px;
-    background-color: #D1EBFF;
-    border-radius: 15px;
-    text-align: center;
-    color: #0063B0;
-    position: relative;
-    top: 5px;
-    left: 1%;
-  }
-
-  .latest-Solution {
-    width: 65%;
-    margin-left: 20%;
-    bottom: 5%;
     position: relative;
   }
 
@@ -471,4 +370,3 @@
     top: 5px;
     left: 1%;
   }
-}
