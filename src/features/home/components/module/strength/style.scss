@@ -129,45 +129,72 @@
     }
 }
 
-@media only screen and (width: 1280px) {
+@media only screen and (max-width: 1600px){
     .strength {
-
-        .center {
-            margin-top: 25%;
-        }
-
-        .left {
-            margin-top: 7%;
-        }
-
         h1 {
-            font-size: 2.4rem;
+            font-size: 3rem;
         }
 
-        span {
-            font-size: 12px;
-        }
-
-        .main-group {
-            margin-bottom: 70px;
-    
+        .main-group {   
             span {
-                top: 100px;
+                top: 140px;
             }
         }
 
         .group:hover .num{
-            bottom: 30px;
+            bottom: -10px;
         }
 
         .num {
-            font-size: 55px;
-            bottom: 0;
+            font-size: 60px;
+            bottom: -40px;
         }
     }
 }
 
-@media only screen and (width: 1366px){
+@media only screen and (max-width: 1536px){
+    .strength {
+
+        h1 {
+            font-size: 2.9rem;
+        }
+
+        .main-group {   
+            span {
+                top: 130px;
+            }
+        }
+
+        .group:hover .num{
+            bottom: 0;
+        }
+
+        .num {
+            font-size: 60px;
+            bottom: -30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1440px){
+    .strength {
+
+        h1 {
+            font-size: 2.6rem;
+        }
+
+        .group:hover .num{
+            bottom: 10px;
+        }
+
+        .num {
+            font-size: 60px;
+            bottom: -20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1366px){
     .strength {
 
         .center {
@@ -200,6 +227,44 @@
 
         .num {
             font-size: 60px;
+            bottom: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .strength {
+
+        .center {
+            margin-top: 25%;
+        }
+
+        .left {
+            margin-top: 7%;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        .main-group {
+            margin-bottom: 70px;
+    
+            span {
+                top: 100px;
+            }
+        }
+
+        .group:hover .num{
+            bottom: 30px;
+        }
+
+        .num {
+            font-size: 55px;
             bottom: 0;
         }
     }

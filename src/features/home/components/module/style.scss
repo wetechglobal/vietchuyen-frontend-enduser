@@ -52,20 +52,42 @@
     }
 }
 
-@media only screen and (width: 1280px) {
+@media only screen and (max-width: 1600px){
     .module {
         .giaiphap {
-            position: relative;
-            top: 13%;
+            top: 11%;
         }
     }
 }
 
-@media only screen and (min-width: 1366px){
+@media only screen and (max-width: 1536px){
     .module {
         .giaiphap {
-            position: relative;
+            top: 10%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1440px){
+    .module {
+        .giaiphap {
+            top: 8%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1366px){
+    .module {
+        .giaiphap {
             top: 17%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .module {
+        .giaiphap {
+            top: 13%;
         }
     }
 }

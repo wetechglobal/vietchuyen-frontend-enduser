@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { useTranslation } from 'react-i18next';
 import parse from 'html-react-parser';
-import './familyTree.scss';
 import './style.scss';
 import CountUp from '../../common/countup/index'
 
