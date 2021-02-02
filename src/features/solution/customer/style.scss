@@ -1,0 +1,75 @@
+.customer-item {
+  img {
+    width: 96%;
+    height: 140px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    border-radius: 10px;
+  }
+
+  .content {
+    z-index: 9;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    font-size: 2vw;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .group_num {
+    display: flex;
+
+    .num_plus {
+      width: 50%;
+      text-align: center;
+
+      .num {
+        font-size: 80px;
+        font-weight: 700;
+        text-shadow: 2px 2px 10px #429ED7;
+        color: white;
+      }
+
+      .name-under {
+        text-align: center;
+        font-size: 13px;
+        color: white;
+        opacity: 60%;
+      }
+    }
+
+    .first {
+      .num {
+        border-right: 2px solid transparent;
+        border-image-source: linear-gradient(#FAFAFA00 30%, #EDEDED, #FAFAFA00 100%);
+        border-image-slice: 1;
+      }
+    }
+  }
+
+  .content-icon {
+    width: 100%;
+    margin-left: 0px;
+    top: 25px;
+    left: 16px;
+    position: relative;
+
+    .content-background-icon {
+      background-color: white;
+      min-width: 10.5rem;
+      height: 40px;
+      border-radius: 5%;
+      margin: 5px;
+      right: 2%;
+      position: relative;
+
+      .icon {
+        height: 30px;
+      }
+    }
+  }
+}

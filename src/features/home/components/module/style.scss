@@ -52,28 +52,41 @@
     }
 }
 
-@media only screen and (min-width: 1499px) {
+@media only screen and (max-width: 1600px){
     .module {
         .giaiphap {
-            position: relative;
-            top: 22%;
+            top: 11%;
         }
     }
 }
 
-@media only screen and (min-width: 1399px) and (max-width: 1498px){
+@media only screen and (max-width: 1536px){
     .module {
         .giaiphap {
-            position: relative;
+            top: 10%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1440px){
+    .module {
+        .giaiphap {
+            top: 8%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1366px){
+    .module {
+        .giaiphap {
             top: 17%;
         }
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1398px){
+@media only screen and (max-width: 1280px) {
     .module {
         .giaiphap {
-            position: relative;
             top: 13%;
         }
     }

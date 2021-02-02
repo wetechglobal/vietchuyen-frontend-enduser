@@ -22,12 +22,13 @@
 
     .name {
         text-align: center;
+        margin-top: 500px;
 
         h1 {
             font-size: 3.4rem;
             font-weight: 700;
             text-shadow: 1px 1px 10px;
-            width: 330px;
+            width: 336px;
             margin: auto;
         }
 
@@ -60,9 +61,21 @@
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1398px){
+@media only screen and (max-width: 1366px) {
     .diamond-group {
         .name {
+            margin-top: 0;
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .diamond-group {
+        .name {
+            margin-top: 0;
             h1 {
                 font-size: 2.5rem;
             }
