@@ -1,151 +1,84 @@
-.news__banner_1st {
-  position: fixed;
-  width: 98%;
-  margin: auto;
-
-  img {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    width:100%;
-
-  }
-}
-.news__banner_2nd {
-  margin-top: 400px;
-  img {
-    height: 100%;
-    width: 100%;
-  }
-}
-
-.background-solution {
-  background-color: white;
-  width: 100%;
-  padding: 0 0 300px 0;
-  top: 430px;
-}
-
-.Page-Solution {
+.page-solution {
   margin-left: 0px;
   margin-right: 0px;
-}
 
+  .solution-prod {
+    padding-left: 0px;
+    padding-right: 0px;
 
-.news__info-container {
-  .news__info-tab-event {
-    cursor: pointer;
-    text-align: end;
+    .solution-banner {
+      position: fixed;
+      width: 98%;
+      margin: auto;
+    
+      img {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        width:100%;
+    
+      }
+    }
+
+    .background-solution {
+      background-color: white;
+      width: 100%;
+      padding: 0 0 300px 0;
+      top: 430px;
+
+      .latest-Solution {
+        height: 700px;
+        position: relative;
+        top: 40px;
+        max-width: 100%;
+
+        .title-solution {
+          font-size: 4vw;
+          font-weight: bolder;
+          text-align: center;
+          text-transform: uppercase;
+          background: -webkit-linear-gradient(#0063B0, #0097CF, #008CF8);
+          -webkit-background-clip: text;
+          -webkit-text-size-adjust: auto;
+          -webkit-text-fill-color: transparent;
+          left: 36%;
+          text-size-adjust: auto;
+          max-width: 30vw;
+        }
+      }
+
+      .banner {
+        margin-top: 400px;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .content-prod {
+        bottom: 95px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        .general-content {
+          background-color: #F5F5F5;
+          position: relative;
+          padding-left: 0px;
+          padding-right: 0px;
+          width: 100%;
+        }
+      }
+
+      .content-prod::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -400px;
+        border-right: 400px solid transparent;
+        border-top: 400px solid #F5F5F5;
+      }
+    }
   }
-
-  .news__info-tab-tech {
-    cursor: pointer;
-    text-align: start;
-  }
-
-  .active {
-    border-bottom: 2px solid blue;
-    color: blue;
-  }
-
-}
-
-.news {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.container-part2 {
-  bottom: 95px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.container-part2::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -400px;
-  border-right: 400px solid transparent;
-  border-top: 400px solid #F5F5F5;
-}
-
-.general-content-part2 {
-  background-color: #F5F5F5;
-  position: relative;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 100%;
-}
-
-.title-solution-sd {
-  font-size: 16px;
-  font-size: 4vw;
-  font-weight: bolder;
-  text-align: center;
-  padding-bottom: 4%;
-  text-transform: uppercase;
-  background: -webkit-linear-gradient(#0063B0, #0097CF, #008CF8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.title-solution-sd-2nd {
-  font-size: 4vw;
-  font-weight: bolder;
-  text-align: center;
-  padding-bottom: 4%;
-  text-transform: uppercase;
-  background: -webkit-linear-gradient(#0063B0, #0097CF, #008CF8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
-.latest-Solution {
-  width: 65%;
-  margin-left: 20%;
-  position: relative;
-}
-
-.latest-Solution1 {
-  height: 700px;
-  position: relative;
-  top: 40px;
-  max-width: 100%;
-}
-
-.detail-solution-content {
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 3%;
-  color: black;
-  position: relative;
-  width: 100%;
-}
-
-.title-solution {
-  font-size: 4vw;
-  font-weight: bolder;
-  text-align: center;
-  text-transform: uppercase;
-  background: -webkit-linear-gradient(#0063B0, #0097CF, #008CF8);
-  -webkit-background-clip: text;
-  -webkit-text-size-adjust: auto;
-  -webkit-text-fill-color: transparent;
-  left: 36%;
-  text-size-adjust: auto;
-  max-width: 30vw;
-}
-
-.carousel-res {
-  bottom: 100px;
-  min-height: 600px;
-}
-
-.tittle-part2 {
-  padding-bottom: 50px;
-  padding-top: 80px;
 }
 
 @media only screen and (max-width: 1600px) {

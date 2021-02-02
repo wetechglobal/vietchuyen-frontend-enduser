@@ -1,4 +1,3 @@
-
 import { useTranslation } from 'react-i18next';
 import { Row, Col } from 'react-bootstrap';
 import Slider from './components/slider/index';
@@ -49,8 +48,8 @@ const Home = () => {
                 </Row>
                 <Module />
                 <img className="shakehands" src={IMAGES.DOITAC} width="100%" alt=""/>
-                <Marquee title={t('news.partner')} datas={partner}/>
-                <Marquee title={t('news.client')} datas={client}/>
+                <Marquee title={t('news.partner')} datas={partner} type="picture"/>
+                <Marquee title={t('news.client')} datas={client} type="picture"/>
             </Col>
         </Row>
     );

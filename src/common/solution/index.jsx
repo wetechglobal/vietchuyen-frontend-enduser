@@ -5,7 +5,7 @@ import ThreeVerticalLine from '../verticalLine/index';
 import './style.scss';
 
 const Solution = (props) => {
-    const {backgroundcolor,diamondtitle,diamondresearch,timhieu,hiddensolution} = props;
+    const {backgroundcolor,diamondtitle,diamondresearch,hiddensolution} = props;
     const { t } = useTranslation();
     const DIAMOND = [
         {
