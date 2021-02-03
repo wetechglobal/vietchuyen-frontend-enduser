@@ -24,7 +24,7 @@ const Contact = () => {
                     </Col>
                     <Col lg={6}>
                         <ContactBox addressStyle='header-address'
-                            address={t('contact.hdAddress')} phone='0292 3918 118' icon={ICONS.FAXXANH} fax='Fax: (028) 3963 7679' hidden='hidden'>
+                            address={t('contact.hdAddress')} phone='(028) 3963 7678' icon={ICONS.FAXXANH} fax='Fax: (028) 3963 7679' hidden='hidden'>
                         </ContactBox>
                     </Col>
                 </Row>
@@ -35,7 +35,7 @@ const Contact = () => {
                     </Col>
                     <Col lg={6}>
                         <ContactBox title={parse(t('contact.HN'))} addressStyle='address' companyName={parse(t('contact.HNname'))}
-                            address={t('contact.CTadd')} phone='(028) 3963 7678' hidden='hidden'
+                            address={t('contact.CTadd')} phone='0911 538 999' hidden='hidden'
                         >
                         </ContactBox>
                         <ContactBox title={parse(t('contact.DN'))} addressStyle='address' companyName={t('contact.DNname')}
