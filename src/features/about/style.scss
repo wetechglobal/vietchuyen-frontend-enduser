@@ -35,7 +35,7 @@
         content: "";
         position: absolute;
         right: -15px;
-        bottom: 0px;
+        bottom: -1px;
         border-left: 350px solid transparent;
         border-bottom: 250px solid #0065b3;
     }
@@ -59,6 +59,7 @@
         content: "";
         position: absolute;
         left: -15px;
+        top: -1px;
         border-right: 300px solid transparent;
         border-top: 400px solid #008bf6;
     }
@@ -195,11 +196,6 @@
             height: 3px;
             background-color: #0063b0;
         }
-        @media screen and (max-width: 1560px) {
-      	.arrowRight .fa-chevron-right {
-                left: 95% !important;
-            }
-        }
         .arrowRight::after {
             content: "";
             position: absolute;
@@ -313,30 +309,241 @@
             }
         }
     }
-    @media only screen and (min-device-width: 992px) and (max-device-width: 1520px) {
+}
+
+@media only screen and (max-width: 1600px) {
+    .about {
         .tree-map {
-        .node {
-            width: 250px;
-            height: 67px;
-            border-radius: 19px;
-            font-size: 15px;
+            .node {
+                .fa-chevron-right {
+                    top: 23px;
+                }
+            }
+            .arrowRight {
+                .fa-chevron-right {
+                    left: 93%;
+                }
+            }
+            .arrowRight::after {
+                width: 85px;
+            }
+
+            .wrapper-3::before {
+                left: calc(18% + 12px);
+                width: 51.2%;
+            }
         }
-      .fix-wrapper-3::before {
-        left: calc(17% + 35px);
-        width: calc(51% + -6px)
-    }
-    }
-    .offset-md-1 {
-      margin-left: 8.33333%;
-      left: 11px;
-    }
-    .col-md-5 {
-      flex: 0 0 41.66667%;
-      max-width: 41.66667%;
-    }
-    .tree-map .arrowRight::after {
-        left: calc(100% + 19px);
-        width: 64px !important;
     }
 }
+
+@media only screen and (max-width: 1536px) {
+    .about {
+        .open-letter {
+            font-size: 57px;
+        }
+        h1 {
+            font-size: 2.3rem
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        .contain-about {
+            margin-top: 50px;
+            .row {
+                .offset-1 {
+                    margin: 9%;
+                }
+                
+                .title-about {
+                    font-size: 49px;
+                }
+
+                .detail-about {
+                    font-size: 20px;
+                }
+            }
+        }
+        .tree-map {
+            .node {
+                width: 300px;
+                height: 60px;
+
+                .fa-chevron-right {
+                    top: 19px;
+                }
+            }
+            .arrowRight {
+                .fa-chevron-right {
+                    top: 23px;
+                }
+            }
+            .arrowDownLarge::before {
+                top: -111%;
+            }
+            .topOther::before {
+                top: -166%;
+            }
+            .arrowRight::after {
+                width: 84px;
+            }
+
+            .wrapper-3::before {
+                left: calc(18% + 10px);
+                width: 51.2%;
+            }
+
+            .verticalLine {
+                p::after {
+                    height: calc(300% + 62px);
+                    top: 60px;
+                }
+            }
+            .child-2 p::after {
+                height: calc(200% + 31px);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .about {
+        .site-map {
+            padding-bottom: 80px;
+        }
+        .open-letter {
+            margin-top: 10px;
+            font-size: 47px;
+        }
+        h1 {
+            font-size: 1.7rem
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+        .contain-about {
+            margin-top: 50px;
+            .row {
+                .offset-1 {
+                    margin: 7%;
+                }
+                
+                .title-about {
+                    font-size: 39px;
+                }
+
+                .detail-about {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .contain-about::before {
+            bottom: -149px;
+            border-right: 200px solid transparent;
+            border-top: 150px solid #fff;
+        }
+
+        .contain-about::after {
+            border-left: 200px solid transparent;
+            border-bottom: 150px solid #0065b3;
+        }
+
+        .org-number {
+            .row {
+                margin: 5% 10%;
+            }
+        }
+
+        .tree-map {
+            .node {
+                width: 250px;
+                height: 55px;
+
+                .fa-chevron-right {
+                    top: 17px;
+                }
+            }
+
+            .arrowDownLarge::before {
+                top: -118%;
+            }
+
+            .topOther::before {
+                top: -180%;
+            }
+
+            .arrowRight::after {
+                width: 110px;
+                top: 30px;
+            }
+
+            .arrowRight {
+                .fa-chevron-right {
+                    top: 19px;
+                    left: 95%;
+                }
+            }
+
+            .wrapper-3::before {
+                left: calc(18% - 5px);
+                width: 51.3%;
+            }
+
+            .verticalLine {
+                p::after {
+                    height: calc(300% + 64px);
+                    top: 55px;
+                }
+            }
+
+            .child-2 p::after {
+                height: calc(200% + 35px);
+            }
+        }
+
+        .percent::before {
+            border-left: 270px solid transparent;
+            border-bottom: 200px solid white;
+        }
+
+        .percent::after {
+            border-right: 250px solid transparent;
+            border-top: 170px solid #008bf6;
+        }
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .about {
+        .tree-map {
+            .arrowRight::after {
+                width: 90px;
+            }
+
+            .wrapper-3::before {
+                left: calc(19% - 11px);
+                width: 51.3%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .about {
+        .tree-map {
+            .arrowRight::after {
+                width: 70px;
+            }
+
+            .wrapper-3::before {
+                left: calc(19% - 3px);
+                width: 51.5%;
+            }
+        }
+    }
 }

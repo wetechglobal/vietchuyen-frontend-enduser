@@ -34,7 +34,7 @@ import agentSystem from 'assets/icons/hethongdaily.svg';
 import lienhengay from 'assets/icons/lienhengay.svg';
 import hovaten from 'assets/icons/hoten.svg';
 import noidungyeucau from 'assets/icons/noidungyeucau.svg'
-
+import bullet from './bullet.svg';
 
 const ICONS = {
     TOP: top,
@@ -72,7 +72,8 @@ const ICONS = {
     AGENTSYSTEM: agentSystem,
     CONTACTNOW: lienhengay,
     FULLNAME: hovaten,
-    REQUESTCONTENT: noidungyeucau
+    REQUESTCONTENT: noidungyeucau,
+    BULLET: bullet
 }
 
 export default ICONS;

@@ -53,7 +53,7 @@ const Contact = () => {
                     </Col>
                 </Row>
 
-                <Row style={{ marginTop: '100px' }}>
+                <Row id="contact" style={{ marginTop: '100px' }}>
                     <Col lg={5}>
                         <ContactIcon src={ICONS.CONTACTNOW} arrow={ICONS.GREYARROW} title={t('contact.contactNow')}></ContactIcon>
                     </Col>

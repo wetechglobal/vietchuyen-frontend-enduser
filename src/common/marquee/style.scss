@@ -1,10 +1,10 @@
 .marquee {
-    margin-bottom: 120px;
 
-    .carousel-container {
+    .picture {
         width: 60%;
         text-align: center;
         margin: auto;
+        margin-bottom: 100px;
 
         img {
             margin: auto;
@@ -24,7 +24,11 @@
             border-image-slice: 1;
         }
     }
-    
+
+    .customer, .project {
+        padding-bottom: 100px;
+    }
+
     h1 {
         font-weight: 700;
         font-size: 60px;
@@ -33,5 +37,30 @@
         text-align: center;
         -webkit-background-clip: text;
         margin-bottom: 60px;
+        padding-top: 60px;
+        text-transform: uppercase;
+    }
+
+    .detail-solution-content {
+        font-size: 25px;
+        text-align: justify;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .customer-item, .project-item {
+        .card {
+            margin-left: 3%;
+            margin-right: 3%;
+            position: relative;
+            height: fit-content;
+            border-radius: 10px;
+            background-color: white;
+            margin-top: 3%;
+            transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            padding-bottom: 35px;
+          }
     }
 }

@@ -23,7 +23,7 @@ const TheFooter = () => {
                 />
                 <Container>
                     <Row>
-                        <img src={ICONS.LOGO} alt="" />
+                        <img className="logo" src={ICONS.LOGO} alt="" />
                     </Row>
                     <Row>
                         <h4>{t('footer.companyName')}</h4>
@@ -55,7 +55,7 @@ const TheFooter = () => {
                         <div className="img"><img src={ICONS.GPKD} alt="" /></div>
                         <div>
                             <span className='companyInfo'>{t('footer.gpkd')}</span><br />
-                            {t('footer.gpkdDetail')}
+                            <span className="gpkd">{t('footer.gpkdDetail')}</span>
                         </div>
                     </Row>
                     <Row>

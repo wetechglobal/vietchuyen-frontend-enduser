@@ -88,6 +88,10 @@ body {
     position: relative;
     z-index: 2;
 
+    .logo {
+        width: 550px;
+    }
+
     .main-footer {
         width: 100%;
         position: relative;
@@ -124,7 +128,7 @@ body {
     .row:last-child {
         bottom: 2%;
         position: absolute;
-        right: 15%;
+        right: 18%;
     }
 
     .companyInfo {
@@ -204,7 +208,19 @@ body {
     }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (max-width: 1366px) {
+    .footer {
+        .logo {
+            width: 350px;
+        }
+
+        .gpkd{
+            font-size: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
     .navbar-light .navbar-nav .nav-link {
         font-weight: 600;
         font-size: 1.2em;
@@ -216,6 +232,12 @@ body {
     }
 
     .footer {
+        .logo {
+            width: 300px;
+        }
+        .gpkd{
+            font-size: 14px;
+        }
         .group {  
             .face {
                 right: 30px;
@@ -229,27 +251,9 @@ body {
                 right: 120px;
             }
         }
-    }
-}
 
-@media only screen and (max-width: 767px) {
-    .header {
-        padding: 0.5rem 0rem;
-    }
-
-    .form-inline {
-        left: 0;
-        bottom: -98px;
-        display: contents;
-    }
-
-    .footer {
-        .container {
-            display: none;
-        }
-
-        .map {
-            min-height: 200px;
+        .row:last-child {
+            right: 10%;
         }
     }
 }

@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next';
 import ThreeVerticalLine from '../verticalLine/index';
 import './style.scss';
 
-const Solution = () => {
+const Solution = (props) => {
+    const {backgroundcolor,diamondtitle,diamondresearch,hiddensolution} = props;
     const { t } = useTranslation();
     const DIAMOND = [
         {
@@ -128,7 +129,7 @@ const Solution = () => {
     for (index; index < DIAMOND.length; index++) {
 
         cols.push(<Diamond key={index} name={DIAMOND[index].name} provider={DIAMOND[index].provider}
-            property={DIAMOND[index].property} benefit={DIAMOND[index].benefit} src={DIAMOND[index].src} name={DIAMOND[index].name} bgColor='white'/>)
+            property={DIAMOND[index].property} benefit={DIAMOND[index].benefit} src={DIAMOND[index].src} name={DIAMOND[index].name} bgColor={backgroundcolor}/>)
 
         if (index === 1) {
             rows.push(
@@ -182,10 +183,13 @@ const Solution = () => {
     return (
         <div className="diamond-group">
             <div className="name">
-                <h1>{t('diamond.product')}</h1>
-                <div className="timhieu">
+                {/* <h1>{t('diamond.product')}</h1> */}
+                <h1>{diamondtitle}</h1>
+                {/* <div className="timhieu"> */}
+                <div className='timhieu' style={{visibility : hiddensolution}}>
                     <ThreeVerticalLine borderLeft="5px solid white"/>
-                    <a href="/solution">{t('diamond.research')}</a>
+                    {/* <a href="/solution">{t('diamond.research')}</a> */}
+                    <a href="/solution">{diamondresearch}</a>
                     <ThreeVerticalLine borderLeft="5px solid white"/>
                 </div>
             </div>

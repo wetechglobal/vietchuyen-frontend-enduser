@@ -25,7 +25,7 @@ const Module = () => {
                 <Container>
                     <Strength />
                     <Row className="giaiphap">
-                        <Solution />
+                        <Solution backgroundcolor='white' diamondtitle={t('diamond.product')} diamondresearch={t('diamond.research')} />
                     </Row>
                 </Container>
             </Figure>
