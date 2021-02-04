@@ -76,7 +76,7 @@
     "address": "302, Toà nhà Độc Lập A, Phường Tân Quý, Quận Tân Phú, TP.HCM",
     "phone": "Điện thoại",
     "gpkd": "Giấy phép kinh doanh số",
-    "gpkdDetail": "\"0304198513\" do Sở Kế Hoạch Đầu Tư TP.HCM cấp ngày 27/01/2006",
+    "gpkdDetail": "0304198513 do Sở Kế Hoạch Đầu Tư TP.HCM cấp ngày 27/01/2006.",
     "mst": "Mã số thuế"
   },
   "strengths": {
@@ -100,9 +100,9 @@
     "titleVision":"TẦM NHÌN",
     "contentVision":"Trở thành Nhà cung cấp Giải pháp và Sản phẩm Cơ sở hạ tầng CNTT hàng đầu Việt Nam – nơi mà mỗi người Việt Chuyên SG đều được thỏa mãn đam mê và nhiệt huyết với công nghệ.",
     "titleCoreValue":"GIÁ TRỊ CỐT LÕI",
-    "contentCoreValue":"Hơn 10 năm qua, đội ngũ cán bộ nhân viên Viet Chuyen SG luôn cam kết làm việc theo phương châm:",
-    "loganCoreValue":"“Chất lượng - Uy tín – Chuyên nghiệp – Sáng tạo – Nỗ lực không ngừng”",
-    "detailCoreValue":"Luôn luôn đề xuất những phương án hướng tới sự phát triển lâu dài nhằm cung cấp các sản phẩm, dịch vụ CNTT chất lượng cao đến các khách hàng.",
+    "contentCoreValue": "Gần 10 năm qua, đội ngũ cán bộ nhân viên Viet Chuyen SG luôn cam kết làm việc theo phương châm:",
+    "loganCoreValue":"“Chuyên nghiệp – Sáng tạo – Nỗ lực không ngừng”",
+    "detailCoreValue":"luôn luôn đề xuất những phương án hướng tới sự phát triển lâu dài nhằm cung cấp các sản phẩm, dịch vụ CNTT chất lượng cao đến các khách hàng.",
     "orgStruct":"CƠ CẤU TỔ CHỨC",
     "detailOrgStruct":"Cơ cấu tổ chức của Việt Chuyên SG được chia thành các nhóm chức năng chuyên môn,<br>nhằm phục vụ tốt nhất cho nhu cầu của khách hàng.",
     "councilMember":"Hội đồng thành viên",
