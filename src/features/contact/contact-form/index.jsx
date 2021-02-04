@@ -53,7 +53,7 @@ const ContactForm = (props) => {
                                     <img src={ICONS.REQUESTCONTENT} className='icon-content' alt="" />
                                 </InputGroup.Text>
                             </InputGroup.Prepend>
-                            <FormControl className='BG-input BG-content'  required
+                            <FormControl className='BG-input'  required
                                 aria-label="text"
                                 aria-describedby="basic-addon1"
                             />

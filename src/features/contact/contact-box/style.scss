@@ -4,8 +4,10 @@
         border: 2px solid #efefef;
         border-radius: 12px;
         width: 699px;
-        height: 300px;
+        height: 320px;
         margin-top: 25px;
+        display: flex;
+        align-items: center;
     }
     .img-position{
         margin-left: 20px;
@@ -32,11 +34,9 @@
     }
 
     .agent-name {
-        text-align: left;
         // font: normal normal normal 40px/54px SVN-Gotham;
         color: #1d1d1f;
         margin-left: 20px;
-        text-align: left;
         letter-spacing: -1.6px;
         opacity: 1;
         font-size: 40px;
@@ -54,7 +54,6 @@
         &--hidden {
             visibility: hidden;
         }
-        margin-top: 5px;
     }
 
 }
@@ -65,11 +64,13 @@
             border: 2px solid #efefef;
             border-radius: 12px;
             margin-top: 25px;
+            display: flex;
+            align-items: center;
         }
 
         .img-position{
             margin-left: 20px;
-            margin-top: 10px;
+            margin-top: 5px;
         }
 
         .img-phone {
@@ -115,7 +116,6 @@
             &--hidden {
                 visibility: hidden;
             }
-            margin-top: 5px;
         }
     }
 }
