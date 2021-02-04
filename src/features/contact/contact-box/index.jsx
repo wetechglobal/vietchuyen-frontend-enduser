@@ -9,7 +9,7 @@ const ContactBox = (props) => {
 
     const { title, companyName, address, phone, fax, icon, addressStyle } = props
     return (
-        <div className='info-box'>
+        <div className='info-box' style={{position:'relative'}}>
             <Col md={12} >
                 <div >
                     <Row className='agent-name'>
@@ -23,7 +23,7 @@ const ContactBox = (props) => {
                         <Col >{address}</Col>
                     </Row>
                
-                    <Row style={{ marginLeft: '20px' , marginTop:'10px'}}>
+                    <Row className='img-position'>
                         <Col className='phone' md={5}>
                             <img src={ICONS.DIENTHOAI} className='img-phone' alt="" /> {phone}
                         </Col>

@@ -1,0 +1,101 @@
+.contact-form {
+
+    
+    @media only screen and (max-device-width: 1920px) and (min-device-width: 1281px) {
+
+    .icon-form {
+        width: 90px;
+        height: 37px;
+    }
+    .BG-hoten {
+        height: 155px;
+        background-color: #f5f5f7;
+        border: 0px;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+    }
+    .BG-input {
+        height: 155px;
+        background-color: #f5f5f7;
+        border: 0px;
+        border-top-right-radius: 13px;
+        border-bottom-right-radius: 13px;
+    }
+    
+    .submit-content {
+        width: 651px;
+        height: 92px;
+        background: #0063b0 0% 0% no-repeat padding-box;
+        border-radius: 13px;
+        opacity: 1;
+    }
+
+    .icon-content{
+        width: 90px;
+        height: 37px;
+        margin-bottom: 80px;
+    }
+
+    .BG-content{
+        height: 155px;
+        border-top-right-radius: 13px;
+        border-bottom-right-radius: 13px;
+    }
+    .placeholder {
+        position: absolute;
+        left: 106px;
+        top: auto;
+        background-color: #f5f5f7;
+        padding: 0 20px;
+        bottom: 106px;
+        color: gray;      
+    }
+}
+
+
+    @media only screen and (max-device-width: 1280px) {
+        .icon-form {
+            width: 80px;
+            height: 27px;
+        }
+        .BG-hoten {
+            height: 110px;
+            border: 0;
+            background-color: #f5f5f7;
+            border-top-left-radius: 13px;
+            border-bottom-left-radius: 13px;
+            
+        }
+        .BG-input {
+            height: 110px;
+            border: 0;
+            background-color: #f5f5f7;
+            border-top-right-radius: 13px;
+            border-bottom-right-radius: 13px;
+        }
+
+        .icon-content{
+            width: 80px;
+            height: 27px;
+            margin-bottom: 50px;
+        }
+
+        .submit-content {
+            width: 651px;
+            height: 92px;
+            background: #0063b0 0% 0% no-repeat padding-box;
+            border-radius: 13px;
+            opacity: 1;
+        }
+        .placeholder {
+            position: absolute;
+            left: 97px;
+            top: auto;
+            background-color: #f5f5f7;
+            padding: 0 20px;
+            bottom: 70px;
+            color: gray;      
+        }
+
+    }
+}
