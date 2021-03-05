@@ -2,7 +2,7 @@
   "mainMenu": {
     "home": "Home Page",
     "about": "About Us",
-    "solution": "Solution - Product",
+    "solution": "Solutions - Products",
     "news": "News",
     "contact": "Contact Us"
   },
@@ -13,8 +13,8 @@
     "title": "Introducing Vung Tau video conferencing solution",
     "description": "Solution of video conferencing or online meeting is a system of equipment (including hardware and software) supporting video and audio transmission ...",
     "highlight": "HIGHLIGHTS",
-    "partner": "OUR PARTNER",
-    "client": "OUR CSTOMMER"
+    "partner": "OUR PARTNERS",
+    "client": "OUR CSTOMMERS"
   },
   "solution":{
     "title":"We are provide",
@@ -79,7 +79,7 @@
   "strengths": {
     "news": "VIEW MORE<br/>NEWS",
     "title": "OUR TRENGTHS",
-    "titleFirst": "Over the past 10 years, the staff of Viet Chuyen SG has always committed to working under the motto",
+    "titleFirst": "Over the past 10 years, the staff of Viet Chuyen SG has always committed to working under the motto ",
     "titleCenter": "“QUALITY - PRESTIGE - PROFESSIONALISM - CREATIVE - STOPPING ENERGY”",
     "titleLast": ", always proposing solutions towards long-term development in order to provide high quality IT products and services to customers.",
     "300": "Practical experience in implementing 300+ small and big events for enterprises, organizations in many fields in Vietnam",
@@ -97,7 +97,7 @@
     "titleVision": "VISION",
     "contentVision": "Become the leading IT Solutions and Infrastructure System Products Provider in Vietnam – where everyone in Viet Chuyen SG is satisfied with their passion and enthusiasm for technology.",
     "titleCoreValue": "CORE VALUES",
-    "contentCoreValue": "Over nearly the last 10 years, Viet Chuyen SG’s staff members have always been committed to working under the motto",
+    "contentCoreValue": "<i>“Professional – Creativity – Continuous Effort”</i><br/>Over nearly the last 10 years, Viet Chuyen SG’s staff members have always been committed to working under the motto",
     "loganCoreValue": "“Professional – Creativity – Continuous Effort”",
     "detailCoreValue": "always propose plans towards sustainable developments in order to provide high quality IT products and services to customers.",
     "orgStruct": "ORGANIZATIONAL STRUCTURE",
@@ -146,7 +146,7 @@
 
   },
   "diamond": {
-    "product":"SOLUTION & PRODUCT",
+    "product":"SOLUTIONS & PRODUCTS",
     "research": "REEARCH",
     "character": "CHARACTERISTIC",
     "benefit": "BENEFIT",
@@ -195,8 +195,8 @@
     "upsProvider": "UPS equipment",
     "upsProperty": "Solution of video conferencing or online meeting is a system of equipment (including hardware and software) supporting video and audio transmission ...",
     "upsBenefit": "Solution of video conferencing or online meeting is a system of equipment (including hardware and software) supporting video and audio transmission ...",
-    "meName": "M&E Electrical Refrigerator equipment",
-    "meProvider": "M&E Electrical Refrigerator equipment",
+    "meName": "M&E equipment",
+    "meProvider": "M&E equipment",
     "meProperty": "Solution of video conferencing or online meeting is a system of equipment (including hardware and software) supporting video and audio transmission ...",
     "meBenefit":  "Solution of video conferencing or online meeting is a system of equipment (including hardware and software) supporting video and audio transmission ...",
     "pacName": "Precision Air Conditioner PAC",

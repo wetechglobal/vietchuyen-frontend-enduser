@@ -46,7 +46,7 @@ const About = () => {
                         </Col>
                         <Col xs={{ span: 3, offset: 1 }}>
                             <div className="title-about blue">{t('about.titleCoreValue')}</div>
-                            <div className="detail-about">{t('about.contentCoreValue')}</div>
+                            <div className="detail-about">{parse(t('about.contentCoreValue'))}</div>
                             <div className="title-small-about red">{t('about.loganCoreValue')}</div>
                             <div className="detail-about">{t('about.detailCoreValue')}</div>
                         </Col>
