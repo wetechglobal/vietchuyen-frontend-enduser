@@ -1,11 +1,11 @@
 import { combineEpics } from 'redux-observable';
-//FILE
-//import { getAllFileEpic, deleteFileEpic } from 'features/file/fileEpic';
+//SOLUTION
+import { getAllSolutionEpic } from 'common/solution/solutionEpic';
 
 
 const rootEpic = combineEpics(
     //FILE
-    //getAllFileEpic,
+    getAllSolutionEpic,
 
 );
 export default rootEpic;

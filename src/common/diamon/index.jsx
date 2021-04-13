@@ -24,7 +24,7 @@ const Diamond = (props) => {
                     zIndex: 2,
                     position: 'relative'
                 }}>
-                    <h3 style={{ color: '#0063B0', fontWeight: 'bold', }}>{name}</h3>
+                    <h3 style={{ color: '#0063B0', fontWeight: 'bold', }}>{parse(name)}</h3>
                     <Button onClick={() => setShow(false)} variant="light" style={{position: 'absolute', right: 10, top: 0, fontSize: 30, border: 'none', backgroundColor: 'transparent'}}>&times;</Button>
                     <h6 style={{ color: 'red', fontWeight: 'bold', textTransform: 'uppercase' }}>{provider}</h6>
                     <div>
