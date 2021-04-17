@@ -1,27 +1,15 @@
 import { Row, Col } from 'react-bootstrap';
 import './style.scss';
 import 'react-multi-carousel/lib/styles.css';
-import React, { useEffect }  from "react";
-import { useDispatch, useSelector } from 'react-redux';
+import React  from "react";
 import CLIENTS from "assets/images/client-logo/client";
 import IMAGES from "assets/images/images";
 import { useTranslation } from 'react-i18next';
 import Solution from '../../../src/common/solution/index';
 import Marquee from 'common/marquee';
-import { getAllSolutionsAction } from 'common/solution/solutionAction';
+
 const SolutionPage = () => {
     const { t } = useTranslation();
-    const dispatch = useDispatch();
-
-    const getAllSolutions = useSelector(state => {
-      console.log('useSelector getAllUsers run!!!');
-      return state.solutuionGetAllReducer;
-    });
-
-    useEffect(() => {
-      console.log('useEffect run!!!');
-      dispatch(getAllSolutionsAction());
-    }, [dispatch]);
 
     const CUSTOMER = [
         {
@@ -187,7 +175,7 @@ const SolutionPage = () => {
                 <p>{t('solution.solutioncontent')}</p>
                 <p>{t('solution.solutioncontentsd')}</p>
             </div>)
-    console.log('getAllSolutions',getAllSolutions);
+
     return (
         <Row className="page-solution">
             <Col className="solution-prod">

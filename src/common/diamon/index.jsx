@@ -4,6 +4,7 @@ import parse from 'html-react-parser';
 import { useTranslation } from 'react-i18next';
 import { HashLink } from 'react-router-hash-link';
 import ICONS from 'assets/icons/icons';
+import config from 'common/config';
 import './style.scss';
 
 const Diamond = (props) => {
@@ -49,7 +50,7 @@ const Diamond = (props) => {
             }>
             <div className="item" style={{ backgroundColor: bgColor, visibility: hidden }} onClick={() => setShow(true)}>
                 <div className="content">
-                    <img src={src} alt="" />
+                    <img src={config.HOST + src} alt="" />
                     <span className="title">{parse(name)}</span>
                 </div>
             </div>
