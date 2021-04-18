@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import React, { useEffect, useState } from "react";
 import ThreeVerticalLine from '../verticalLine/index';
 import { getAllSolutionsAction } from './solutionAction';
+import Moment from 'moment';
 import './style.scss';
 
 const Solution = (props) => {
@@ -13,6 +14,12 @@ const Solution = (props) => {
     const getAllSolutions = useSelector(state => {
         return state.solutuionGetAllReducer;
     });
+
+    const today = new Date();
+    const yesterday = new Date(today);
+    yesterday.setDate(yesterday.getDate() - 1)
+    const strNow = Moment(today).format('YYYYMMDD');
+    const strYesterday = Moment(yesterday).format('YYYYMMDD');
 
     useEffect(() => {
         const language = localStorage.getItem('i18nextLng') === 'en' ? 2 : 1;
@@ -33,14 +40,42 @@ const Solution = (props) => {
     let four = true;
 
     if (getAllSolutions?.responseData?.data?.records.length > 0) {
+        //set data to diamonArray if session is null
         if(sessionStorage.getItem(diamon) === null)
         {
             setDiamonArray(getAllSolutions.responseData.data.records);
         }
+
+        //set diamonArray new to localStorage
+        if(localStorage.getItem(diamon + strNow) === null)
+        {
+            localStorage.setItem(diamon + strNow, JSON.stringify(getAllSolutions.responseData.data.records));
+        }
+
+        //set diamonArray old from localStorage
+        if(localStorage.getItem(diamon + strYesterday) !== null)
+        {
+            localStorage.removeItem(diamon + strYesterday);
+        }
+
+        //set diamonArray data to session if session is null
         if(sessionStorage.getItem(diamon) === null && diamonArray.length > 0)
         {
             sessionStorage.setItem(diamon, JSON.stringify(getAllSolutions.responseData.data.records));
         }
+    }
+
+    //if server error and diamonArray on localStorage have data
+    if(getAllSolutions?.isError === true) {
+        if(localStorage.getItem(diamon + strNow) !== null && sessionStorage.getItem(diamon) === null)
+        {
+            setDiamonArray(JSON.parse(localStorage.getItem(diamon + strNow)));
+            sessionStorage.setItem(diamon, localStorage.getItem(diamon + strNow));
+        }
+    }
+
+    if (diamonArray.length === 0) {
+        //show error
     }
 
     if (diamonArray.length > 0) {
