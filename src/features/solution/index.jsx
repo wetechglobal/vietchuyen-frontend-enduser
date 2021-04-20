@@ -1,14 +1,16 @@
 import { Row, Col } from 'react-bootstrap';
 import './style.scss';
 import 'react-multi-carousel/lib/styles.css';
-import React from "react";
+import React  from "react";
 import CLIENTS from "assets/images/client-logo/client";
 import IMAGES from "assets/images/images";
 import { useTranslation } from 'react-i18next';
 import Solution from '../../../src/common/solution/index';
 import Marquee from 'common/marquee';
+
 const SolutionPage = () => {
     const { t } = useTranslation();
+
     const CUSTOMER = [
         {
           "color":["linear-gradient(#0063B0, #008CF8)"],
@@ -173,7 +175,7 @@ const SolutionPage = () => {
                 <p>{t('solution.solutioncontent')}</p>
                 <p>{t('solution.solutioncontentsd')}</p>
             </div>)
-    console.log(PROJECT);
+
     return (
         <Row className="page-solution">
             <Col className="solution-prod">
