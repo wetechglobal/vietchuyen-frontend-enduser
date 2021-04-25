@@ -13,13 +13,18 @@
                 width: 100%;
             }
 
-            .thumnail::before {
+            .thumnail::after {
                 content: "";
                 position: absolute;
                 right: -1px;
                 bottom: 0;
-                border-left: 190px solid transparent;
-                border-bottom: 190px solid #fff;
+                border-left: 160px solid transparent;
+                border-bottom: 160px solid #fff;
+            }
+            
+            .thumnail:hover::before {
+                border-left: 180px solid transparent;
+                border-bottom: 180px solid #fff;
             }
 
             .thumnail.red::after, .thumnail.blue::after {
@@ -31,7 +36,7 @@
                 border-bottom: 140px solid #fff;
             }
 
-            .thumnail.red:hover::before, .thumnail.blue::be {
+            .thumnail.red:hover::before, .thumnail.blue::before {
                 border-left: 10px solid transparent;
                 border-bottom: 100px solid #fff;
             }
@@ -253,12 +258,30 @@
                     width: 55%;
                 }
 
-                .thumnail::before {
-                    border-left: 120px solid transparent;
-                    border-bottom: 120px solid #fff;
+                .thumnail::after {
+                    content: "";
+                    position: absolute;
+                    right: -1px;
+                    bottom: 0;
+                    border-left: 115px solid transparent;
+                    border-bottom: 115px solid #fff;
+                }
+                
+                .thumnail:hover::before {
+                    border-left: 110px solid transparent;
+                    border-bottom: 110px solid #fff;
+                }
+
+                .thumnail.red::after, .thumnail.blue::after {
+                    content: "";
+                    position: absolute;
+                    right: -1px;
+                    bottom: 0;
+                    border-left: 110px solid transparent;
+                    border-bottom: 110px solid #fff;
                 }
     
-                .thumnail.red::before {
+                .thumnail.red:hover::before, .thumnail.blue::before {
                     border-left: 100px solid transparent;
                     border-bottom: 100px solid #fff;
                 }
