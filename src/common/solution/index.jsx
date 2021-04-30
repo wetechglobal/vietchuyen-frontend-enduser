@@ -12,7 +12,7 @@ const Solution = (props) => {
     const [diamon, setDiamon] = useState('');
     const [diamonArray, setDiamonArray] = useState([]);
     const getAllSolutions = useSelector(state => {
-        return state.solutuionGetAllReducer;
+        return state.solutionGetAllReducer;
     });
 
     const today = new Date();
@@ -22,8 +22,8 @@ const Solution = (props) => {
     const strYesterday = Moment(yesterday).format('YYYYMMDD');
 
     useEffect(() => {
-        const language = localStorage.getItem('i18nextLng') === 'en' ? 2 : 1;
-        const text = language === 1 ? 'diamonVi' : 'diamonEn';
+        const language = localStorage.getItem('i18nextLng') === 'en' ? 'en' : 'vi';
+        const text = language === 'vi' ? 'diamonVi' : 'diamonEn';
         setDiamon(text);
         if(sessionStorage.getItem(text) === null)
         {

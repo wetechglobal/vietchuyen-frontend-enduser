@@ -24,7 +24,7 @@ const CardCustom = (props) => {
                 </div>
                 <Row className="content-icon">
                     {clientCustom.map((item, idx) =>
-                        <Col className="content-background-icon" md={3} >
+                        <Col key={idx} className="content-background-icon" md={3} >
                             <img className="icon" key={idx} src={item} alt="" />
                         </Col>)}
                 </Row>
