@@ -3,12 +3,12 @@ import './style.scss';
 import 'react-multi-carousel/lib/styles.css';
 import { useDispatch, useSelector } from 'react-redux';
 import React, { useEffect, useState } from "react";
-import CLIENTS from "assets/images/client-logo/client";
 import IMAGES from "assets/images/images";
 import { useTranslation } from 'react-i18next';
 import Solution from '../../../src/common/solution/index';
 import Marquee from 'common/marquee';
 import { getAllOurProjectsAction } from './project/ourProjectAction';
+import { getAllOurCustomersAction } from './customer/ourCustomerAction';
 import Moment from 'moment';
 
 const SolutionPage = () => {
@@ -28,9 +28,17 @@ const SolutionPage = () => {
     return state.ourProjectGetAllReducer;
   });
 
+  // Customer
+  const [customer, setCustomer] = useState('');
+  const [customerArray, setCustomerArray] = useState([]);
+  const getAllCustomers = useSelector(state => {
+    return state.ourCustomerGetAllReducer;
+  });
+
   useEffect(() => {
     const language = localStorage.getItem('i18nextLng') === 'en' ? 'en' : 'vi';
 
+    // Project
     const textProject = language === 'vi' ? 'projectVi' : 'projectEn';
     setProject(textProject);
     if (sessionStorage.getItem(textProject) === null) {
@@ -40,9 +48,19 @@ const SolutionPage = () => {
       setProjectArray(JSON.parse(sessionStorage.getItem(textProject)));
     }
 
+    // Customer
+    const textCustomer = language === 'vi' ? 'customerVi' : 'customerEn';
+    setCustomer(textCustomer);
+    if (sessionStorage.getItem(textCustomer) === null) {
+      dispatch(getAllOurCustomersAction(language));
+    }
+    else {
+      setCustomerArray(JSON.parse(sessionStorage.getItem(textCustomer)));
+    }
+
   }, [dispatch, localStorage.getItem('i18nextLng')]);
 
-  //project
+  //Project
   if (getAllProjects?.responseData?.data?.records.length > 0) {
     //set data to projectArray if session is null
     if (sessionStorage.getItem(project) === null) {
@@ -73,62 +91,36 @@ const SolutionPage = () => {
     }
   }
 
-  const CUSTOMER = [
-    {
-      "color": ["linear-gradient(#0063B0, #008CF8)"],
-      "title": t('solution.finance'),
-      "cardimg": IMAGES.TAICHINH,
-      "projectNum": "40",
-      "value": "60",
-      dsLogo: [
-        CLIENTS.BIDV,
-        CLIENTS.EXIMBANK,
-        CLIENTS.VIETBANK,
-        CLIENTS.ACB,
-        CLIENTS.CATHAYLIFE
-      ]
-    },
-    {
-      "color": ["linear-gradient(#FF2700, #D20311, #BA0707)"],
-      "title": t('solution.electric'),
-      "cardimg": IMAGES.DIENLUC,
-      "projectNum": "20",
-      "value": "100",
-      dsLogo: [
-        CLIENTS.EXIMBANK,
-        CLIENTS.ACB,
-        CLIENTS.EVN,
-        CLIENTS.EXIMBANK,
-        CLIENTS.ACB,
-      ]
-    },
-    {
-      "color": ["linear-gradient(#0063B0, #008CF8)"],
-      "title": t('solution.business'),
-      "cardimg": IMAGES.TAICHINH,
-      "projectNum": "20",
-      "value": "10",
-      dsLogo: [
-        CLIENTS.EXIMBANK,
-        CLIENTS.ACB,
-        CLIENTS.EVN,
-      ]
-    },
-    {
-      "color": ["linear-gradient(#FF2700, #D20311, #BA0707)"],
-      "title": t('solution.police'),
-      "cardimg": IMAGES.CONGAN,
-      "projectNum": "3",
-      "value": "20",
-      dsLogo: [
-        CLIENTS.EXIMBANK,
-        CLIENTS.ACB,
-        CLIENTS.EVN,
-        CLIENTS.ACB,
-        CLIENTS.BIDV,
-      ]
+  //Customer
+  if (getAllCustomers?.responseData?.data?.records.length > 0) {
+    //set data to customerArray if session is null
+    if (sessionStorage.getItem(customer) === null) {
+      setCustomerArray(getAllCustomers.responseData.data.records);
     }
-  ];
+
+    //set customerArray new to localStorage
+    if (localStorage.getItem(customer + strNow) === null) {
+      localStorage.setItem(customer + strNow, JSON.stringify(getAllCustomers.responseData.data.records));
+    }
+
+    //set customerArray old from localStorage
+    if (localStorage.getItem(customer + strYesterday) !== null) {
+      localStorage.removeItem(customer + strYesterday);
+    }
+
+    //set customerArray data to session if session is null
+    if (sessionStorage.getItem(customer) === null && customerArray.length > 0) {
+      sessionStorage.setItem(customer, JSON.stringify(getAllCustomers.responseData.data.records));
+    }
+  }
+
+  //if server error and customerArray on localStorage have data
+  if (getAllCustomers?.isError === true) {
+    if (localStorage.getItem(customer + strNow) !== null && sessionStorage.getItem(customer) === null) {
+      setCustomerArray(JSON.parse(localStorage.getItem(customer + strNow)));
+      sessionStorage.setItem(customer, localStorage.getItem(customer + strNow));
+    }
+  }
 
   const row = [];
   row.push(<div className="detail-solution-content">
@@ -152,7 +144,7 @@ const SolutionPage = () => {
           <div className="banner">
             <img src={IMAGES.DOITAC} alt="" /></div>
           <Col className="content-prod">
-            <Marquee title={t('solution.titlecustomer')} datas={CUSTOMER} text={row} type="customer"/>
+            <Marquee title={t('solution.titlecustomer')} datas={customerArray} text={row} type="customer"/>
             <Col className="general-content">
               <Marquee title={t('solution.titleproject')} datas={projectArray} type="project" />
             </Col>

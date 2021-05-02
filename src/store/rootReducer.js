@@ -7,6 +7,9 @@ import solutionGetAllReducer from 'common/solution/solutionGetAllReducer';
 //OURPROJECT
 import ourProjectGetAllReducer from 'features/solution/project/ourProjectGetAllReducer';
 
+//OURCUSTOMER
+import ourCustomerGetAllReducer from 'features/solution/customer/ourCustomerGetAllReducer';
+
 export default combineReducers({
     toastr: toastrReducer,
     
@@ -15,5 +18,8 @@ export default combineReducers({
 
     //OURPROJECT
     ourProjectGetAllReducer,
+
+    //OURCUSTOMER
+    ourCustomerGetAllReducer
 
 });

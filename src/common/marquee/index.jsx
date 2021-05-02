@@ -16,13 +16,15 @@ const Marquee = (props) => {
 
     if (type === "customer") {
         data = datas.map((item, idx) => {
+            let color = idx % 2 === 0 ? 'linear-gradient(#FF2700, #D20311, #BA0707)' : 'linear-gradient(#0063B0, #008CF8)';
             return <CardCustom
-            colorBg={item.color}
-            cardImg={item.cardimg}
+            // colorBg={item.color}
+            colorBg={color}
+            cardImg={item.cardImage}
             cardContent={item.title}
-            projectNum={item.projectNum}
-            projectValue={item.value}
-            clientCustom={item.dsLogo}/>
+            projectNum={item.countProject}
+            projectValue={item.totalInvestment}
+            clientCustom={item.ourCustomerLogo}/>
         })
     }
 
@@ -30,7 +32,6 @@ const Marquee = (props) => {
         data = datas.map((item, idx) => {
             let titlecolor = item.type === 'Điện Lực' ? 'mini-title' : item.type === 'Ngân Hàng' ? 'mini-title-blue': 'mini-title-smb';
             let description = item.description.split("</p><p>");
-            //let color = idx % 2 === 0 ? 'linear-gradient(#FF2700, #D20311, #BA0707)' : 'linear-gradient(#0063B0, #008CF8)';
             return <CardProject
                 minititlecolor={titlecolor}
                 contentmini={description}
