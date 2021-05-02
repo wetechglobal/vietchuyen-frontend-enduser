@@ -197,3 +197,19 @@
         }
     }
 }
+
+@media (min-width: 1920px) and (max-width: 2560px)  {
+    .news__col {
+        .box {
+            .box-top {
+                .figure {
+                    .text-highlight.highlight {
+                        right: 12px;
+                        font-size:9pt;
+                        bottom: 41px;
+                    }
+                }
+            }
+        }
+    }
+}
