@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from "react-router-dom";
 import 'scss/index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -15,7 +16,9 @@ library.add(fab, faCheckSquare, faCoffee)
 ReactDOM.render(
   <Provider store={store()}>
     {/* <React.StrictMode> */}
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
     <ReduxToastr timeOut={3000} newestOnTop={false} preventDuplicates
       position="top-right" transitionIn="fadeIn" transitionOut="fadeOut"
       progressBar closeOnToastrClick={false} />
