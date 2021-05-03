@@ -3,6 +3,7 @@ import  IMAGES from "assets/images/images";
 
 export default [
     {
+        id: 111,
         link: IMAGES.DEFAULT_NEWS,
         alt: 'giai-phap-hoi-nghi-truyen-hinh',
         date: '17-10-2020',
@@ -12,6 +13,7 @@ export default [
         description: 'news.description',
     },
     {
+        id: 112,
         link: IMAGES.DEFAULT_NEWS,
         alt: 'giai-phap-hoi-nghi-truyen-hinh',
         date: '17-10-2020',
@@ -21,6 +23,7 @@ export default [
         description: 'news.description',
     },
     {
+        id: 123,
         link: IMAGES.DEFAULT_NEWS,
         alt: 'giai-phap-hoi-nghi-truyen-hinh',
         date: '17-10-2020',
@@ -30,6 +33,7 @@ export default [
         description: 'news.description',
     },
     {
+        id: 321,
         link: IMAGES.DEFAULT_NEWS,
         alt: 'giai-phap-hoi-nghi-truyen-hinh',
         date: '17-10-2020',
@@ -39,6 +43,7 @@ export default [
         description: 'news.description',
     },
     {
+        id: 222,
         link: IMAGES.DEFAULT_NEWS,
         alt: 'giai-phap-hoi-nghi-truyen-hinh',
         date: '17-10-2020',
@@ -48,6 +53,7 @@ export default [
         description: 'news.description',
     },
     {
+        id: 125,
         link: IMAGES.DEFAULT_NEWS,
         alt: 'giai-phap-hoi-nghi-truyen-hinh',
         date: '17-10-2020',
@@ -57,6 +63,7 @@ export default [
         description: 'news.description',
     },
     {
+        id: 213,
         link: IMAGES.DEFAULT_TECHNEWS,
         alt: 'giai-phap-hoi-nghi-truyen-hinh',
         date: '17-10-2020',
@@ -66,6 +73,7 @@ export default [
         description: 'news.description',
     },
     {
+        id: 424,
         link: IMAGES.DEFAULT_TECHNEWS,
         alt: 'giai-phap-hoi-nghi-truyen-hinh',
         date: '17-10-2020',
@@ -75,6 +83,7 @@ export default [
         description: 'news.description',
     },
     {
+        id: 126,
         link: IMAGES.DEFAULT_TECHNEWS,
         alt: 'giai-phap-hoi-nghi-truyen-hinh',
         date: '17-10-2020',
@@ -84,6 +93,7 @@ export default [
         description: 'news.description',
     },
     {
+        id: 127,
         link: IMAGES.DEFAULT_TECHNEWS,
         alt: 'giai-phap-hoi-nghi-truyen-hinh',
         date: '17-10-2020',
@@ -93,6 +103,7 @@ export default [
         description: 'news.description',
     },
     {
+        id: 128,
         link: IMAGES.DEFAULT_TECHNEWS,
         alt: 'giai-phap-hoi-nghi-truyen-hinh',
         date: '17-10-2020',
@@ -102,6 +113,7 @@ export default [
         description: 'news.description',
     },
     {
+        id: 130,
         link: IMAGES.DEFAULT_TECHNEWS,
         alt: 'giai-phap-hoi-nghi-truyen-hinh',
         date: '17-10-2020',

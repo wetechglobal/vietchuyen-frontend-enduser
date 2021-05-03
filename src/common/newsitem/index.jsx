@@ -7,7 +7,7 @@ import './style.scss';
 const NewsItem = (props) => {
     // lineTextColor => blue, red, highlight
     // lineSrc => ICONS.BLUELINE, ICONS.REDLINE, ICONS.HIGHLIGHTLINE
-    const { lineTextColor, lineSrc, date, type, title, description, link } = props;
+    const { lineTextColor, lineSrc, date, type, title, description, link, id } = props;
     const { t } = useTranslation();
 
     return (
@@ -23,7 +23,7 @@ const NewsItem = (props) => {
             <div className="box-date">
                 <span><FontAwesomeIcon icon={faClock} />{date}</span>
             </div>
-            <div className="box-lable"><Nav.Link href="/news/:id">{title}</Nav.Link></div>
+            <div className="box-lable"><Nav.Link href={`/news/${id}`}>{title}</Nav.Link></div>
             <div className="box-bottom">{description}</div>
         </div>
     )

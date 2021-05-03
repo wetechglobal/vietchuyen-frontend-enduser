@@ -22,6 +22,7 @@ const ListNews = (props) => {
                     title={t(`${item.title}`)}
                     description={t(`${item.description}`)}  
                     link={item.link}
+                    id={item.id}
                 />
             </Col>
         })
