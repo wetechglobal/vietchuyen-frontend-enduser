@@ -14,7 +14,7 @@ const TheContent = () => {
         <Route path="/about" component={About}/>
         <Route path="/solution" component={Solution}/>
         <Route path="/news" exact component={News}/>
-        <Route path="/news/details" component={Details}/>
+        <Route path="/news/:newsId" component={Details}/>
         <Route path="/contact" component={Contact}/>
         <Route path="/" exact component={Home}/>
         </div>
