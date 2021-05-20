@@ -8,6 +8,9 @@ import { getAllOurProjectEpic } from 'features/solution/project/ourProjectEpic';
 //OURCUSTOMER
 import { getAllOurCustomerEpic } from 'features/solution/customer/ourCustomerEpic';
 
+//NEWS
+import { getAllNewsEpic, getAllCategoryEpic } from 'features/news/newsEpic';
+
 const rootEpic = combineEpics(
     //SOLUTION
     getAllSolutionEpic,
@@ -16,7 +19,11 @@ const rootEpic = combineEpics(
     getAllOurProjectEpic,
 
     //OURCUSTOMER
-    getAllOurCustomerEpic
+    getAllOurCustomerEpic,
+
+    //NEWS
+    getAllNewsEpic,
+    getAllCategoryEpic
 
 );
 export default rootEpic;

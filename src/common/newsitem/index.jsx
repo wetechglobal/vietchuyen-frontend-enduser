@@ -5,8 +5,6 @@ import { useTranslation } from 'react-i18next';
 import './style.scss';
 
 const NewsItem = (props) => {
-    // lineTextColor => blue, red, highlight
-    // lineSrc => ICONS.BLUELINE, ICONS.REDLINE, ICONS.HIGHLIGHTLINE
     const { lineTextColor, lineSrc, date, type, title, description, link } = props;
     const { t } = useTranslation();
 

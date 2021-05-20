@@ -19,6 +19,7 @@ const Marquee = (props) => {
             let color = idx % 2 === 0 ? 'linear-gradient(#FF2700, #D20311, #BA0707)' : 'linear-gradient(#0063B0, #008CF8)';
             return <CardCustom
             // colorBg={item.color}
+            key={idx}
             colorBg={color}
             cardImg={item.cardImage}
             cardContent={item.title}
@@ -33,6 +34,7 @@ const Marquee = (props) => {
             let titlecolor = item.type === 'Điện Lực' ? 'mini-title' : item.type === 'Ngân Hàng' ? 'mini-title-blue': 'mini-title-smb';
             let description = item.description.split("</p><p>");
             return <CardProject
+                key={idx}
                 minititlecolor={titlecolor}
                 contentmini={description}
                 contentheader={item.title}
@@ -66,6 +68,7 @@ const Marquee = (props) => {
             <h1>{title}</h1>
             {text}
             <Carousel
+                key={text}
                 swipeable={true}
                 draggable={true}
                 responsive={responsive}

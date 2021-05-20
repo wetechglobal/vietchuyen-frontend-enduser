@@ -1,52 +1,225 @@
-/* eslint-disable jsx-a11y/alt-text */
 import { useState, useEffect } from "react";
 import { Col, Row, Image } from 'react-bootstrap';
 import TabItem from './components/tabItem/index';
 import HighlightNews from './components/highlightNews/index';
 import ListNews from './components/listNews/index';
 import IMAGES from "assets/images/images";
-import dataNews from './data/dataNews';
-import dataHighlight from './data/dataHighlight';
 import './style.scss';
-
-const dataTabs = [{id: 1, title: 'Tin tức sự kiện'}, {id: 2, title: 'Tin tức công nghệ'}];
+import Moment from 'moment';
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllNewsAction, getAllCategoryAction } from './newsAction';
+import { useTranslation } from 'react-i18next';
+import parse from 'html-react-parser';
 
 const News = () => {
-    const [dataType, setDataType] = useState(1);
-    const [newsData, setNewsData] = useState([]);
-    const [newsHighlightData, setNewsHighlightData] = useState([]);
+    const { t } = useTranslation();
+    const dispatch = useDispatch();
+    const [dataType, setDataType] = useState(0);
+    const [dataTabs, setdataTabs] = useState([]);
+    const [highlightNews, setHighlightNews] = useState([]);
+    const [listNews, setListNews] = useState([]);
+
+    const today = new Date();
+    const yesterday = new Date(today);
+    yesterday.setDate(yesterday.getDate() - 1)
+    const strNow = Moment(today).format('YYYYMMDD');
+    const strYesterday = Moment(yesterday).format('YYYYMMDD');
+
+    // News
+    const [news, setNews] = useState('');
+    const [newsArray, setNewsArray] = useState([]);
+    const getAllNews = useSelector(state => {
+        return state.newsGetAllReducer;
+    });
+
+    // Category
+    const [category, setCategory] = useState('');
+    const [categoryArray, setCategoryArray] = useState([]);
+    const getAllCategory = useSelector(state => {
+        return state.categoryGetAllReducer;
+    });
+
+    const init = () => {
+        const language = localStorage.getItem('i18nextLng') === 'en' ? 'en' : 'vi';
+
+        // News
+        const textNews = language === 'vi' ? 'newsVi' : 'newsEn';
+        setNews(textNews);
+        if (sessionStorage.getItem(textNews) === null) {
+            dispatch(getAllNewsAction(language));
+        }
+        else {
+            setNewsArray(JSON.parse(sessionStorage.getItem(textNews)));
+        }
+
+        // Category
+        const textCategory = language === 'vi' ? 'categoryVi' : 'categoryEn';
+        setCategory(textCategory);
+        if (sessionStorage.getItem(textCategory) === null) {
+            dispatch(getAllCategoryAction(language));
+        }
+        else {
+            setCategoryArray(JSON.parse(sessionStorage.getItem(textCategory)));
+        }
+    }
+
+    const getCategory = () => {
+        // Category
+        if (getAllCategory?.responseData?.data?.records.length > 0) {
+            //set data to categoryArray if session is null
+            if (sessionStorage.getItem(category) === null) {
+                setCategoryArray(getAllCategory.responseData.data.records);
+            }
+
+            //set categoryArray new to localStorage
+            if (localStorage.getItem(category + strNow) === null) {
+                localStorage.setItem(category + strNow, JSON.stringify(getAllCategory.responseData.data.records));
+            }
+
+            //set categoryArray old from localStorage
+            if (localStorage.getItem(category + strYesterday) !== null) {
+                localStorage.removeItem(category + strYesterday);
+            }
+
+            //set categoryArray data to session if session is null
+            if (sessionStorage.getItem(category) === null && categoryArray.length > 0) {
+                sessionStorage.setItem(category, JSON.stringify(getAllCategory.responseData.data.records));
+            }
+        }
+
+        //if server error and categoryArray on localStorage have data
+        if (getAllCategory?.isError === true) {
+            if (localStorage.getItem(category + strNow) !== null && sessionStorage.getItem(category) === null) {
+                setCategoryArray(JSON.parse(localStorage.getItem(category + strNow)));
+                sessionStorage.setItem(category, localStorage.getItem(category + strNow));
+            }
+        }
+    }
+
+    const getNews = () => {
+        // News
+        if (getAllNews?.responseData?.data?.records.length > 0) {
+            //set data to newsArray if session is null
+            if (sessionStorage.getItem(news) === null) {
+                setNewsArray(getAllNews.responseData.data.records);
+            }
+
+            //set newsArray new to localStorage
+            if (localStorage.getItem(news + strNow) === null) {
+                localStorage.setItem(news + strNow, JSON.stringify(getAllNews.responseData.data.records));
+            }
+
+            //set newsArray old from localStorage
+            if (localStorage.getItem(news + strYesterday) !== null) {
+                localStorage.removeItem(news + strYesterday);
+            }
+
+            //set newsArray data to session if session is null
+            if (sessionStorage.getItem(news) === null && newsArray.length > 0) {
+                sessionStorage.setItem(news, JSON.stringify(getAllNews.responseData.data.records));
+            }
+        }
+
+        //if server error and newsArray on localStorage have data
+        if (getAllNews?.isError === true) {
+            if (localStorage.getItem(news + strNow) !== null && sessionStorage.getItem(news) === null) {
+                setNewsArray(JSON.parse(localStorage.getItem(news + strNow)));
+                sessionStorage.setItem(news, localStorage.getItem(news + strNow));
+            }
+        }
+    }
+
+    const setDataTab = () => {
+        //set data for tab
+        if (categoryArray.length > 0) {
+            var tempdataTabs = [];
+            categoryArray.map((item, idx) => {
+                if (idx === 0 && dataType === 0) {
+                    setDataType(item.id);
+                }
+                var dataTab = { id: item.id, title: item.name };
+                tempdataTabs.push(dataTab);
+            });
+            setdataTabs(tempdataTabs);
+        }
+    }
+
+    const setNewsData = () => {
+        //set list news and hightlight
+        var highlightNew = [];
+        var hightlight = [];
+        if (newsArray.length > 0) {
+            console.log(highlightNew);
+            var newsCate = newsArray.filter(row => row.categoryId === dataType);
+            highlightNew = newsCate.filter(row => row.isHighlight === true).slice(0, 2);
+            switch (highlightNew.length) {
+                case 0:
+                    var highlight = newsCate.slice(0, 2);
+                    if (highlight.length > 0) highlightNew = highlight;
+                    break;
+                case 1:
+                    var highlight = newsCate.filter(row => row.id !== highlightNew[0].id).slice(0, 1);
+                    if (highlight.length > 0) highlightNew.push(highlight[0]);
+                    break;
+                default:
+                    break;
+            }
+
+            setHighlightNews(highlightNew);
+            highlightNew?.map((item, i) => {
+                hightlight.push(item.id);
+            })
+
+            var listNew = newsCate.filter(row => hightlight.includes(row.id) === false);
+            setListNews(listNew);
+        }
+    }
 
     useEffect(() => {
-        setNewsData(dataNews.filter(x => x.typeId === dataType));
-        setNewsHighlightData(dataHighlight.filter(x => x.typeId === dataType));
-    }, [dataType]);
+        init();
+    }, [dispatch, localStorage.getItem('i18nextLng')]);
 
-    return (    
-        <>  
+    useEffect(() => {
+        setDataTab();
+        setNewsData();
+    }, [newsArray, categoryArray, dataType]);
+
+    //alway run
+    useEffect(() => {
+        getNews();
+        getCategory();
+    });
+
+    //run first times
+    useEffect(() => {
+    }, []);
+
+    return (
+        <>
             {/* --- BANNER --- */}
             <Row className="news__banner">
-                <Image src={IMAGES.BANNER} className="news__banner--image"/>
+                <Image src={IMAGES.BANNER} className="news__banner--image" />
             </Row>
 
             <Col className="news__col">
                 <div className="news__row news__header">
-                { 
-                    dataTabs.map(({id,title}) => <TabItem 
-                        key={id} 
-                        title={title} 
-                        onItemClicked={() => setDataType(id)} 
-                        isActive={dataType === id} 
-                    />) 
-                }
+                    {
+                        dataTabs.map(({ id, title }) => <TabItem
+                            key={id}
+                            title={title}
+                            onItemClicked={() => setDataType(id)}
+                            isActive={dataType === id || dataTabs[0] === id}
+                        />)
+                    }
                 </div>
 
                 <Row>
-                    <HighlightNews data={newsHighlightData}/>
-                    <ListNews data={newsData}/>
+                    <HighlightNews data={highlightNews} />
+                    <ListNews data={listNews} />
                 </Row>
 
                 <div className="news__row news__footer">
-                    <span>XEM THÊM<br/>TIN TỨC</span>
+                    <span>{parse(t('strengths.news'))}</span>
                     <div className="news__line" />
                 </div>
             </Col>

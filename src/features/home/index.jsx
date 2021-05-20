@@ -48,8 +48,8 @@ const Home = () => {
                 </Row>
                 <Module />
                 <img className="shakehands" src={IMAGES.DOITAC} width="100%" alt=""/>
-                <Marquee title={t('news.partner')} datas={partner} type="picture"/>
-                <Marquee title={t('news.client')} datas={client} type="picture"/>
+                <Marquee key="123" title={t('news.partner')} datas={partner} type="picture"/>
+                <Marquee key="321" title={t('news.client')} datas={client} type="picture"/>
             </Col>
         </Row>
     );

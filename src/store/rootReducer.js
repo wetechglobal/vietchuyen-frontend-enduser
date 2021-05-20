@@ -10,6 +10,10 @@ import ourProjectGetAllReducer from 'features/solution/project/ourProjectGetAllR
 //OURCUSTOMER
 import ourCustomerGetAllReducer from 'features/solution/customer/ourCustomerGetAllReducer';
 
+//NEWS
+import newsGetAllReducer from 'features/news/components/reducers/newsGetAllReducer';
+import categoryGetAllReducer from 'features/news/components/reducers/categoryGetAllReducer';
+
 export default combineReducers({
     toastr: toastrReducer,
     
@@ -20,6 +24,10 @@ export default combineReducers({
     ourProjectGetAllReducer,
 
     //OURCUSTOMER
-    ourCustomerGetAllReducer
+    ourCustomerGetAllReducer,
+
+    //NEWS
+    newsGetAllReducer,
+    categoryGetAllReducer
 
 });

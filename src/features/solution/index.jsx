@@ -144,9 +144,9 @@ const SolutionPage = () => {
           <div className="banner">
             <img src={IMAGES.DOITAC} alt="" /></div>
           <Col className="content-prod">
-            <Marquee title={t('solution.titlecustomer')} datas={customerArray} text={row} type="customer"/>
+            <Marquee key={`customer`} title={t('solution.titlecustomer')} datas={customerArray} text={row} type="customer" />
             <Col className="general-content">
-              <Marquee title={t('solution.titleproject')} datas={projectArray} type="project" />
+              <Marquee key={`project`} title={t('solution.titleproject')} datas={projectArray} type="project" />
             </Col>
           </Col>
         </Col>
