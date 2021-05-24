@@ -131,7 +131,7 @@ const News = () => {
 
     const setDataTab = () => {
         //set data for tab
-        if (categoryArray.length > 0) {
+        if (categoryArray.length > 0 && categoryArray[0].languageCode === category.slice(-2).toLowerCase()) {
             var tempdataTabs = [];
             categoryArray.map((item, idx) => {
                 if (idx === 0 && dataType === 0) {
@@ -147,18 +147,24 @@ const News = () => {
     const setNewsData = () => {
         //set list news and hightlight
         var highlightNew = [];
-        var hightlight = [];
-        if (newsArray.length > 0) {
-            console.log(highlightNew);
+        var highlights = [];
+        var highlight = [];
+        var idType = [];
+        if (newsArray.length > 0 && newsArray[0].languageCode === news.slice(-2).toLowerCase()) {
+            categoryArray?.map((item, i) => {
+                idType.push(item.id);
+            })
+
+            if(idType.includes(dataType) === false) setDataType(categoryArray[0]?.id);
             var newsCate = newsArray.filter(row => row.categoryId === dataType);
             highlightNew = newsCate.filter(row => row.isHighlight === true).slice(0, 2);
             switch (highlightNew.length) {
                 case 0:
-                    var highlight = newsCate.slice(0, 2);
+                    highlight = newsCate.slice(0, 2);
                     if (highlight.length > 0) highlightNew = highlight;
                     break;
                 case 1:
-                    var highlight = newsCate.filter(row => row.id !== highlightNew[0].id).slice(0, 1);
+                    highlight = newsCate.filter(row => row.id !== highlightNew[0].id).slice(0, 1);
                     if (highlight.length > 0) highlightNew.push(highlight[0]);
                     break;
                 default:
@@ -167,27 +173,38 @@ const News = () => {
 
             setHighlightNews(highlightNew);
             highlightNew?.map((item, i) => {
-                hightlight.push(item.id);
+                highlights.push(item.id);
             })
 
-            var listNew = newsCate.filter(row => hightlight.includes(row.id) === false);
+            var listNew = newsCate.filter(row => highlights.includes(row.id) === false);
             setListNews(listNew);
         }
     }
 
     useEffect(() => {
+        setDataType(0);
         init();
-    }, [dispatch, localStorage.getItem('i18nextLng')]);
+    }, [localStorage.getItem('i18nextLng')]);
 
     useEffect(() => {
         setDataTab();
         setNewsData();
-    }, [newsArray, categoryArray, dataType]);
+    }, [newsArray]);
+
+    useEffect(() => {
+        setDataTab();
+        setNewsData();
+    }, [categoryArray]);
+
+    useEffect(() => {
+        setDataTab();
+        setNewsData();
+    }, [dataType]);
 
     //alway run
     useEffect(() => {
-        getNews();
         getCategory();
+        getNews();
     });
 
     //run first times
@@ -208,7 +225,7 @@ const News = () => {
                             key={id}
                             title={title}
                             onItemClicked={() => setDataType(id)}
-                            isActive={dataType === id || dataTabs[0] === id}
+                            isActive={dataType === id}
                         />)
                     }
                 </div>
